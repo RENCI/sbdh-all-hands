@@ -15,8 +15,8 @@ function Footer() {
                             <Menu text >
                                 <Menu.Item header href='/' content='Home' className='footer-link' />
                                 <Menu.Item href='/register' content='Registration' className='footer-link'/>
-                                <Menu.Item href='/event-agenda' content='Agenda' className='footer-link'/>
-                                <Menu.Item href='/speakers' content='Speakers' className='footer-link'/>
+                                {/* <Menu.Item href='/event-agenda' content='Agenda' className='footer-link'/>
+                                <Menu.Item href='/speakers' content='Speakers' className='footer-link'/> */}
                                 <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='SBDH Main Site' className='footer-link' />
                             </Menu>
                         </Grid.Column>
