@@ -14,7 +14,11 @@
 }
 
 .header-bar {
-  margin: 2rem;
+  margin: 1rem;
+}
+
+.pageContain {
+  margin: 3rem;
 }
 .App-header {
   /* background-color: #282c34; */
