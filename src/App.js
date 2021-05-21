@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { Grid, Segment } from 'semantic-ui-react'
+import { useRoutes } from "hookrouter";
+
+import NavBar from './components/Navbar';
+import PageNotFound from './components/404';
+import routes from './routes';
+
 function App() {
+  const routeResult = useRoutes(routes)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar />
+        <Grid centered columns={3}>
+          <Grid.Column width={12}>
+            <Segment>
+                {routeResult || <PageNotFound />}
+            </Segment>
+          </Grid.Column>
+        </Grid>
     </div>
   );
 }
