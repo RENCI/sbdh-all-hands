@@ -21,11 +21,23 @@
 .pageBody {
   background-image: url('./components/images/SouthBDHubWatermarkBackground.png');
   background-size: cover;
+  min-height: 100vh;
 }
 
 .pageContain {
   margin: 2rem auto;
 }
+
+a.item.nav-link:hover:not(.active) {
+  border-bottom: solid 3px #808080 !important;
+  color: #f37521 !important;
+}
+
+a.item.nav-link:active {
+  border-bottom: solid 3px #808080 !important;
+  color: #f37521 !important;
+}
+
 
 .footer {
   position: absolute;
