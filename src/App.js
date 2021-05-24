@@ -1,9 +1,10 @@
 import './App.css';
 
-import { Grid, Segment } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import { useRoutes } from "hookrouter";
 
 import NavBar from './components/Navbar';
+import Footer from './components/Footer';
 import PageNotFound from './components/404';
 import routes from './routes';
 
@@ -12,14 +13,17 @@ function App() {
 
   return (
     <div className="App">
+      <div className='wrapper'>
         <NavBar />
         <Grid centered columns={3}>
           <Grid.Column width={12}>
-            <Segment>
+            <div>
                 {routeResult || <PageNotFound />}
-            </Segment>
+            </div>
           </Grid.Column>
         </Grid>
+        <Footer />
+      </div>
     </div>
   );
 }
