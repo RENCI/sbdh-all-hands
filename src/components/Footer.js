@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Container, Grid, Header, Image, Menu, Segment, List } from 'semantic-ui-react'
+import { Link } from '@reach/router';
+
 import logo from './images/SBDH-logo-white-vertical.png'
 
 function Footer() {
@@ -13,10 +15,10 @@ function Footer() {
                         </Grid.Column>
                         <Grid.Column width={6}>
                             <Menu text >
-                                <Menu.Item header href='/' content='Home' className='footer-link' />
-                                <Menu.Item href='/register' content='Registration' className='footer-link'/>
-                                {/* <Menu.Item href='/event-agenda' content='Agenda' className='footer-link'/>
-                                <Menu.Item href='/speakers' content='Speakers' className='footer-link'/> */}
+                                <Menu.Item header as={Link} to='/' content='Home' className='footer-link' />
+                                <Menu.Item as={Link} to='/register' content='Registration' className='footer-link'/>
+                                {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/>
+                                <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/> */}
                                 <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='SBDH Main Site' className='footer-link' />
                             </Menu>
                         </Grid.Column>

@@ -1,5 +1,7 @@
 //import {useState, useEffect} from "react";
-import { Image, Dimmer, Loader, Header, Grid, Button, Item } from "semantic-ui-react";
+import { Image, Header, Grid, Button, Item } from "semantic-ui-react";
+import { Link } from '@reach/router'
+
 import saveDate from './images/Save_The_Date.png'
 import placeholder from './images/placeholder.png'
 
@@ -50,7 +52,7 @@ function Home() {
                     </Grid.Column>
                     <Grid.Column width={8}>
                         <Header as='h2' content='Bringing People and Data Together' subheader={shortDesc} />
-                        <Button color='orange' content='REGISTER NOW' href='/register' />
+                        <Button color='orange' content='REGISTER NOW' as={Link} to='/register' />
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>

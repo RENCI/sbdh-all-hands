@@ -1,22 +1,26 @@
-import React from 'react';
+// import {useState} from "react";
+import { Link } from '@reach/router'
 import { Button, Container, Image, Menu } from 'semantic-ui-react'
+
 import logo from './images/SBDH-logo.png'
 
 function NavBar() {
+    // const [isActive, setActive] = useState(false)
+    // const onClick = () => setActive(!isActive)
 
     return (
         <div className='header-bar'>
             <Container>
                 <Menu pointing secondary size='large' stackable fluid>
-                    <Menu.Item as='a' header href='/'>
+                    <Menu.Item header as={Link} to='/'>
                         <Image size='small' src={logo} alt='logo' style={{ marginRight: '2rem' }} />
                     </Menu.Item>
-                    <Menu.Item as='A' icon='home' name='Home' href='/' />
-                    {/* <Menu.Item as='A' icon='calendar alternate outline' name='Agenda' href='/event-agenda' /> */}
-                    <Menu.Item as='A' icon='pencil' name='Registration' href='/register' />
-                    {/* <Menu.Item as='A' icon='users' name='Speakers' href='/speakers' /> */}
-                    <Menu.Item>
-                        <Button color='orange' size='small' content='REGISTER NOW' href='/register' />
+                    <Menu.Item as={Link} icon='home' name='Home' to='/' />
+                    {/* <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' /> */}
+                    <Menu.Item as={Link} icon='pencil' name='Registration' to='/register' />
+                    {/* <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' /> */}
+                    <Menu.Item as={Link} to='/register'>
+                        <Button color='orange' size='small' content='REGISTER NOW' />
                     </Menu.Item>
                 </Menu>
             </Container>

@@ -1,4 +1,5 @@
 import { List, Message } from "semantic-ui-react";
+import { Link } from '@reach/router'
 
 function PageNotFound() {
     return (
@@ -10,9 +11,9 @@ function PageNotFound() {
                        May we interest you in one of these pages?
                     </List.Header>
                 </List.Item>
-                <List.Item as='a' href='/'>Home</List.Item>
-                <List.Item as='a' href='/register' >Register</List.Item>
-                {/* <List.Item as='a' href='/event-agenda' >Agenda</List.Item> */}
+                <List.Item as={Link} to='/'>Home</List.Item>
+                <List.Item as={Link} to='/register' >Register</List.Item>
+                {/* <List.Item as={Link} to='/event-agenda' >Agenda</List.Item> */}
             </List>
         </div>
     )
