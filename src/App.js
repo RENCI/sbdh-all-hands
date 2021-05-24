@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className='wrapper'>
         <NavBar />
-        <Grid centered columns={3}>
+        <Grid centered columns={3} className='pageBody' padded>
           <Grid.Column width={12}>
             <div>
                 {routeResult || <PageNotFound />}
