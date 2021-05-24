@@ -18,8 +18,8 @@ function Footer() {
                                 <Menu.Item header as={Link} to='/' content='Home' className='footer-link' />
                                 <Menu.Item as={Link} to='/register' content='Registration' className='footer-link'/>
                                 {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/>
-                                <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/> */}
-                                <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='SBDH Main Site' className='footer-link' />
+                                <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/>
+                                <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='South Hub Main Site' className='footer-link' /> */}
                             </Menu>
                         </Grid.Column>
                         <Grid.Column width={6} padded>
@@ -29,13 +29,13 @@ function Footer() {
                             <Grid.Row id='socials'>
                                 <List horizontal>
                                     <List.Item>
-                                        <Button className='social-btn' icon='computer' color='grey' href='https://southbigdatahub.org/' target='_blank' noopener />
+                                        <Button className='social-btn' icon='computer' color='grey' href='https://southbigdatahub.org/' target='_blank' noopener title="South Hub Main Site" />
                                     </List.Item>
                                     <List.Item>
-                                        <Button className='social-btn' icon='twitter' color='twitter' href='https://twitter.com/SouthBigDataHub' target='_blank' noopener />
+                                        <Button className='social-btn' icon='twitter' color='twitter' href='https://twitter.com/SouthBigDataHub' target='_blank' noopener title="South Hub Twitter" />
                                     </List.Item>
                                     <List.Item>
-                                        <Button className='social-btn' icon='youtube' color='youtube' href='https://www.youtube.com/channel/UCxmSez9cqyxJ6jQhs9dRkeQ' target='_blank' noopener />
+                                        <Button className='social-btn' icon='youtube' color='youtube' href='https://www.youtube.com/channel/UCxmSez9cqyxJ6jQhs9dRkeQ' target='_blank' noopener title="South Hub YouTube" />
                                     </List.Item>
                                 </List>
                             </Grid.Row>
