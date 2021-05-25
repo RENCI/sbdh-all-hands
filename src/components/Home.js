@@ -2,8 +2,12 @@
 import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react";
 import { Link } from '@reach/router'
 
-import saveDate from './images/Save_The_Date.png'
-import placeholder from './images/placeholder.png'
+import saveDate from './images/home/Save_The_Date.png';
+// import placeholder from './images/home/300x300_placeholder.png';
+import expertsImg from './images/home/expert-convo.jpg';
+import purposeImg from './images/home/purpose.jpg';
+import communityImg from './images/home/community.jpg';
+
 
 const shortDesc = {
     main: `Join big data influencers from industry, academia, nonprofits, and government to discuss some of the most important topics in data science today:`,
@@ -61,7 +65,7 @@ function Home() {
             {/* <Image src={page.headerImage.url} alt="main-image" />
             <p>{page.pageTitle}</p>
             <div>{page.description}</div> */}
-            <Grid divided='vertically'>
+            <Grid divided='vertically' style={{ padding: "1rem", backgroundColor: "white"}}>
                 <Grid.Row>
                     <Grid.Column width={8}>
                         <Image src={saveDate} />
@@ -70,10 +74,10 @@ function Home() {
                         <Header as='h1'>
                             <Header.Content>
                                 Bringing People and Data Together
-                                <Header.Subheader>{shortDesc.main}</Header.Subheader>
+                                <Header.Subheader className="sub-head">{shortDesc.main}</Header.Subheader>
                                 <Header.Subheader>
                                     {/* {shortDesc.list} */}
-                                    <List style={{ paddingTop: "1rem", marginLeft: "1.5rem"}}>
+                                    <List className='home-list'>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>Building Data Science Education and Workforce</List.Content>
@@ -98,19 +102,24 @@ function Home() {
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                    <Header as='h2' content='Leverage the expertise of data science professionals throughout the American South' subheader={shortDesc.benefits} />
+                    <Header as='h2'>
+                        <Header.Content>
+                            Leverage the expertise of data science professionals throughout the American South
+                            <Header.Subheader className="sub-head">{shortDesc.benefits}</Header.Subheader>
+                        </Header.Content>
+                    </Header>
                     <Item.Group divided>
                         <Item>
-                            <Item.Image src={placeholder} />
-                            <Item.Content header='Focused Conversations On Important Data Science Topics' description={blurbs.conversation} />
+                            <Item.Image src={expertsImg} className="home-goals" />
+                            <Item.Content className="home-goals" header='Focused Conversations On Important Data Science Topics' description={blurbs.conversation} />
                         </Item>
                         <Item>
-                            <Item.Image src={placeholder} />
-                            <Item.Content header='Our Purpose' description={blurbs.purpose} />
+                            <Item.Image src={purposeImg} className="home-goals" />
+                            <Item.Content className="home-goals" header='Our Purpose' description={blurbs.purpose} />
                         </Item>
                         <Item>
-                            <Item.Image src={placeholder} />
-                            <Item.Content header='How the South Big Data Hub Can Help' description={blurbs.whySH} />
+                            <Item.Image src={communityImg} className="home-goals" />
+                            <Item.Content className="home-goals" header='How the South Big Data Hub Can Help' description={blurbs.whySH} />
                         </Item>
                     </Item.Group>
                 </Grid.Row>
