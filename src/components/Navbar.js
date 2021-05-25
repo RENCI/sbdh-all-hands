@@ -2,7 +2,7 @@
 import { Link } from '@reach/router'
 import { Button, Container, Image, Menu } from 'semantic-ui-react'
 
-import logo from './images/SBDH-logo.png'
+import logo from './images/logos/SBDH-logo.png'
 
 function NavBar() {
     
