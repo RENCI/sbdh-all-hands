@@ -5,6 +5,7 @@ import { Button, Container, Image, Menu } from 'semantic-ui-react'
 import logo from './images/SBDH-logo.png'
 
 function NavBar() {
+    
     // const [isActive, setActive] = useState(false)
     // const onClick = () => setActive(!isActive)
 
@@ -15,11 +16,11 @@ function NavBar() {
                     <Menu.Item header as={Link} to='/'>
                         <Image size='small' src={logo} alt='logo' style={{ marginRight: '2rem' }} />
                     </Menu.Item>
-                    <Menu.Item as={Link} icon='home' name='Home' to='/' />
-                    {/* <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' /> */}
-                    <Menu.Item as={Link} icon='pencil' name='Registration' to='/register' />
-                    {/* <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' /> */}
-                    <Menu.Item as={Link} to='/register'>
+                    <Menu.Item as={Link} icon='home' name='Home' to='/' className='nav-link' />
+                    {/* <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' className='nav-link' /> */}
+                    <Menu.Item as={Link} icon='pencil' name='Registration' to='/register' className='nav-link' />
+                    {/* <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' className='nav-link' /> */}
+                    <Menu.Item as={Link} to='/register' position='right'>
                         <Button color='orange' size='small' content='REGISTER NOW' />
                     </Menu.Item>
                 </Menu>

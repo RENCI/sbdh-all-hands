@@ -5,7 +5,7 @@ function Registration() {
 
     return (
         <div className='pageContain'>
-            <Header as='h2' textAlign='center'>
+            <Header as='h1' textAlign='center'>
                 <Header.Content  style={{ color: '#f37521' }}>
                     Register Today!
                 </Header.Content>
