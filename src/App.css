@@ -16,6 +16,7 @@
 .header-bar {
   padding: 1rem;
   background-color: #f5d580;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,.2)
 }
 
 .pageBody {
@@ -26,6 +27,7 @@
 
 .pageContain {
   margin: 2rem auto;
+  background-color: white;
 }
 
 a.item.nav-link:hover:not(.active) {
@@ -38,6 +40,24 @@ a.item.nav-link:active {
   color: #f37521 !important;
 }
 
+.sub-head {
+  padding-top: 0.5rem !important;
+}
+
+div.home-list {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-left: 1.5rem !important;
+}
+
+div.image.home-goals {
+  border: 3.5px solid #f5d580 !important;
+  box-shadow: 8px 8px 5px grey;
+}
+
+div.content.home-goals div.description {
+  font-size: 1.05rem !important;
+}
 
 .footer {
   position: absolute;

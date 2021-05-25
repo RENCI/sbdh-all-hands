@@ -12,7 +12,7 @@ function PageNotFound() {
                     </List.Header>
                 </List.Item>
                 <List.Item as={Link} to='/'>Home</List.Item>
-                <List.Item as={Link} to='/register' >Register</List.Item>
+                <List.Item as={Link} to='/register' >Registration</List.Item>
                 {/* <List.Item as={Link} to='/event-agenda' >Agenda</List.Item> */}
             </List>
         </div>
