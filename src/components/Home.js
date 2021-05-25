@@ -3,7 +3,6 @@ import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react
 import { Link } from '@reach/router'
 
 import saveDate from './images/home/Save_The_Date.png';
-// import placeholder from './images/home/300x300_placeholder.png';
 import expertsImg from './images/home/expert-convo.jpg';
 import purposeImg from './images/home/purpose.jpg';
 import communityImg from './images/home/community.jpg';
@@ -65,12 +64,12 @@ function Home() {
             {/* <Image src={page.headerImage.url} alt="main-image" />
             <p>{page.pageTitle}</p>
             <div>{page.description}</div> */}
-            <Grid divided='vertically' style={{ padding: "1rem", backgroundColor: "white"}}>
+            <Grid divided='vertically' style={{ padding: "1rem" }}>
                 <Grid.Row>
-                    <Grid.Column width={8}>
+                    <Grid.Column width={9}>
                         <Image src={saveDate} />
                     </Grid.Column>
-                    <Grid.Column width={8}>
+                    <Grid.Column width={7}>
                         <Header as='h1'>
                             <Header.Content>
                                 Bringing People and Data Together
@@ -110,15 +109,47 @@ function Home() {
                     </Header>
                     <Item.Group divided>
                         <Item>
-                            <Item.Image src={expertsImg} className="home-goals" />
-                            <Item.Content className="home-goals" header='Focused Conversations On Important Data Science Topics' description={blurbs.conversation} />
+                            <Item.Image src={expertsImg} className="home-goals" size="medium" />
+                            <Item.Content className="home-goals" >
+                                <Item.Header>Focused Conversations On Important Data Science Topics</Item.Header>
+                                <Item.Description>{blurbs.conversation}</Item.Description>
+                                <Item.Extra>
+                                    <Item.Description>Focus your time in one or more of the following tracks:</Item.Description>
+                                    <List className='home-list'>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Data Science and Education Workforce</List.Content>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Data Sharing and Cyberinfrastructure</List.Content>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Team Science</List.Content>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Smart Cities</List.Content>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Health Disparities</List.Content>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Icon name='caret right' style={{color: '#f37521'}} />
+                                            <List.Content>Materials and Advanced Manufacturing</List.Content>
+                                        </List.Item>
+                                    </List>
+                                </Item.Extra>
+                            </Item.Content>
                         </Item>
                         <Item>
-                            <Item.Image src={purposeImg} className="home-goals" />
+                            <Item.Image src={purposeImg} className="home-goals" size="medium" />
                             <Item.Content className="home-goals" header='Our Purpose' description={blurbs.purpose} />
                         </Item>
                         <Item>
-                            <Item.Image src={communityImg} className="home-goals" />
+                            <Item.Image src={communityImg} className="home-goals" size="medium" />
                             <Item.Content className="home-goals" header='How the South Big Data Hub Can Help' description={blurbs.whySH} />
                         </Item>
                     </Item.Group>

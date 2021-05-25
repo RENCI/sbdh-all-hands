@@ -35,9 +35,9 @@ a.item.nav-link:hover:not(.active) {
   color: #f37521 !important;
 }
 
-a.item.nav-link:active {
-  border-bottom: solid 3px #808080 !important;
-  color: #f37521 !important;
+a.item.nav-link.active {
+  border-top: solid 2px #808080 !important;
+  border-bottom: solid 3px #f37521 !important;
 }
 
 .sub-head {
@@ -57,6 +57,10 @@ div.image.home-goals {
 
 div.content.home-goals div.description {
   font-size: 1.05rem !important;
+}
+div.content.home-goals div.extra {
+  font-size: 1.05rem !important;
+  color: #808080 !important;
 }
 
 .footer {
