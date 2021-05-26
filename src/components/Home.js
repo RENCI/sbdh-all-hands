@@ -60,7 +60,7 @@ function Home() {
     // }
 
     return  (
-        <div className='pageContain'>
+        <div className='page-contain'>
             {/* <Image src={page.headerImage.url} alt="main-image" />
             <p>{page.pageTitle}</p>
             <div>{page.description}</div> */}
