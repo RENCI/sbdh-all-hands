@@ -16,7 +16,7 @@
 .header-bar {
   padding: 1rem;
   background-color: #f5d580;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,.2)
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
 }
 
 .pageBody {
@@ -25,9 +25,9 @@
   min-height: 100vh;
 }
 
-.pageContain {
+.page-contain {
   margin: 2rem auto;
-  background-color: white;
+  min-height: 100vh;
 }
 
 a.item.nav-link:hover:not(.active) {
@@ -35,13 +35,18 @@ a.item.nav-link:hover:not(.active) {
   color: #f37521 !important;
 }
 
-a.item.nav-link:active {
-  border-bottom: solid 3px #808080 !important;
-  color: #f37521 !important;
+a.item.nav-link.active {
+  border-top: solid 2px #808080 !important;
+  border-bottom: solid 3px #f37521 !important;
 }
 
 .sub-head {
   padding-top: 0.5rem !important;
+}
+
+.page-title {
+  color: #f37521 !important;
+  padding-top: 1rem !important;
 }
 
 div.home-list {
@@ -58,8 +63,17 @@ div.image.home-goals {
 div.content.home-goals div.description {
   font-size: 1.05rem !important;
 }
+div.content.home-goals div.extra {
+  font-size: 1.05rem !important;
+  color: #808080 !important;
+}
 
-.footer {
+.conduct-list .item {
+  font-size: 1.1rem !important;
+  margin-left: 1.5rem !important;
+}
+
+.page-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -70,6 +84,10 @@ div.content.home-goals div.description {
   color: #f5d580 !important
 }
 .footer-link:hover {
+  color: #f37521 !important
+}
+
+.footer-extra:hover {
   color: #f37521 !important
 }
 

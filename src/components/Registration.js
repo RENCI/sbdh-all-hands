@@ -1,14 +1,13 @@
 import { Loader, Header } from "semantic-ui-react";
+
 function Registration() {
     const Loading = <Loader content='Loading...' />
     const url = 'https://forms.gle/xCYHGyAFHzBR1iky8'
 
     return (
-        <div className='pageContain'>
+        <div className='page-contain'>
             <Header as='h1' textAlign='center'>
-                <Header.Content  style={{ color: '#f37521' }}>
-                    Register Today!
-                </Header.Content>
+                <Header.Content className="page-title">Register Today!</Header.Content>
                 <Header.Subheader>
                     Please fill out the registration form for this event below. If you are having issues completing it here, you can go to the direct <a href={url} target='_blank' rel='noopener noreferrer'>form</a> instead.
                 </Header.Subheader>
