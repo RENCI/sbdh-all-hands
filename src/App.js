@@ -9,13 +9,13 @@ import Home from './components/Home';
 import Agenda from './components/Agenda';
 import Registration from './components/Registration';
 import Speaker from './components/Speaker';
+import Conduct from './components/ConductCode';
 import PageNotFound from './components/404';
 
 function App() {
   return (
     <LocationProvider>
       <div className="App">
-        <div className='wrapper'>
           <NavBar />
           <Grid centered columns={3} className='pageBody' padded>
             <Grid.Column width={12}>
@@ -24,13 +24,13 @@ function App() {
                   <Agenda path='/event-agenda' />
                   <Registration path='/register' />
                   <Speaker path='/speakers' />
+                  <Conduct path="/code-of-conduct" />
                   <PageNotFound default />
               </ReachRouter>
             </Grid.Column>
           </Grid>
           <Footer />
         </div>
-      </div>
     </LocationProvider>
   );
 }
