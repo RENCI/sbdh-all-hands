@@ -28,9 +28,9 @@ function NavBar() {
                         <Image size='small' src={logo} alt='logo' style={{ marginRight: '2rem' }} />
                     </Menu.Item>
                     <Menu.Item as={Link} icon='home' name='Home' to='/' className={navClass.home} />
-                    {/* <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' className={navClass.agenda} /> */}
                     <Menu.Item as={Link} icon='pencil' name='Registration' to='/register' className={navClass.register} />
-                    {/* <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' className={navClass.speakers} /> */}
+                    <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' className={navClass.agenda} />
+                    <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' className={navClass.speakers} />
                     <Menu.Item as={Link} to='/register' position='right'>
                         <Button color='orange' size='small' content='REGISTER NOW' />
                     </Menu.Item>
