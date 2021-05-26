@@ -3,7 +3,7 @@ import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react
 import { Link } from '@reach/router'
 
 import saveDate from './images/home/Save_The_Date.png';
-import expertsImg from './images/home/expert-convo.jpg';
+import expertsImg from './images/home/expert-2.jpg';
 import purposeImg from './images/home/purpose.jpg';
 import communityImg from './images/home/community.jpg';
 
