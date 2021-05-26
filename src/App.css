@@ -16,7 +16,7 @@
 .header-bar {
   padding: 1rem;
   background-color: #f5d580;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,.2)
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
 }
 
 .pageBody {
@@ -27,7 +27,6 @@
 
 .page-contain {
   margin: 2rem auto;
-  background-color: white;
   min-height: 100vh;
 }
 
