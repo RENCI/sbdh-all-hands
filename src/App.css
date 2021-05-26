@@ -25,9 +25,10 @@
   min-height: 100vh;
 }
 
-.pageContain {
+.page-contain {
   margin: 2rem auto;
   background-color: white;
+  min-height: 100vh;
 }
 
 a.item.nav-link:hover:not(.active) {
@@ -42,6 +43,11 @@ a.item.nav-link.active {
 
 .sub-head {
   padding-top: 0.5rem !important;
+}
+
+.page-title {
+  color: #f37521 !important;
+  padding-top: 1rem !important;
 }
 
 div.home-list {
@@ -63,7 +69,12 @@ div.content.home-goals div.extra {
   color: #808080 !important;
 }
 
-.footer {
+.conduct-list .item {
+  font-size: 1.1rem !important;
+  margin-left: 1.5rem !important;
+}
+
+.page-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -74,6 +85,10 @@ div.content.home-goals div.extra {
   color: #f5d580 !important
 }
 .footer-link:hover {
+  color: #f37521 !important
+}
+
+.footer-extra:hover {
   color: #f37521 !important
 }
 
