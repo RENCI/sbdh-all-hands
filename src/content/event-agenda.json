@@ -1,0 +1,211 @@
+[
+    {
+        "eventId": "w1",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "11:00 AM",
+        "end": "11:30 AM",
+        "title": "Welcome and Introductions",
+        "desc": "this is what the thing is about"
+    },
+    {
+        "eventId": "w2",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "11:30 AM",
+        "end": "11:45 AM",
+        "title": "What to Expect",
+        "desc": ""
+    },
+    {
+        "eventId": "w3",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "11:45 AM",
+        "end": "12:00 PM",
+        "title": "Keynote: TBD",
+        "desc": ""
+    },
+    {
+        "eventId": "w4",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "12:15 PM",
+        "end": "01:00 PM",
+        "title": "BLB: Break, Lounge and Booth Time",
+        "desc": ""
+    },
+    {
+        "eventId": "w5",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "01:00 PM",
+        "end": "02:30 PM",
+        "title": "Concurrent Sessions: Data Science and Education Workforce and Data Sharing and Cyberinfrastructure",
+        "desc": ""
+    },
+    {
+        "eventId": "w6",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "02:30 PM",
+        "end": "04:00 PM",
+        "title": "Concurrent Sessions: Smart and Resilient Cities and Team Science",
+        "desc": ""
+    },
+    {
+        "eventId": "w7",
+        "weekday": "Wednesday",
+        "date": "July 28",
+        "start": "04:00 PM",
+        "end": "05:30 PM",
+        "title": "Concurrent Sessions: Health Disparities and Materials and Advanced Manufacturing",
+        "desc": ""
+
+    },
+    {
+        "eventId": "t1",
+        "weekday": "Thursday",
+        "date": "July 29",
+        "start": "11:00 AM",
+        "end": "12:00 PM",
+        "title": "Plenary Session: TBD",
+        "desc": ""
+    },
+    {
+        "eventId": "t2",
+        "weekday": "Thursday",
+        "date": "July 29",
+        "start": "12:00 PM",
+        "end": "01:00 PM",
+        "title": "BLB: Break, Lounge and Booth Time",
+        "desc": ""
+    },
+    {
+        "eventId": "t3",
+        "weekday": "Thursday",
+        "date": "July 29",
+        "start": "01:00 PM",
+        "end": "02:30 PM",
+        "title": "Concurrent Sessions: Data Science and Education Workforce and Data Sharing and Cyberinfrastructure",
+        "desc": ""
+    },
+    {
+        "eventId": "t4",
+        "weekday": "Thursday",
+        "date": "July 29",
+        "start": "02:30 PM",
+        "end": "04:00 PM",
+        "title": "Concurrent Sessions: Smart and Resilient Cities and Team Science",
+        "desc": ""
+    },
+    {
+        "eventId": "t5",
+        "weekday": "Thursday",
+        "date": "July 29",
+        "start": "04:00 PM",
+        "end": "05:30 PM",
+        "title": "Concurrent Sessions: Health Disparities and Materials and Advanced Manufacturing",
+        "desc": ""
+
+    },
+    {
+        "eventId": "f1",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "10:00 AM",
+        "end": "10:30 AM",
+        "title": "Overview",
+        "desc": ""
+    },
+    {
+        "eventId": "f2",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "10:30 AM",
+        "end": "01:30 PM",
+        "title": "Track Reports & Opportunities",
+        "desc": ""
+    },
+    {
+        "eventId": "f3",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "10:30 AM",
+        "end": "11:00 AM",
+        "title": "Data Science and Education Workforce",
+        "desc": ""
+    },
+    {
+        "eventId": "f4",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "11:00 AM",
+        "end": "11:30 AM",
+        "title": "Data Sharing and Cyberinfrastructure",
+        "desc": ""
+    },
+    {
+        "eventId": "f5",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "11:30 AM",
+        "end": "12:00 PM",
+        "title": "Team Science",
+        "desc": ""
+    },
+    {
+        "eventId": "f5",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "12:00 PM",
+        "end": "12:30 PM",
+        "title": "BLB: Break, Lounge and Booth Time",
+        "desc": ""
+    },
+    {
+        "eventId": "f6",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "12:30 PM",
+        "end": "01:00 PM",
+        "title": "Smart and Resilient Cities",
+        "desc": ""
+    },
+    {
+        "eventId": "f7",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "01:00 PM",
+        "end": "01:30 PM",
+        "title": "Health Disparities",
+        "desc": ""
+    },
+    {
+        "eventId": "f8",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "1:30 PM",
+        "end": "02:00 PM",
+        "title": "Materials and Advanced Manufacturing",
+        "desc": ""
+    },
+    {
+        "eventId": "f9",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "02:00 PM",
+        "end": "02:15 PM",
+        "title": "BLB: Break, Lounge and Booth Time",
+        "desc": ""
+    },
+    {
+        "eventId": "f10",
+        "weekday": "Friday",
+        "date": "July 30",
+        "start": "02:15 PM",
+        "end": "03:15 PM",
+        "title": "Closing Plenary - What's Next?",
+        "desc": ""
+    }
+]
