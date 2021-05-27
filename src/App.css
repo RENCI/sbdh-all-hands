@@ -73,6 +73,15 @@ div.content.home-goals div.extra {
   margin-left: 1.5rem !important;
 }
 
+.agenda-pane {
+  padding: 1rem 2rem 2rem 2rem !important;
+}
+
+.agenda-header {
+  color: #f37521 !important;
+  
+}
+
 .page-footer {
   position: absolute;
   bottom: 0;
