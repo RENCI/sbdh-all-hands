@@ -27,9 +27,9 @@ function Footer() {
                                 </Grid.Row>
                                 <Grid.Row id='socials'>
                                     <List horizontal>
-                                        <List.Item>
+                                        {/* <List.Item>
                                             <Button className='social-btn' icon='computer' color='grey' href='https://southbigdatahub.org/' target='_blank' noopener title="South Hub Main Site" />
-                                        </List.Item>
+                                        </List.Item> */}
                                         <List.Item>
                                             <Button className='social-btn' icon='twitter' color='twitter' href='https://twitter.com/SouthBigDataHub' target='_blank' noopener title="South Hub Twitter" />
                                         </List.Item>
@@ -45,13 +45,13 @@ function Footer() {
                         </Grid.Row>
                         <Grid.Row  textAlign="left">
                             <Grid.Column width={2} verticalAlign='middle'>
-                                <Image size='tiny' src={logo} alt='logo' />
+                                <Image size='tiny' src={logo} alt='logo' as={Link} to="https://southbigdatahub.org/" noopener />
                             </Grid.Column>
                             <Grid.Column width={9}>
                                 <Grid.Row>
                                     <Menu text inverted stackable fluid>
                                         <Menu.Item as={Link} name="Code of Conduct" to="/code-of-conduct" className='footer-extra' />
-                                        {/* <Menu.Item as={Link} name="Sponsor or Booth Host Interest" to="#" className='footer-extra' /> */}
+                                        <Menu.Item as={Link} name="Learn About The South Hub" to="https://southbigdatahub.org/" noopener className='footer-extra' />
                                     </Menu>
                                 </Grid.Row>
                                 <Grid.Row>
