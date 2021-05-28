@@ -41,6 +41,14 @@ a.item.nav-link.active {
   border-bottom: solid 3px #f37521 !important;
 }
 
+button.button.orange {
+  background-color: #f37521 !important;
+}
+
+button.button.orange:hover {
+  background-color: #d55c0b !important;
+}
+
 .page-title {
   color: #f37521 !important;
   padding-top: 1rem !important;
