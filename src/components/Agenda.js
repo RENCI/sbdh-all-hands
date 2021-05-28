@@ -131,12 +131,13 @@ const panes = [
 ]
 
 function Agenda() {
-    // date stuff for default active tab
+    // date stuff for default active tab to be the one for the corresponding day during the event window
     const [defaultTab, setDefaultTab] = useState()
+    
     useEffect(() => {
         const date = new Date()
-        // let today = `${date.getMonth()+1}-${date.getDate()}`
-        let today = "7-29"
+        let today = `${date.getMonth()+1}-${date.getDate()}`
+        // let today = "7-30"
         console.log(today)
 
         // ES6 object literal which acts like a switch case statement
@@ -146,16 +147,15 @@ function Agenda() {
             "7-30": 3
         })[today]
         
-
-        setDefaultTab(2)
-
+        setDefaultTab(tab(today) || 0)
     }, [])
+
     console.log(defaultTab)
 
     return (
         <div className='page-contain'>
             <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Info about how to attend events. Maybe Airmeet link? Explanation of tracks? Note that some events on different tracks are happening during the same time blocks on a given day." />
-            {defaultTab && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
+            {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
         </div>
     )
 }
