@@ -17,7 +17,8 @@ function Footer() {
                                     <Menu.Item header as={Link} to='/' content='Home' className='footer-link' />
                                     <Menu.Item as={Link} to='/register' content='Registration' className='footer-link'/>
                                     {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/>
-                                    <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/> */}
+                                    <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/>
+                                    <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='South Hub Main Site' className='footer-link' /> */}
                                 </Menu>
                             </Grid.Column>
                             <Grid.Column width={8} padded>
@@ -44,13 +45,13 @@ function Footer() {
                         </Grid.Row>
                         <Grid.Row  textAlign="left">
                             <Grid.Column width={2} verticalAlign='middle'>
-                                <Image size='tiny' src={logo} alt='logo' as={Link} to="https://southbigdatahub.org/" noopener target="_blank" />
+                                <Image size='tiny' src={logo} alt='logo' href="https://southbigdatahub.org/" rel="noopener" target="_blank" />
                             </Grid.Column>
                             <Grid.Column width={9}>
                                 <Grid.Row>
                                     <Menu text inverted stackable fluid>
                                         <Menu.Item as={Link} name="Code of Conduct" to="/code-of-conduct" className='footer-extra' />
-                                        <Menu.Item as={Link} name="Learn About The South Hub" to="https://southbigdatahub.org/" noopener target="_blank" className='footer-extra' />
+                                        <Menu.Item name="Learn About The South Hub" href="https://southbigdatahub.org/" rel="noopener" target="_blank" className='footer-extra' />
                                     </Menu>
                                 </Grid.Row>
                                 <Grid.Row>

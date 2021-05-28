@@ -8,7 +8,7 @@ function Registration() {
         <div className='page-contain'>
             <Header as='h1' textAlign='center'>
                 <Header.Content className="page-title">Register Today!</Header.Content>
-                <Header.Subheader>
+                <Header.Subheader className="sub-head">
                     Please fill out the registration form for this event below. If you are having issues completing it here, you can go to the direct <a href={url} target='_blank' rel='noopener noreferrer'>form</a> instead.
                 </Header.Subheader>
             </Header>

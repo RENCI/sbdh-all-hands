@@ -2,6 +2,7 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
+  font-size: 12.5pt !important;
 }
 
 .App-header {
@@ -40,13 +41,13 @@ a.item.nav-link.active {
   border-bottom: solid 3px #f37521 !important;
 }
 
-.sub-head {
-  padding-top: 0.5rem !important;
-}
-
 .page-title {
   color: #f37521 !important;
   padding-top: 1rem !important;
+}
+
+.header.page-title div.sub.header, .sub-head {
+  padding-top: 0.5rem !important;
 }
 
 div.home-list {
@@ -60,17 +61,31 @@ div.image.home-goals {
   box-shadow: 8px 8px 5px grey;
 }
 
-div.content.home-goals div.description {
-  font-size: 1.05rem !important;
-}
 div.content.home-goals div.extra {
-  font-size: 1.05rem !important;
   color: #808080 !important;
 }
 
 .conduct-list .item {
-  font-size: 1.1rem !important;
   margin-left: 1.5rem !important;
+}
+
+.agenda-pane {
+  padding: 1rem 1.5rem 2rem 1.5rem !important;
+  background-color: transparent !important;
+}
+
+.agenda-header {
+  color: #f37521 !important;
+}
+
+.agenda-highlight {
+  /* background-color: rgba(243, 117, 33, 0.2) !important; */
+  border: #f37521 dashed 2px !important;
+  border-radius: 0.75rem !important;
+}
+
+.agenda-pane div.items div.item div.image {
+  margin-left: 0.75rem !important;
 }
 
 .page-footer {
