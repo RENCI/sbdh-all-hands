@@ -118,27 +118,39 @@ function Home() {
                                     <List className='home-list'>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Data Science and Education Workforce</List.Content>
+                                            <List.Content>
+                                                Data Science and Education Workforce, Led by <a href="https://www.linkedin.com/in/afiimani/" rel="noopener noreferrer" target="_blank">Dr. Renata Rawlings-Goss</a>
+                                            </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Data Sharing and Cyberinfrastructure</List.Content>
+                                            <List.Content>
+                                                Data Sharing and Cyberinfrastructure, Led by <a href="https://www.linkedin.com/in/niall-gaffney-ab5b604/" rel="noopener noreferrer" target="_blank">Niall Gaffney</a>
+                                            </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Team Science</List.Content>
+                                            <List.Content>
+                                                Team Science, Led by <a href="https://www.linkedin.com/in/shannonmckeen/" rel="noopener noreferrer" target="_blank">Shannon McKeen</a> and <a href="https://www.linkedin.com/in/stephen-fiore-8087305/" rel="noopener noreferrer" target="_blank">Steve Fiore</a>
+                                            </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Smart Cities</List.Content>
+                                            <List.Content>
+                                                Smart and Resilient Cities, Led by <a href="https://www.linkedin.com/in/madhav-marathe-1426826/" rel="noopener noreferrer" target="_blank">Madhav Marathe</a>
+                                            </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Health Disparities</List.Content>
+                                            <List.Content>
+                                                Health Disparities, Led by <a href="https://www.linkedin.com/in/patricksullivan5/" rel="noopener noreferrer" target="_blank">Patrick Sullivan</a>
+                                            </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
-                                            <List.Content>Materials and Advanced Manufacturing</List.Content>
+                                            <List.Content>
+                                                Materials and Advanced Manufacturing, Led by <a href="https://www.linkedin.com/in/zacharytrautt/" rel="noopener noreferrer" target="_blank">Zachary Trautt</a> and <a href="https://www.linkedin.com/in/eva-campo-8901343/" rel="noopener noreferrer" target="_blank">Eva Campo</a>
+                                            </List.Content>
                                         </List.Item>
                                     </List>
                                 </Item.Extra>
