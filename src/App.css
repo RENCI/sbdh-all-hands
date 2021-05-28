@@ -74,12 +74,21 @@ div.content.home-goals div.extra {
 }
 
 .agenda-pane {
-  padding: 1rem 2rem 2rem 2rem !important;
+  padding: 1rem 1.5rem 2rem 1.5rem !important;
 }
 
 .agenda-header {
   color: #f37521 !important;
-  
+}
+
+.agenda-highlight {
+  /* background-color: rgba(243, 117, 33, 0.2) !important; */
+  border: #f37521 dashed 2px !important;
+  border-radius: 0.75rem !important;
+}
+
+.agenda-pane div.items div.item div.image {
+  margin-left: 0.75rem !important;
 }
 
 .page-footer {

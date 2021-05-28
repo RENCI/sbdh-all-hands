@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react';
 import { Tab, Header, Item, Divider } from 'semantic-ui-react'
 
 import itemLogo from './images/logos/SBDH-logo-wordless.png'
+import breakLogo from './images/CoffeeBreak_SBDH_V1-03.png'
 import agendaData from "../content/event-agenda.json"
 
 const agenda = [...agendaData]
@@ -18,8 +20,8 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {wed.map(wedEvent => (
-                    <Item key={wedEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={wedEvent.eventId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{wedEvent.title}</Item.Header>
                             <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
@@ -35,8 +37,8 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {thurs.map(thursEvent => (
-                    <Item key={thursEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={thursEvent.eventId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{thursEvent.title}</Item.Header>
                             <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
@@ -52,8 +54,8 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {fri.map(friEvent => (
-                    <Item key={friEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={friEvent.eventId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{friEvent.title}</Item.Header>
                             <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
@@ -70,11 +72,10 @@ const panes = [
             <Divider horizontal section>
                 <Header content="Wednesday, July 28" className="agenda-header" />
             </Divider>
-
             <Item.Group divided>
                 {wed.map(wedEvent => (
-                    <Item key={wedEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={wedEvent.eventId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{wedEvent.title}</Item.Header>
                             <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
@@ -94,8 +95,8 @@ const panes = [
 
             <Item.Group divided>
                 {thurs.map(thursEvent => (
-                    <Item key={thursEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={thursEvent.eventId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{thursEvent.title}</Item.Header>
                             <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
@@ -114,8 +115,8 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {fri.map(friEvent => (
-                    <Item key={friEvent.eventId}>
-                        <Item.Image size="tiny" src={itemLogo} />
+                    <Item key={friEvent.eventId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                        <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{friEvent.title}</Item.Header>
                             <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
@@ -131,13 +132,30 @@ const panes = [
 
 function Agenda() {
     // date stuff for default active tab
-    // let today = new Date()
-    // console.log(today.getMonth(), today.getDate())
+    const [defaultTab, setDefaultTab] = useState()
+    useEffect(() => {
+        const date = new Date()
+        // let today = `${date.getMonth()+1}-${date.getDate()}`
+        let today = "7-29"
+        console.log(today)
+
+        // ES6 object literal which acts like a switch case statement
+        const tab = today => ({
+            "7-28": 1,
+            "7-29": 2,
+            "7-30": 3
+        })[today]
+        
+
+        setDefaultTab(2)
+
+    }, [])
+    console.log(defaultTab)
 
     return (
         <div className='page-contain'>
             <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Info about how to attend events. Maybe Airmeet link? Explanation of tracks? Note that some events on different tracks are happening during the same time blocks on a given day." />
-            <Tab panes={panes} defaultActiveIndex={1} />
+            {defaultTab && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
         </div>
     )
 }
