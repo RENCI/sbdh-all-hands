@@ -12,16 +12,20 @@ function Footer() {
                 <Container>
                     <Grid stackable>
                         <Grid.Row>
-                            <Grid.Column width={8}>
-                                <Menu text>
+                            <Grid.Column width={9}>
+                                <Menu text >
                                     <Menu.Item header as={Link} to='/' content='Home' className='footer-link' />
                                     <Menu.Item as={Link} to='/register' content='Registration' className='footer-link'/>
                                     {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/>
                                     <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/>
                                     <Menu.Item href='https://southbigdatahub.org/' target='_blank' noopener content='South Hub Main Site' className='footer-link' /> */}
+                                    <Menu.Item as={Link} to='/register' position='right'>
+                                        <Button color='orange' size='small' content='REGISTER NOW' />
+                                    </Menu.Item>
+
                                 </Menu>
                             </Grid.Column>
-                            <Grid.Column width={8} padded>
+                            <Grid.Column width={7} padded>
                                 <Grid.Row>
                                     <Header as='h3' style={{color: "#f37521"}} content='Follow us online!' />
                                 </Grid.Row>
