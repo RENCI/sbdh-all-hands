@@ -24,7 +24,6 @@ function Conduct() {
                 <List.Item>Avoid personal attacks directed toward other participants</List.Item>
                 <List.Item>Be mindful of your surroundings and of your fellow participants</List.Item>
                 <List.Item>Alert South Big Data Hub conference staff and suppliers/vendors if you notice a dangerous situation or someone in distress</List.Item>
-                <List.Item>Respect the rules and policies of the project and venue</List.Item>
             </List>
            
             <Header content="Unacceptable Behavior includes, but is not limited to:" />
@@ -43,7 +42,7 @@ function Conduct() {
             <Header content="Consequences and Enforcement" />
             <List bulleted className="conduct-list">
                 <List.Item>Anyone requested to stop unacceptable behavior is expected to comply immediately</List.Item>
-                <List.Item>South Big Data Hub staff or security/local police may take action deemed necessary and appropriate, including immediate removal from the event or program without warning or refund</List.Item>
+                <List.Item>South Big Data Hub staff may take action deemed necessary and appropriate, including immediate removal from the event or program without warning or refund</List.Item>
                 <List.Item>South Big Data Hub reserves the right to prohibit attendance at a future event, conference, workshop or field project</List.Item>
                 <List.Item>Notification of an infraction to a Home Institution. In cases where there has been a potentially serious policy or code of conduct violation, South Big Data Hub will notify the offender’s home institution</List.Item>
             </List>
