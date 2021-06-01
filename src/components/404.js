@@ -12,8 +12,11 @@ function PageNotFound() {
                     </List.Header>
                 </List.Item>
                 <List.Item as={Link} to='/'>Home</List.Item>
-                <List.Item as={Link} to='/register' >Registration</List.Item>
-                {/* <List.Item as={Link} to='/event-agenda' >Agenda</List.Item> */}
+                <List.Item as={Link} to='/register'>Registration</List.Item>
+                {/* <List.Item as={Link} to='/event-agenda'>Agenda</List.Item> */}
+                {/* <List.Item as={Link} to='/speakers'>Speakers</List.Item> */}
+                <List.Item as={Link} to='/get-involved'>Get Involved</List.Item>
+                <List.Item href="https://southbigdatahub.org/about" rel="noopener" target="_blank">About The South Hub</List.Item>
             </List>
         </div>
     )
