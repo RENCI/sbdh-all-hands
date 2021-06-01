@@ -9,6 +9,7 @@ import Home from './components/Home';
 import Agenda from './components/Agenda';
 import Registration from './components/Registration';
 import Speaker from './components/Speaker';
+import Participate from './components/Participate';
 import Conduct from './components/ConductCode';
 import PageNotFound from './components/404';
 
@@ -24,6 +25,7 @@ function App() {
                   <Agenda path='/event-agenda' />
                   <Registration path='/register' />
                   <Speaker path='/speakers' />
+                  <Participate path='/get-involved' />
                   <Conduct path="/code-of-conduct" />
                   <PageNotFound default />
               </ReachRouter>
