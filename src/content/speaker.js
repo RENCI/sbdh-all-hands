@@ -28,7 +28,7 @@ export const speakers = [
     },
     {
         "name": "Stephanie Suber",
-        "title": "Really Awesome Person",
+        "title": "Communications and Outreach Manager",
         "org": "RENCI",
         "isTrackCaptain": 0,
         "img": require("../components/images/home/300x300_placeholder.png"),
