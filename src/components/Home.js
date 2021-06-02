@@ -3,9 +3,8 @@ import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react
 import { Link } from '@reach/router'
 
 import saveDate from './images/home/Save_The_Date.png';
-import expertsImg from './images/home/expert-2.jpg';
-import purposeImg from './images/home/purpose.jpg';
-import communityImg from './images/home/community.jpg';
+import expertsImg from './images/home/expert-3_3_1200x950.jpg';
+import purposeImg from './images/home/purpose-2.png';
 
 
 const shortDesc = {
@@ -25,10 +24,9 @@ const shortDesc = {
 
 const blurbs = {
     conversation: `Conference tracks are each led by a game changer within their area of expertise. These leaders are building sessions to spark conversations and create collaborative opportunities. Don’t miss your chance to be in the room where things happen!`,
-    purpose: `Let’s do this together. At the South Big Data Hub, we know we make the biggest impact when we work with our neighbors and weave together our strengths. Join us to learn how your work can shine brighter as part of our collective efforts. 
-    We look forward to sharing what’s new with our members while identifying what’s needed to continue to forge a sustainable path forward.`,
-    whySH: `We’re eager to share what we’ve discovered through five years of community building with experts across the nation. We want to help your organization accomplish its goals as well. 
-    Our sessions are designed to inspire and continue discovering the community we need to tackle the data science challenges of the future.`
+    purpose: `Let’s do this together. At the South Big Data Hub, we know we make the biggest impact when we work with our neighbors and weave together our strengths.`,
+    purpose2: `At this event, you’ll learn about advances our current members have made toward tackling the data science challenges of the future. 
+    You’ll also have the chance to share what you’ve done and connect with game changers in your areas of interest.`
 };
 
 function Home() {
@@ -103,13 +101,13 @@ function Home() {
                 <Grid.Row>
                     <Header as='h2'>
                         <Header.Content>
-                            Leverage the expertise of data science professionals throughout the American South
+                            Leverage the expertise of data science professionals throughout the Nation
                             <Header.Subheader className="sub-head">{shortDesc.benefits}</Header.Subheader>
                         </Header.Content>
                     </Header>
                     <Item.Group divided>
                         <Item>
-                            <Item.Image src={expertsImg} className="home-goals" size="medium" />
+                            <Item.Image src={expertsImg} className="home-goals" size="large" />
                             <Item.Content className="home-goals" >
                                 <Item.Header>Focused Conversations On Important Data Science Topics</Item.Header>
                                 <Item.Description>{blurbs.conversation}</Item.Description>
@@ -157,12 +155,16 @@ function Home() {
                             </Item.Content>
                         </Item>
                         <Item>
-                            <Item.Image src={purposeImg} className="home-goals" size="medium" />
-                            <Item.Content className="home-goals" header='Our Purpose' description={blurbs.purpose} />
-                        </Item>
-                        <Item>
-                            <Item.Image src={communityImg} className="home-goals" size="medium" />
-                            <Item.Content className="home-goals" header='How the South Big Data Hub Can Help' description={blurbs.whySH} />
+                            <Item.Image src={purposeImg} className="home-goals" size="large" />
+                            <Item.Content className="home-goals">
+                                <Item.Header>
+                                    How the South Big Data Hub Can Help
+                                </Item.Header>
+                                <Item.Description>
+                                    <p>{blurbs.purpose}</p>
+                                    <p>{blurbs.purpose2}</p>
+                                </Item.Description>
+                            </Item.Content>
                         </Item>
                     </Item.Group>
                 </Grid.Row>
