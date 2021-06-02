@@ -69,6 +69,11 @@ div.image.home-goals {
   box-shadow: 8px 8px 5px grey;
 }
 
+div.image.home-goals img {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
 div.content.home-goals div.extra {
   color: #808080 !important;
 }
