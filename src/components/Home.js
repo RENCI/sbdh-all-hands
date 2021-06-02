@@ -3,9 +3,8 @@ import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react
 import { Link } from '@reach/router'
 
 import saveDate from './images/home/Save_The_Date.png';
-import expertsImg from './images/home/expert-2.jpg';
-import purposeImg from './images/home/purpose.jpg';
-import communityImg from './images/home/community.jpg';
+import expertsImg from './images/home/expert-3_3_1200x950.jpg';
+import purposeImg from './images/home/purpose-2.png';
 
 
 const shortDesc = {
@@ -25,10 +24,9 @@ const shortDesc = {
 
 const blurbs = {
     conversation: `Conference tracks are each led by a game changer within their area of expertise. These leaders are building sessions to spark conversations and create collaborative opportunities. Don’t miss your chance to be in the room where things happen!`,
-    purpose: `Let’s do this together. At the South Big Data Hub, we know we make the biggest impact when we work with our neighbors and weave together our strengths. Join us to learn how your work can shine brighter as part of our collective efforts. 
-    We look forward to sharing what’s new with our members while identifying what’s needed to continue to forge a sustainable path forward.`,
-    whySH: `We’re eager to share what we’ve discovered through five years of community building with experts across the nation. We want to help your organization accomplish its goals as well. 
-    Our sessions are designed to inspire and continue discovering the community we need to tackle the data science challenges of the future.`
+    purpose: `Let’s do this together. At the South Big Data Hub, we know we make the biggest impact when we work with our neighbors and weave together our strengths.`,
+    purpose2: `At this event, you’ll learn about advances our current members have made toward tackling the data science challenges of the future. 
+    You’ll also have the chance to share what you’ve done and connect with game changers in your areas of interest.`
 };
 
 function Home() {
@@ -61,15 +59,12 @@ function Home() {
 
     return  (
         <div className='page-contain'>
-            {/* <Image src={page.headerImage.url} alt="main-image" />
-            <p>{page.pageTitle}</p>
-            <div>{page.description}</div> */}
-            <Grid divided='vertically' style={{ padding: "1rem" }}>
+            <Grid divided='vertically' stackable style={{ padding: "1rem" }} centered>
                 <Grid.Row>
-                    <Grid.Column width={9}>
+                    <Grid.Column width={7}>
                         <Image src={saveDate} />
                     </Grid.Column>
-                    <Grid.Column width={7}>
+                    <Grid.Column width={8}>
                         <Header as='h1'>
                             <Header.Content>
                                 Bringing People and Data Together
@@ -100,19 +95,28 @@ function Home() {
                         <Button color='orange' content='REGISTER NOW' as={Link} to='/register' />
                     </Grid.Column>
                 </Grid.Row>
+
+                {/* Boxes Area start */}
+
+                {/* Box 1 */}
                 <Grid.Row>
-                    <Header as='h2'>
-                        <Header.Content>
-                            Leverage the expertise of data science professionals throughout the American South
-                            <Header.Subheader className="sub-head">{shortDesc.benefits}</Header.Subheader>
-                        </Header.Content>
-                    </Header>
-                    <Item.Group divided>
+                    <Grid.Column width={16}>
+                        <Header as='h2' textAlign="left">
+                            <Header.Content>
+                                Leverage the expertise of data science professionals throughout the Nation
+                                <Header.Subheader className="sub-head">{shortDesc.benefits}</Header.Subheader>
+                            </Header.Content>
+                        </Header>
+                    </Grid.Column>
+                    
+                    <Grid.Column width={7}>
+                        <Image src={expertsImg} className="home-goals" fluid/>
+                    </Grid.Column>
+                    <Grid.Column width={9} textAlign="left">
                         <Item>
-                            <Item.Image src={expertsImg} className="home-goals" size="medium" />
                             <Item.Content className="home-goals" >
-                                <Item.Header>Focused Conversations On Important Data Science Topics</Item.Header>
-                                <Item.Description>{blurbs.conversation}</Item.Description>
+                                <Item.Header as="h3">Focused Conversations On Important Data Science Topics</Item.Header>
+                                <Item.Description className="sub-head">{blurbs.conversation}</Item.Description>
                                 <Item.Extra>
                                     <Item.Description>Focus your time in one or more of the following tracks:</Item.Description>
                                     <List className='home-list'>
@@ -156,16 +160,28 @@ function Home() {
                                 </Item.Extra>
                             </Item.Content>
                         </Item>
-                        <Item>
-                            <Item.Image src={purposeImg} className="home-goals" size="medium" />
-                            <Item.Content className="home-goals" header='Our Purpose' description={blurbs.purpose} />
-                        </Item>
-                        <Item>
-                            <Item.Image src={communityImg} className="home-goals" size="medium" />
-                            <Item.Content className="home-goals" header='How the South Big Data Hub Can Help' description={blurbs.whySH} />
-                        </Item>
-                    </Item.Group>
+                    </Grid.Column>
                 </Grid.Row>
+
+                {/* Box 2 */}
+                <Grid.Row>
+                    <Grid.Column width={7}>
+                        <Image src={purposeImg} className="home-goals" fluid />
+                    </Grid.Column>
+                    <Grid.Column width={9} textAlign="left">
+                        <Item>
+                            <Item.Content className="home-goals">
+                                <Item.Header as="h3">How the South Big Data Hub Can Help</Item.Header>
+                                <Item.Description>
+                                    <p>{blurbs.purpose}</p>
+                                    <p>{blurbs.purpose2}</p>
+                                </Item.Description>
+                            </Item.Content>
+                        </Item>
+
+                    </Grid.Column>
+                </Grid.Row>
+                {/* End of Boxes Area */}
             </Grid>
         </div>
     );

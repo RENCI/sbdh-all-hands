@@ -18,13 +18,13 @@
   padding: 1rem;
   background-color: #f5d580;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  min-width: 100% !important;
 }
 
 .pageBody {
   background-image: url('./components/images/SouthBDHubWatermarkBackground.png');
   background-size: cover;
   min-height: 100vh;
-  background-attachment: fixed;
 }
 
 .page-contain {
@@ -59,15 +59,23 @@ button.button.orange:hover {
   padding-top: 0.5rem !important;
 }
 
+div.content.home-goals div.extra {
+  margin-top: 1rem !important;
+}
+
 div.home-list {
-  padding-top: 1rem !important;
   padding-bottom: 1rem !important;
   margin-left: 1.5rem !important;
 }
 
-div.image.home-goals {
+img.image.home-goals {
   border: 3.5px solid #f5d580 !important;
   box-shadow: 8px 8px 5px grey;
+}
+
+div.image.home-goals img {
+  object-fit: cover !important;
+  height: 100% !important;
 }
 
 div.content.home-goals div.extra {
