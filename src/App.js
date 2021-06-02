@@ -1,9 +1,10 @@
 import './App.css';
 
-import { Grid } from 'semantic-ui-react'
-import { LocationProvider, Router as ReachRouter } from '@reach/router'
 import ReactGA from 'react-ga';
-import Analytics from './RouteAnalytics';
+import { createBrowserHistory } from 'history';
+import { LocationProvider, Router as ReachRouter } from '@reach/router'
+
+import { Grid } from 'semantic-ui-react'
 
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
@@ -17,15 +18,22 @@ import PageNotFound from './components/404';
 
 
 function App() {
-  ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID)
+  const history = createBrowserHistory()
+
+  history.listen(location => {
+    ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID)
+
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname)
+  })
+
   return (
     <LocationProvider>
       <div className="App">
           <NavBar />
           <Grid centered columns={3} className='pageBody' padded>
             <Grid.Column width={12}>
-              <ReachRouter primary={false}>
-                  <Analytics />
+              <ReachRouter primary={false} history={history}>
                   <Home path='/' />
                   <Agenda path='/event-agenda' />
                   <Registration path='/register' />
