@@ -1,19 +1,19 @@
-import { Card, Header, Icon, Image, Label } from "semantic-ui-react";
+import { Card, Header, Icon, Image } from "semantic-ui-react";
 
 import speakers from '../content/speaker.js'
-
+import placeholder from './images/home/placeholder.jpg'
 
 function Speaker() {
     return (
         <div className="page-contain">
             <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="Summary about speakers and how we're so excited. Probably the blurb from the home page." />
-            <Card.Group centered itemsPerRow={4}>
+            <Card.Group centered itemsPerRow={5}>
                 {speakers.map(speaker => (
                     <Card>
-                        <Image src={speaker.img} wrapped ui={false} />
+                        <Image src={placeholder} wrapped ui={false} />
                         <Card.Content>
                             <Card.Header>
-                                {speaker.name} <Icon disabled name="star" color="orange" title="Track Captain" />
+                                {speaker.name} {speaker.isTrackCaptain === 1 ? <Icon disabled name="star" color="orange" title="Track Captain" /> : null}
                             </Card.Header>
                             <Card.Meta  className="sub-head">{`${speaker.title}, ${speaker.org}`}</Card.Meta>
                         </Card.Content>

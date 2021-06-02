@@ -4,7 +4,7 @@ export const speakers = [
         "title": "Executive Director",
         "org": "South Big Data Hub",
         "isTrackCaptain": 1,
-        "img": require("../components/images/home/300x300_placeholder.png"),
+        "img": "renata-rawlings-goss.jpeg",
         "presentations": [],
         "bio": ""
     },
@@ -13,7 +13,7 @@ export const speakers = [
         "title": "Director of Data Intensive Computing, Office of Advanced Cyberinfrastructure",
         "org": "CISE. Texas Advanced Computing Center",
         "isTrackCaptain": 1,
-        "img": require("../components/images/home/300x300_placeholder.png"),
+        "img": "niall-gaffney.jpeg",
         "presentations": [],
         "bio": ""
     },
@@ -22,7 +22,7 @@ export const speakers = [
         "title": "Deputy Director",
         "org": "South Big Data Hub",
         "isTrackCaptain": 1,
-        "img": require("../components/images/home/300x300_placeholder.png"),
+        "img": "shannon-mckeen.jpeg",
         "presentations": [],
         "bio": ""
     },
@@ -31,7 +31,61 @@ export const speakers = [
         "title": "Communications and Outreach Manager",
         "org": "RENCI",
         "isTrackCaptain": 0,
-        "img": require("../components/images/home/300x300_placeholder.png"),
+        "img": "eva-campo.jpeg",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Dr. Eva Campo",
+        "title": "Adjunct Professor Department of Materials Science & Engineering",
+        "org": "University of Maryland College Park",
+        "isTrackCaptain": 1,
+        "img": "eva-campo.jpeg",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Dr. Steve Fiore",
+        "title": "Director, Cognitive Science Laboratory",
+        "org": "University of Central Florida",
+        "isTrackCaptain": 1,
+        "img": "steve-fiore.jpeg",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Madhav Marathe",
+        "title": "Division Director, Network Systems Science and Advanced Computing",
+        "org": "University of Virginia Biocomplexity Institute",
+        "isTrackCaptain": 1,
+        "img": "madhav-marathe.jpeg",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Patrick Sullivan",
+        "title": "Charles Howard Candler Professor of Epidemiology, Rollins School of Public Health",
+        "org": "Emory University School of Medicine",
+        "isTrackCaptain": 1,
+        "img": "patrick-sullivan.jpeg",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Samarth Swarup",
+        "title": "Research Associate Professor, Network Systems Science and Advanced Computing",
+        "org": "University of Virginia Biocomplexity Institute",
+        "isTrackCaptain": 1,
+        "img": "samarth-swarup.png",
+        "presentations": [],
+        "bio": ""
+    },
+    {
+        "name": "Dr. Zachary Trautt",
+        "title": "Materials Research Engineer",
+        "org": "NIST",
+        "isTrackCaptain": 1,
+        "img": "zachary-trautt.jpeg",
         "presentations": [],
         "bio": ""
     }
