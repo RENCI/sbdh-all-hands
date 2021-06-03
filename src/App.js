@@ -32,7 +32,7 @@ function App() {
       <div className="App">
           <NavBar />
           <Grid centered columns={3} className='pageBody' padded>
-            <Grid.Column width={14}>
+            <Grid.Column width={14} className="page-content">
               <ReachRouter primary={false} history={history}>
                   <Home path='/' />
                   <Agenda path='/event-agenda' />
