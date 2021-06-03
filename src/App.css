@@ -126,3 +126,27 @@ div.content.home-goals div.extra {
 #socials {
   margin-top: 0.5rem;
 }
+
+.footer-nsf-acknwledgment {
+  display:  flex;
+  flex-direction: row;
+  align-items:  stretch;
+  gap: 1rem;
+  margin: auto;
+  width:  80%;
+  max-width:  800px;
+}
+
+.footer-nsf-acknwledgment__logo {
+  min-width:  100px;
+  min-height:  100px;
+  max-width:  100px;
+  max-height:  100px;
+}
+
+.footer-nsf-acknwledgment__blurb {
+  flex:  1;
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
+}
