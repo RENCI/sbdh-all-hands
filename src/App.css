@@ -2,6 +2,7 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
+  font-size: 12.5pt !important;
 }
 
 .App-header {
@@ -16,18 +17,96 @@
 .header-bar {
   padding: 1rem;
   background-color: #f5d580;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  min-width: 100% !important;
 }
 
 .pageBody {
   background-image: url('./components/images/SouthBDHubWatermarkBackground.png');
   background-size: cover;
+  min-height: 100vh;
 }
 
-.pageContain {
+.page-contain {
   margin: 2rem auto;
+  min-height: 100vh;
+  max-width:  1080px;
 }
 
-.footer {
+a.item.nav-link:hover:not(.active) {
+  border-bottom: solid 3px #808080 !important;
+  color: #f37521 !important;
+}
+
+a.item.nav-link.active {
+  border-top: solid 2px #808080 !important;
+  border-bottom: solid 3px #f37521 !important;
+}
+
+button.button.orange {
+  background-color: #f37521 !important;
+}
+
+button.button.orange:hover {
+  background-color: #d55c0b !important;
+}
+
+.page-title {
+  color: #f37521 !important;
+  padding-top: 1rem !important;
+}
+
+.header.page-title div.sub.header, .sub-head {
+  padding-top: 0.5rem !important;
+}
+
+div.content.home-goals div.extra {
+  margin-top: 1rem !important;
+}
+
+div.home-list {
+  padding-bottom: 1rem !important;
+  margin-left: 1.5rem !important;
+}
+
+img.image.home-goals {
+  border: 3.5px solid #f5d580 !important;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+div.image.home-goals img {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
+div.content.home-goals div.extra {
+  color: #808080 !important;
+}
+
+.conduct-list .item {
+  margin-left: 1.5rem !important;
+}
+
+.agenda-pane {
+  padding: 1rem 1.5rem 2rem 1.5rem !important;
+  background-color: transparent !important;
+}
+
+.agenda-header {
+  color: #f37521 !important;
+}
+
+.agenda-highlight {
+  /* background-color: rgba(243, 117, 33, 0.2) !important; */
+  border: #f37521 dashed 2px !important;
+  border-radius: 0.75rem !important;
+}
+
+.agenda-pane div.items div.item div.image {
+  margin-left: 0.75rem !important;
+}
+
+.page-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -35,12 +114,40 @@
 }
 
 .footer-link {
-  color: #f5d580 !important
+  color: #f5d580 !important;
 }
 .footer-link:hover {
-  color: #f37521 !important
+  color: #f37521 !important;
+}
+
+.footer-extra:hover {
+  color: #f37521 !important;
 }
 
 #socials {
   margin-top: 0.5rem;
+}
+
+.footer-nsf-acknwledgment {
+  display:  flex;
+  flex-direction: row;
+  align-items:  stretch;
+  gap: 1rem;
+  margin: auto;
+  width:  80%;
+  max-width:  800px;
+}
+
+.footer-nsf-acknwledgment__logo {
+  min-width:  100px;
+  min-height:  100px;
+  max-width:  100px;
+  max-height:  100px;
+}
+
+.footer-nsf-acknwledgment__blurb {
+  flex:  1;
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
 }
