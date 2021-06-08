@@ -2,7 +2,8 @@
 import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react";
 import { Link } from '@reach/router'
 
-import saveDate from './images/home/Save_The_Date.png';
+// import saveDate from './images/home/Save_The_Date.png';
+import dateBanner from './images/home/date_banner.png'
 import expertsImg from './images/home/expert-3_3_1200x950.jpg';
 import purposeImg from './images/home/purpose-2.png';
 
@@ -62,7 +63,7 @@ function Home() {
             <Grid divided='vertically' stackable style={{ padding: "1rem" }} centered>
                 <Grid.Row>
                     <Grid.Column width={7}>
-                        <Image src={saveDate} />
+                        <Image src={dateBanner} />
                     </Grid.Column>
                     <Grid.Column width={8}>
                         <Header as='h1'>
@@ -141,7 +142,7 @@ function Home() {
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Smart and Resilient Cities, Led by <a href="https://www.linkedin.com/in/madhav-marathe-1426826/" rel="noopener noreferrer" target="_blank">Madhav Marathe</a>
+                                                Smart and Resilient Cities, Led by <a href="https://www.linkedin.com/in/madhav-marathe-1426826/" rel="noopener noreferrer" target="_blank">Madhav Marathe</a> and <a href="https://www.linkedin.com/in/samarth-swarup-20b2767/" rel="noopener noreferrer" target="_blank">Samarth Swarup</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
