@@ -32,9 +32,6 @@ function Footer() {
                                 </Grid.Row>
                                 <Grid.Row id='socials'>
                                     <List horizontal>
-                                        {/* <List.Item>
-                                            <Button className='social-btn' icon='computer' color='grey' href='https://southbigdatahub.org/' target='_blank' noopener title="South Hub Main Site" />
-                                        </List.Item> */}
                                         <List.Item>
                                             <Button className='social-btn' icon='twitter' color='twitter' href='https://twitter.com/SouthBigDataHub' target='_blank' noopener title="South Hub Twitter" />
                                         </List.Item>
