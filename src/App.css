@@ -30,6 +30,7 @@
 .page-contain {
   margin: 2rem auto;
   min-height: 100vh;
+  max-width:  1080px;
 }
 
 a.item.nav-link:hover:not(.active) {
@@ -70,7 +71,7 @@ div.home-list {
 
 img.image.home-goals {
   border: 3.5px solid #f5d580 !important;
-  box-shadow: 8px 8px 5px grey;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 div.image.home-goals img {
@@ -113,16 +114,40 @@ div.content.home-goals div.extra {
 }
 
 .footer-link {
-  color: #f5d580 !important
+  color: #f5d580 !important;
 }
 .footer-link:hover {
-  color: #f37521 !important
+  color: #f37521 !important;
 }
 
 .footer-extra:hover {
-  color: #f37521 !important
+  color: #f37521 !important;
 }
 
 #socials {
   margin-top: 0.5rem;
+}
+
+.footer-nsf-acknowledgement {
+  display:  flex;
+  flex-direction: row;
+  align-items:  stretch;
+  gap: 1rem;
+  margin: auto;
+  width:  80%;
+  max-width:  800px;
+}
+
+.footer-nsf-acknowledgement_logo {
+  min-width:  100px;
+  min-height:  100px;
+  max-width:  100px;
+  max-height:  100px;
+}
+
+.footer-nsf-acknowledgement_blurb {
+  flex:  1;
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
 }

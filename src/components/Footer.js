@@ -5,6 +5,7 @@ import { Link } from '@reach/router';
 import logo from './images/logos/SBDH-logo-white-vertical.png'
 import logoNSF from './images/logos/nsf.png'
 
+
 function Footer() {
     return(
         <footer className='page-footer'>
@@ -65,6 +66,17 @@ function Footer() {
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
+                    
+                    <br/>
+                    <div class="ui divider"></div>
+                    <br/>
+                    
+                    <div className="footer-nsf-acknowledgement">
+                        <Image size='tiny' src={logoNSF} className="footer-nsf-acknowledgement_logo"/>
+                        <div className="footer-nsf-acknowledgement_blurb">
+                            The South Big Data Innovation Hub is supported by the National Science Foundation through awards: #1550305 and 1916589
+                        </div>
+                    </div>
                 </Container>
             </Segment>
         </footer>
