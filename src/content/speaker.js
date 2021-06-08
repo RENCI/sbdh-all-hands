@@ -1,5 +1,6 @@
 export const speakers = [
     {
+        "speakerId": 1,
         "name": "Dr. Renata Rawlings-Goss",
         "title": "Executive Director",
         "org": "South Big Data Hub",
