@@ -46,9 +46,9 @@ function Footer() {
                     <div class="ui divider"></div>
                     <br/>
                     
-                    <div className="footer-nsf-acknwledgment">
-                        <Image size='tiny' src={logoNSF} className="footer-nsf-acknwledgment__logo"/>
-                        <div className="footer-nsf-acknwledgment__blurb">
+                    <div className="footer-nsf-acknowledgement">
+                        <Image size='tiny' src={logoNSF} className="footer-nsf-acknowledgement_logo"/>
+                        <div className="footer-nsf-acknowledgement_blurb">
                             The South Big Data Innovation Hub is supported by the National Science Foundation through awards: #1550305 and 1916589
                         </div>
                     </div>

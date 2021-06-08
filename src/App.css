@@ -128,7 +128,7 @@ div.content.home-goals div.extra {
   margin-top: 0.5rem;
 }
 
-.footer-nsf-acknwledgment {
+.footer-nsf-acknowledgement {
   display:  flex;
   flex-direction: row;
   align-items:  stretch;
@@ -138,14 +138,14 @@ div.content.home-goals div.extra {
   max-width:  800px;
 }
 
-.footer-nsf-acknwledgment__logo {
+.footer-nsf-acknowledgement_logo {
   min-width:  100px;
   min-height:  100px;
   max-width:  100px;
   max-height:  100px;
 }
 
-.footer-nsf-acknwledgment__blurb {
+.footer-nsf-acknowledgement_blurb {
   flex:  1;
   display:  flex;
   flex-direction: row;
