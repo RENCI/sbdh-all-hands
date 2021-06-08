@@ -10,6 +10,7 @@ export const speakers = [
         "bio": ""
     },
     {
+        "speakerId": 2,
         "name": "Niall Gaffney",
         "title": "Director of Data Intensive Computing, Office of Advanced Cyberinfrastructure",
         "org": "CISE. Texas Advanced Computing Center",
