@@ -38,6 +38,7 @@ export const speakers = [
         "bio": ""
     },
     {
+        "speakerId": 4,
         "name": "Dr. Eva Campo",
         "title": "Adjunct Professor Department of Materials Science & Engineering",
         "org": "University of Maryland College Park",
