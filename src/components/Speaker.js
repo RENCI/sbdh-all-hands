@@ -1,7 +1,9 @@
 import { Card, Header, Icon, Image } from "semantic-ui-react";
 
-import speakers from '../content/speaker.js'
+import speakerData from '../content/speaker.json'
 import placeholder from './images/home/placeholder.jpg'
+
+const speakers = [...speakerData]
 
 function Speaker() {
     return (
