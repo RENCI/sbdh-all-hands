@@ -20,6 +20,7 @@ export const speakers = [
         "bio": ""
     },
     {
+        "speakerId": 3,
         "name": "Shannon McKeen",
         "title": "Deputy Director",
         "org": "South Big Data Hub",
