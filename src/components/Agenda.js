@@ -20,12 +20,12 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {wed.map(wedEvent => (
-                    <Item key={wedEvent.eventId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={wedEvent.sessionId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{wedEvent.title}</Item.Header>
                             <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
-                            <Item.Meta>{wedEvent.speaker !== "" ? `Speaker: ${wedEvent.speaker}` : null}</Item.Meta>
+                            {wedEvent.speaker !== "" ? <Item.Meta>Speaker: {wedEvent.speaker}</Item.Meta> : null}
                             <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
                         </Item.Content>
                     </Item>
@@ -37,7 +37,7 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {thurs.map(thursEvent => (
-                    <Item key={thursEvent.eventId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={thursEvent.sessionId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{thursEvent.title}</Item.Header>
@@ -54,7 +54,7 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {fri.map(friEvent => (
-                    <Item key={friEvent.eventId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={friEvent.sessionId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{friEvent.title}</Item.Header>
@@ -74,7 +74,7 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {wed.map(wedEvent => (
-                    <Item key={wedEvent.eventId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={wedEvent.sessionId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{wedEvent.title}</Item.Header>
@@ -95,7 +95,7 @@ const panes = [
 
             <Item.Group divided>
                 {thurs.map(thursEvent => (
-                    <Item key={thursEvent.eventId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={thursEvent.sessionId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{thursEvent.title}</Item.Header>
@@ -115,7 +115,7 @@ const panes = [
             </Divider>
             <Item.Group divided>
                 {fri.map(friEvent => (
-                    <Item key={friEvent.eventId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                    <Item key={friEvent.sessionId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                         <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
                         <Item.Content>
                             <Item.Header as="h3">{friEvent.title}</Item.Header>
@@ -154,7 +154,7 @@ function Agenda() {
 
     return (
         <div className='page-contain'>
-            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Info about how to attend events. Maybe Airmeet link? Explanation of tracks? Note that some events on different tracks are happening during the same time blocks on a given day." />
+            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. Agenda highlights are listed below." />
             {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
         </div>
     )
