@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Grid, Header, Image, Menu, Segment, List } from 'semantic-ui-react'
 import { Link } from '@reach/router';
 
-import logo from './images/logos/SBDH-logo-white-vertical.png'
+// import logo from './images/logos/SBDH-logo-white-vertical.png'
 import logoNSF from './images/logos/nsf.png'
 
 

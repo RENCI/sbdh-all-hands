@@ -58,6 +58,7 @@ button.button.orange:hover {
 
 .header.page-title div.sub.header, .sub-head {
   padding-top: 0.5rem !important;
+  font-size: 1.2rem !important;
 }
 
 div.content.home-goals div.extra {
@@ -97,13 +98,16 @@ div.content.home-goals div.extra {
 }
 
 .agenda-highlight {
-  /* background-color: rgba(243, 117, 33, 0.2) !important; */
   border: #f37521 dashed 2px !important;
   border-radius: 0.75rem !important;
 }
 
 .agenda-pane div.items div.item div.image {
   margin-left: 0.75rem !important;
+}
+
+div.speaker-card-title {
+  font-size: 1.1rem !important;
 }
 
 .page-footer {
