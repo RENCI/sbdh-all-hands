@@ -1,7 +1,5 @@
 import './App.css';
 
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
 import { LocationProvider, Router as ReachRouter } from '@reach/router'
 
 import { Grid } from 'semantic-ui-react'
@@ -15,17 +13,10 @@ import Speaker from './components/Speaker';
 import Participate from './components/Participate';
 import Conduct from './components/ConductCode';
 import PageNotFound from './components/404';
+import SpeakerInfo from './components/SpeakerInfo';
 
 
 function App() {
-  const history = createBrowserHistory()
-
-  history.listen(location => {
-    ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID)
-
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname)
-  })
 
   return (
     <LocationProvider>
@@ -33,11 +24,12 @@ function App() {
           <NavBar />
           <Grid centered columns={3} className='pageBody' padded>
             <Grid.Column width={14} className="page-content">
-              <ReachRouter primary={false} history={history}>
+              <ReachRouter primary={false}>
                   <Home path='/' />
                   <Agenda path='/event-agenda' />
                   <Registration path='/register' />
                   <Speaker path='/speakers' />
+                  <SpeakerInfo path='/speakers/:speakerSlug' />
                   <Participate path='/get-involved' />
                   <Conduct path="/code-of-conduct" />
                   <PageNotFound default />
