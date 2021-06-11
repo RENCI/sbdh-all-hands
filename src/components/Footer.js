@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Grid, Header, Image, Menu, Segment, List } from 'semantic-ui-react'
 import { Link } from '@reach/router';
 
-// import logo from './images/logos/SBDH-logo-white-vertical.png'
+import logo from './images/logos/SBDH-logo-white-vertical.png'
 import logoNSF from './images/logos/nsf.png'
 
 
@@ -64,9 +64,7 @@ function Footer() {
                         </Grid.Row>
                     </Grid>
                     
-                    <br/>
-                    <div class="ui divider"></div>
-                    <br/>
+                    <div class="ui divider section"></div>
                     
                     <div className="footer-nsf-acknowledgement">
                         <Image size='tiny' src={logoNSF} className="footer-nsf-acknowledgement_logo"/>
