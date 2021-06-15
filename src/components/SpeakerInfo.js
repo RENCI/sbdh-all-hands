@@ -1,7 +1,9 @@
 import { useParams } from "@reach/router"
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
-import { Header, Loader } from 'semantic-ui-react'
+import { Header, Loader, Image } from 'semantic-ui-react'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 
 function SpeakerInfo() {
     const params = useParams()
@@ -17,7 +19,10 @@ function SpeakerInfo() {
             }) {
               items {
                 speakerName
-                speakerPic {url}
+                speakerPic {
+                    url
+                    title
+                }
                 speakerTitle
                 org
                 bio {
@@ -35,23 +40,25 @@ function SpeakerInfo() {
 
     useEffect(() => {
         if (!query) return
-        console.log(query)
+
+        console.log("<=== This is the query ===>", query)
+
         window.fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE}/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/JSON",
                 Authorization: `Bearer ${process.env.REACT_APP_CONTENTFUL_CONTENT}`
             },
-            body: JSON.stringify(query)
+            body: JSON.stringify({query})
         })
-        .then( res => res.json())
+        .then(res => res.json())
         .then(({data, err}) => {
             if (err) {
                 console.error(err)
             }
 
             setSpeakerInfo(data.postWithSlug.items[0])
-            console.log(data.postWithSlug.items[0])
+            console.log("<=== This is the post info ===>", data.postWithSlug.items[0])
         })
     }, [query])
 
@@ -64,10 +71,26 @@ function SpeakerInfo() {
         )
     }
 
+    //  USE THIS TO FORMAT THE CONTENT THAT COMES FROM THE RICH TEXT EDITOR FIELDS
+    const RICHTEXT_OPTIONS = {
+        renderNode: {
+            [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
+            [INLINES.HYPERLINK]: (node, children) => <a href={node.data.uri} target="_blank" rel="noopenner noreferrer" className="bio-links">{children}</a>
+        }
+    }
+
     return (
         <div className="page-contain">
-            <Header as='h1' className="page-title" textAlign='center' content={speakerInfo.speakerName} />
-            <pre>{JSON.stringify(params, null, 2)}</pre>
+            {/* <Header as='h1' className="page-title" textAlign='center' content={speakerInfo.speakerName} /> */}
+            <Header as='h1' textAlign='center'>
+                <Header.Content className="page-title">{speakerInfo.speakerName}</Header.Content>
+                <Header.Subheader className="sub-head">{`${speakerInfo.speakerTitle},`} <strong>{speakerInfo.org}</strong></Header.Subheader>
+            </Header>
+
+            <Image src={speakerInfo.speakerPic.url} alt={speakerInfo.speakerPic.title} size="medium" floated="right" rounded bordered />
+            {documentToReactComponents(speakerInfo.bio.json, RICHTEXT_OPTIONS)}
+
+            {/* <pre>{JSON.stringify(params, null, 2)}</pre> */}
         </div>
     )
 }
