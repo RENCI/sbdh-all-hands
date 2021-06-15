@@ -51,7 +51,7 @@ button.button.orange:hover {
   background-color: #d55c0b !important;
 }
 
-.page-title {
+.page-title, .bio-title {
   color: #f37521 !important;
   padding-top: 1rem !important;
 }
@@ -108,6 +108,15 @@ div.content.home-goals div.extra {
 
 div.speaker-card-title {
   font-size: 1.1rem !important;
+}
+
+a.bio-links {
+  color: #f37521;
+}
+
+a.bio-links:hover {
+  color: #808080;
+  text-decoration: #f37521 underline;
 }
 
 .page-footer {

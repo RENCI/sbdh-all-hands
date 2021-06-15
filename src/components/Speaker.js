@@ -63,7 +63,7 @@ function Speaker() {
 
     return (
         <div className="page-contain">
-            <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Explore more about each speaker below by clicking on their card." />
+            <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Learn more about each speaker below by clicking on their card." />
             <Card.Group centered itemsPerRow={4}>
                 {speakerContent.map(speaker => (
                     <Card as={Link} to={`/speakers/${speaker.slug}`} key={`speakerId-${speaker.speakerId}`}>
