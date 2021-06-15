@@ -5,10 +5,12 @@ import { Header, Loader } from 'semantic-ui-react'
 
 function SpeakerInfo() {
     const params = useParams()
-    const [speakerInfo, setSpeakerInfo] = useState()
+    const [query, setQuery] = useState()
+    const [speakerInfo, setSpeakerInfo] = useState(null)
 
-    useEffect (() => {
-        let query = `
+    useEffect(() => {
+        console.log(params.speakerSlug)
+        setQuery(`
         {
             postWithSlug: speakerCollection( where: {
               slug_contains: "${params.speakerSlug}"
@@ -27,11 +29,13 @@ function SpeakerInfo() {
                 }
               }
             }
-        }`
-        return query
-    }, [params.speakerSlug])
+        }`)
+    }, [params.speakerSlug]) 
+    
 
     useEffect(() => {
+        if (!query) return
+        console.log(query)
         window.fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE}/`, {
             method: "POST",
             headers: {
@@ -49,7 +53,7 @@ function SpeakerInfo() {
             setSpeakerInfo(data.postWithSlug.items[0])
             console.log(data.postWithSlug.items[0])
         })
-    }, [speakerInfo])
+    }, [query])
 
     if (!speakerInfo) {
         return (

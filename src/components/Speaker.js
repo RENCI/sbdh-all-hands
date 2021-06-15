@@ -66,7 +66,7 @@ function Speaker() {
             <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Explore more about each speaker below by clicking on their card." />
             <Card.Group centered itemsPerRow={4}>
                 {speakerContent.map(speaker => (
-                    <Card as={Link} to={`/speakers/${speaker.slug}`}>
+                    <Card as={Link} to={`/speakers/${speaker.slug}`} key={`speakerId-${speaker.speakerId}`}>
                         <Image src={speaker.speakerPic.url} wrapped ui={false} />
                         <Card.Content>
                             <Card.Header>
