@@ -124,7 +124,7 @@ function Home() {
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Data Science and Education Workforce, Led by <a href="https://www.linkedin.com/in/afiimani/" rel="noopener noreferrer" target="_blank">Dr. Renata Rawlings-Goss</a>
+                                                Data Science and Education Workforce, Led by <a href="https://www.linkedin.com/in/afiimani/" rel="noopener noreferrer" target="_blank">Dr. Renata Rawlings-Goss</a> and <a href="https://www.linkedin.com/in/melvingreer/" rel="noopener noreferrer" target="_blank">Dr. Melvin Greer</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
@@ -136,25 +136,25 @@ function Home() {
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Team Science, Led by <a href="https://www.linkedin.com/in/shannonmckeen/" rel="noopener noreferrer" target="_blank">Shannon McKeen</a> and <a href="https://www.linkedin.com/in/stephen-fiore-8087305/" rel="noopener noreferrer" target="_blank">Steve Fiore</a>
+                                                Team Science, Led by <a href="https://www.linkedin.com/in/shannonmckeen/" rel="noopener noreferrer" target="_blank">Shannon McKeen</a> and <a href="https://www.linkedin.com/in/stephen-fiore-8087305/" rel="noopener noreferrer" target="_blank">Dr. Steve Fiore</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Smart and Resilient Cities, Led by <a href="https://www.linkedin.com/in/madhav-marathe-1426826/" rel="noopener noreferrer" target="_blank">Madhav Marathe</a> and <a href="https://www.linkedin.com/in/samarth-swarup-20b2767/" rel="noopener noreferrer" target="_blank">Samarth Swarup</a>
+                                                Smart and Resilient Cities, Led by <a href="https://www.linkedin.com/in/madhav-marathe-1426826/" rel="noopener noreferrer" target="_blank">Dr. Madhav Marathe</a> and <a href="https://www.linkedin.com/in/samarth-swarup-20b2767/" rel="noopener noreferrer" target="_blank">Samarth Swarup</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Health Disparities, Led by <a href="https://www.linkedin.com/in/patricksullivan5/" rel="noopener noreferrer" target="_blank">Patrick Sullivan</a>
+                                                Health Disparities, Led by <a href="https://www.linkedin.com/in/patricksullivan5/" rel="noopener noreferrer" target="_blank">Dr. Patrick Sullivan</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Materials and Advanced Manufacturing, Led by <a href="https://www.linkedin.com/in/zacharytrautt/" rel="noopener noreferrer" target="_blank">Zachary Trautt</a> and <a href="https://www.linkedin.com/in/eva-campo-8901343/" rel="noopener noreferrer" target="_blank">Eva Campo</a>
+                                                Materials and Advanced Manufacturing, Led by <a href="https://www.linkedin.com/in/zacharytrautt/" rel="noopener noreferrer" target="_blank">Dr. Zachary Trautt</a> and <a href="https://www.linkedin.com/in/eva-campo-8901343/" rel="noopener noreferrer" target="_blank">Dr. Eva Campo</a>
                                             </List.Content>
                                         </List.Item>
                                     </List>
