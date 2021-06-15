@@ -64,9 +64,7 @@ function Footer() {
                         </Grid.Row>
                     </Grid>
                     
-                    <br/>
-                    <div class="ui divider"></div>
-                    <br/>
+                    <div className="ui divider section"></div>
                     
                     <div className="footer-nsf-acknowledgement">
                         <Image size='tiny' src={logoNSF} className="footer-nsf-acknowledgement_logo"/>
