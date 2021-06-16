@@ -97,7 +97,7 @@ function SpeakerInfo() {
 
             {documentToReactComponents(speakerInfo.bio.json, RICHTEXT_OPTIONS)}
 
-            <p><strong>Presentations:</strong> {speakerInfo.presentationsCollection.total}</p>
+            {/* <p><strong>Presentations:</strong> {speakerInfo.presentationsCollection.total}</p> */}
             {/* <pre>{JSON.stringify(params, null, 2)}</pre> */}
         </div>
     )
