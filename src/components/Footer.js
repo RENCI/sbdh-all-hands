@@ -17,8 +17,8 @@ function Footer() {
                                 <Menu text >
                                     <Menu.Item header as={Link} to='/' content='Home' className='footer-link' />
                                     <Menu.Item as={Link} to='/register' content='Registration' className='footer-link'/>
-                                    {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/>
-                                    <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/> */}
+                                    {/* <Menu.Item as={Link} to='/event-agenda' content='Agenda' className='footer-link'/> */}
+                                    <Menu.Item as={Link} to='/speakers' content='Speakers' className='footer-link'/>
                                     <Menu.Item as={Link} to='/get-involved' content='Get Involved' className="footer-link" />
                                     <Menu.Item as={Link} to='/register' position='right'>
                                         <Button color='orange' size='small' content='REGISTER NOW' />

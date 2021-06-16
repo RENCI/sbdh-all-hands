@@ -31,7 +31,7 @@ function NavBar() {
                     <Menu.Item as={Link} icon='home' name='Home' to='/' className={navClass.home} />
                     <Menu.Item as={Link} icon='pencil' name='Registration' to='/register' className={navClass.register} />
                     {/* <Menu.Item as={Link} icon='calendar alternate outline' name='Agenda' to='/event-agenda' className={navClass.agenda} /> */}
-                    {/* <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' className={navClass.speakers} /> */}
+                    <Menu.Item as={Link} icon='users' name='Speakers' to='/speakers' className={navClass.speakers} />
                     <Menu.Item as={Link} icon='lightbulb outline' name='Get Involved' to='/get-involved' className={navClass.participate} />
                     <Menu.Item icon='info' name='About the South Hub' href="https://southbigdatahub.org/about" rel="noopener" target="_blank" />
                     <Menu.Item as={Link} to='/register' position='right'>
