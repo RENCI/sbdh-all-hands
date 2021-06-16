@@ -3,14 +3,9 @@ import { Link } from '@reach/router';
 
 import { Card, Header, Icon, Image, Loader } from "semantic-ui-react";
 
-// import speakerData from '../content/speaker.json'
-// import placeholder from './images/home/placeholder.jpg'
-
-// const speakers = [...speakerData]
-
 const query = `
 {
-    speakerCollection {    
+    speakerCollection (order: speakerId_ASC) {    
       items{
         slug
         sys {id}
@@ -55,7 +50,7 @@ function Speaker() {
     if (!speakerContent) {
         return (
             <div className="page-contain">
-                <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Explore more about each speaker below by clicking on their card." />
+                <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Learn more about each speaker below by clicking on their card." />
                 <Loader inverted indeterminate size="big" content='Loading' />
             </div>
         )
@@ -64,7 +59,7 @@ function Speaker() {
     return (
         <div className="page-contain">
             <Header as='h1' className="page-title" textAlign='center' content="Speakers" subheader="All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Learn more about each speaker below by clicking on their card." />
-            <Card.Group centered itemsPerRow={4}>
+            <Card.Group centered itemsPerRow={4} className="speaker-cards">
                 {speakerContent.map(speaker => (
                     <Card as={Link} to={`/speakers/${speaker.slug}`} key={`speakerId-${speaker.speakerId}`}>
                         <Image src={speaker.speakerPic.url} wrapped ui={false} />
