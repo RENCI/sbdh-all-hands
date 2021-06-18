@@ -1,4 +1,4 @@
-//import {useState, useEffect} from "react";
+// import {useState, useEffect} from "react";
 import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react";
 import { Link } from '@reach/router'
 
@@ -10,16 +10,6 @@ import purposeImg from './images/home/purpose-2.png';
 
 const shortDesc = {
     main: `Join big data influencers from industry, academia, nonprofits, and government to discuss some of the most important topics in data science today:`,
-    // list: () => {
-    //     const bullets = ["Building Data Science Education and Workforce","Promoting Data Sharing and Cyberinfrastructure","Addressing Societal Challenges","Connecting the Data Community"]
-    //     const list = <List></List>
-
-    //         bullets.forEach(bullet => {
-    //             let li = <List.Item icon='caret right' content={bullet} />
-    //             list.appendChild(li)
-    //         })
-    //   return list  
-    // },
     benefits: `The South Big Data Hub has spent the last five years connecting with people and developing programs to move data science forward in remarkable ways, and we can’t wait to share what we’ve learned with you!`
 };
 
@@ -47,16 +37,6 @@ function Home() {
     //     }
     // };
 
-    // fetchData()
-    // }, []);
-
-    // if (!page) {
-    //     return (
-    //         <Dimmer active inverted>
-    //             <Loader inverted content='Loading' />
-    //         </Dimmer>
-    //     )
-    // }
 
     return  (
         <div className='page-contain'>
