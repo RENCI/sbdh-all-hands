@@ -68,7 +68,7 @@ function Speaker() {
                 <Header.Subheader className="sub-head"><Icon disabled name="star" color="orange"/>Track Captain</Header.Subheader>
             </Header>
 
-            <Card.Group centered itemsPerRow={4} className="speaker-cards">
+            <Card.Group centered stackable itemsPerRow={4} className="speaker-cards">
                 {speakerContent.map(speaker => (
                     <Card as={Link} to={`/speakers/${speaker.slug}`} key={`speakerId-${speaker.speakerId}`}>
                         <Image src={speaker.speakerPic.url} wrapped ui={false} />
