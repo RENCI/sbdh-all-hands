@@ -104,7 +104,7 @@ function Home() {
                                         <List.Item>
                                             <Icon name='caret right' style={{color: '#f37521'}} />
                                             <List.Content>
-                                                Data Science and Education Workforce, Led by <a href="https://www.linkedin.com/in/afiimani/" rel="noopener noreferrer" target="_blank">Dr. Renata Rawlings-Goss</a> and <a href="https://www.linkedin.com/in/melvingreer/" rel="noopener noreferrer" target="_blank">Dr. Melvin Greer</a>
+                                                Data Science Education and Workforce, Led by <a href="https://www.linkedin.com/in/afiimani/" rel="noopener noreferrer" target="_blank">Dr. Renata Rawlings-Goss</a> and <a href="https://www.linkedin.com/in/melvingreer/" rel="noopener noreferrer" target="_blank">Dr. Melvin Greer</a>
                                             </List.Content>
                                         </List.Item>
                                         <List.Item>
