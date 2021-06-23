@@ -73,6 +73,7 @@ div.home-list {
 div.speaker-label {
   font-size: 0.9rem !important;
   padding: 0.75em 0.85em !important;
+  font-weight: 600 !important;
 }
 
 img.image.home-goals {
