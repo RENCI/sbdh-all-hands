@@ -146,7 +146,7 @@ function Home() {
             </Grid.Column>
 
             <Grid.Column width={16} textAlign="left">
-              <Header as="h3" textAlign="left">
+              <Header as="h3">
                 <Header.Content>
                   Focused Conversations On Important Data Science Topics
                   <Header.Subheader className="sub-head">
@@ -156,7 +156,7 @@ function Home() {
               </Header>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Column width={8} stackable textAlign="left">
+          <Grid.Column width={8} stackable>
             <List className="home-list" textAlign="left">
               <List.Item>
                 <Icon name="caret right" style={{ color: "#f37521" }} />
@@ -174,7 +174,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[0].speakerName}`,
+                        content: `${speakerContent[0].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                     <Image
@@ -186,7 +187,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[6].speakerName}`,
+                        content: `${speakerContent[6].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>
@@ -209,6 +211,7 @@ function Home() {
                         color: "orange",
                         attached: "bottom",
                         content: `${speakerContent[5].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>
@@ -229,6 +232,7 @@ function Home() {
                         color: "orange",
                         attached: "bottom",
                         content: `${speakerContent[1].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                     <Image
@@ -240,7 +244,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[4].speakerName}`,
+                        content: `${speakerContent[4].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>
@@ -264,7 +269,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[2].speakerName}`,
+                        content: `${speakerContent[2].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                     <Image
@@ -277,6 +283,7 @@ function Home() {
                         color: "orange",
                         attached: "bottom",
                         content: `${speakerContent[8].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>
@@ -296,7 +303,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[7].speakerName}`,
+                        content: `${speakerContent[7].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>
@@ -318,7 +326,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[9].speakerName}`,
+                        content: `${speakerContent[9].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                     <Image
@@ -330,7 +339,8 @@ function Home() {
                       label={{
                         color: "orange",
                         attached: "bottom",
-                        content: `Dr. ${speakerContent[3].speakerName}`,
+                        content: `${speakerContent[3].speakerName}`,
+                        className: "speaker-label"
                       }}
                     />
                   </Image.Group>

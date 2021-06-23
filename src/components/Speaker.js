@@ -73,7 +73,7 @@ function Speaker() {
                     <Card as={Link} to={`/speakers/${speaker.slug}`} key={`speakerId-${speaker.speakerId}`}>
                         <Image src={speaker.speakerPic.url} wrapped ui={false} />
                         <Card.Content>
-                            <Card.Header>
+                            <Card.Header className="speaker-card-name">
                                 {speaker.speakerName} {speaker.isTrackCaptain ? <Icon disabled name="star" size="small" color="orange" title="Track Captain" /> : null}
                             </Card.Header>
                             <Card.Meta className="sub-head speaker-card-title">{`${speaker.speakerTitle},`} <strong>{speaker.org}</strong></Card.Meta>
