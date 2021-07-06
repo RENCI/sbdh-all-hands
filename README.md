@@ -1,1 +1,1 @@
-This is the development version of the app to test new and/or upcoming ideas.
+This is the staging version of the app to demo upcoming releases.
