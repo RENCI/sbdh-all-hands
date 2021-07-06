@@ -42,23 +42,22 @@ function Agenda() {
                 </Divider>
                 <Item.Group divided>
                     {wed.current && wed.current.map(wedEvent => (
-                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                            <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                            <Item.Content>
-                                <Item.Header as="h3">{wedEvent.title}</Item.Header>
+                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === true ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
+                            <Item.Content className="agenda-content">
+                                <Item.Header>{wedEvent.title}</Item.Header>
                                 <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
-                                {wedEvent.speakersCollection.items !== [] ? () => {
-                                    const speakers = wedEvent.speakersCollection.items
-                                    if(speakers.length > 1) {
-                                        <Item.Meta>
-                                            Speaker(s): {speakers.forEach(speaker => {
-                                                return `${speaker.speakerName},`
-                                            })}
-                                        </Item.Meta>
-                                    } else {
-                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                    }
-                                    } : null}
+                                {
+                                    (wedEvent.speakersCollection.items.length > 1) 
+                                    ? (<Item.Meta>
+                                        Speaker(s): {wedEvent.speakersCollection.items.map(speaker => {
+                                            return `${speaker.speakerName}, `
+                                        })}
+                                        </Item.Meta>)        
+                                    : (wedEvent.speakersCollection.items.length === 1) 
+                                    ? <Item.Meta>Speaker(s): {wedEvent.speakersCollection.items[0].speakerName}</Item.Meta>
+                                    : null
+                                }
                                 <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
                             </Item.Content>
                         </Item>
@@ -70,23 +69,22 @@ function Agenda() {
                 </Divider>
                 <Item.Group divided>
                     {thurs.current && thurs.current.map(thursEvent => (
-                            <Item key={thursEvent.sys.id} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                                <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                                <Item.Content>
-                                    <Item.Header as="h3">{thursEvent.title}</Item.Header>
+                            <Item key={thursEvent.sys.id} className={thursEvent.isBreak === true ? "agenda-highlight" : ""}>
+                                <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
+                                <Item.Content className="agenda-content">
+                                    <Item.Header>{thursEvent.title}</Item.Header>
                                     <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
-                                    {thursEvent.speakersCollection.items !== [] ? () => {
-                                        const speakers = thursEvent.speakersCollection.items
-                                        if(speakers.length > 1) {
-                                            <Item.Meta>
-                                                Speaker(s): {speakers.forEach(speaker => {
-                                                    return `${speaker.speakerName},`
-                                                })}
-                                            </Item.Meta>
-                                        } else {
-                                            <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                        }
-                                        } : null}
+                                    {
+                                        (thursEvent.speakersCollection.items.length > 1) 
+                                        ? (<Item.Meta>
+                                            Speaker(s): {thursEvent.speakersCollection.items.map(speaker => {
+                                                return `${speaker.speakerName}, `
+                                            })}
+                                            </Item.Meta>)        
+                                        : (thursEvent.speakersCollection.items.length === 1) 
+                                        ? <Item.Meta>Speaker(s): {thursEvent.speakersCollection.items[0].speakerName}</Item.Meta>
+                                        : null
+                                    }
                                     <Item.Description>{thursEvent.desc !== "" ? thursEvent.desc : null}</Item.Description>
                                 </Item.Content>
                             </Item>
@@ -98,26 +96,25 @@ function Agenda() {
                 </Divider>
                 <Item.Group divided>
                     {fri.current && fri.current.map(friEvent => (
-                            <Item key={friEvent.sys.id} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                                <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                                <Item.Content>
-                                    <Item.Header as="h3">{friEvent.title}</Item.Header>
-                                    <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
-                                    {friEvent.speakersCollection.items !== [] ? () => {
-                                        const speakers = friEvent.speakersCollection.items
-                                        if(speakers.length > 1) {
-                                            <Item.Meta>
-                                                Speaker(s): {speakers.forEach(speaker => {
-                                                    return `${speaker.speakerName},`
-                                                })}
-                                            </Item.Meta>
-                                        } else {
-                                            <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                        }
-                                        } : null}
-                                    <Item.Description>{friEvent.desc !== "" ? friEvent.desc : null}</Item.Description>
-                                </Item.Content>
-                            </Item>
+                        <Item key={friEvent.sys.id} className={friEvent.isBreak === true ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
+                            <Item.Content className="agenda-content">
+                                <Item.Header>{friEvent.title}</Item.Header>
+                                <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
+                                {
+                                    (friEvent.speakersCollection.items.length > 1) 
+                                    ? (<Item.Meta>
+                                        Speaker(s): {friEvent.speakersCollection.items.map(speaker => {
+                                            return `${speaker.speakerName}, `
+                                        })}
+                                        </Item.Meta>)        
+                                    : (friEvent.speakersCollection.items.length === 1) 
+                                    ? <Item.Meta>Speaker(s): {friEvent.speakersCollection.items[0].speakerName}</Item.Meta>
+                                    : null
+                                }
+                                <Item.Description>{friEvent.desc !== "" ? friEvent.desc : null}</Item.Description>
+                            </Item.Content>
+                        </Item>
                     ))}
                 </Item.Group>
             </Tab.Pane> 
@@ -129,23 +126,22 @@ function Agenda() {
                 </Divider>
                 <Item.Group divided>
                     {wed.current.map(wedEvent => (
-                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                            <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                            <Item.Content>
-                                <Item.Header as="h3">{wedEvent.title}</Item.Header>
+                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === true ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
+                            <Item.Content className="agenda-content">
+                                <Item.Header>{wedEvent.title}</Item.Header>
                                 <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
-                                {wedEvent.speakersCollection.items !== [] ? () => {
-                                    const speakers = wedEvent.speakersCollection.items
-                                    if(speakers.length > 1) {
-                                        <Item.Meta>
-                                            Speaker(s): {speakers.forEach(speaker => {
-                                                return `${speaker.speakerName},`
-                                            })}
-                                        </Item.Meta>
-                                    } else {
-                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                    }
-                                    } : null}
+                                {
+                                    (wedEvent.speakersCollection.items.length > 1) 
+                                    ? (<Item.Meta>
+                                        Speaker(s): {wedEvent.speakersCollection.items.map(speaker => {
+                                            return `${speaker.speakerName}, `
+                                        })}
+                                        </Item.Meta>)        
+                                    : (wedEvent.speakersCollection.items.length === 1) 
+                                    ? <Item.Meta>{`Speaker(s): ${wedEvent.speakersCollection.items[0].speakerName}`}</Item.Meta>
+                                    : null
+                                }
                                 <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
                             </Item.Content>
                         </Item>
@@ -161,23 +157,22 @@ function Agenda() {
     
                 <Item.Group divided>
                     {thurs.current.map(thursEvent => (
-                        <Item key={thursEvent.sys.id} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                            <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                            <Item.Content>
-                                <Item.Header as="h3">{thursEvent.title}</Item.Header>
+                        <Item key={thursEvent.sys.id} className={thursEvent.isBreak === true ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
+                            <Item.Content className="agenda-content">
+                                <Item.Header>{thursEvent.title}</Item.Header>
                                 <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
-                                {thursEvent.speakersCollection.items !== [] ? () => {
-                                    const speakers = thursEvent.speakersCollection.items
-                                    if(speakers.length > 1) {
-                                        <Item.Meta>
-                                            Speaker(s): {speakers.forEach(speaker => {
-                                                return `${speaker.speakerName},`
-                                            })}
-                                        </Item.Meta>
-                                    } else {
-                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                    }
-                                    } : null}
+                                {
+                                    (thursEvent.speakersCollection.items.length > 1) 
+                                    ? (<Item.Meta>
+                                        Speaker(s): {thursEvent.speakersCollection.items.map(speaker => {
+                                            return `${speaker.speakerName}, `
+                                        })}
+                                        </Item.Meta>)        
+                                    : (thursEvent.speakersCollection.items.length === 1) 
+                                    ? <Item.Meta>Speaker(s): {thursEvent.speakersCollection.items[0].speakerName}</Item.Meta>
+                                    : null
+                                }
                                 <Item.Description>{thursEvent.desc !== "" ? thursEvent.desc : null}</Item.Description>
                             </Item.Content>
                         </Item>
@@ -192,23 +187,22 @@ function Agenda() {
                 </Divider>
                 <Item.Group divided>
                     {fri.current.map(friEvent => (
-                        <Item key={friEvent.sys.id} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                            <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                            <Item.Content>
-                                <Item.Header as="h3">{friEvent.title}</Item.Header>
+                        <Item key={friEvent.sys.id} className={friEvent.isBreak === true ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
+                            <Item.Content className="agenda-content">
+                                <Item.Header>{friEvent.title}</Item.Header>
                                 <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
-                                {friEvent.speakersCollection.items !== [] ? () => {
-                                    const speakers = friEvent.speakersCollection.items
-                                    if(speakers.length > 1) {
-                                        <Item.Meta>
-                                            Speaker(s): {speakers.forEach(speaker => {
-                                                return `${speaker.speakerName},`
-                                            })}
-                                        </Item.Meta>
-                                    } else {
-                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
-                                    }
-                                    } : null}
+                                {
+                                    (friEvent.speakersCollection.items.length > 1) 
+                                    ? (<Item.Meta>
+                                        Speaker(s): {friEvent.speakersCollection.items.map(speaker => {
+                                            return `${speaker.speakerName}, `
+                                        })}
+                                        </Item.Meta>)        
+                                    : (friEvent.speakersCollection.items.length === 1) 
+                                    ? <Item.Meta>Speaker(s): {friEvent.speakersCollection.items[0].speakerName}</Item.Meta>
+                                    : null
+                                }
                                 <Item.Description>{friEvent.desc !== "" ? friEvent.desc : null}</Item.Description>
                             </Item.Content>
                         </Item>
@@ -260,7 +254,7 @@ function Agenda() {
             console.log("Wed data", wed)
         })
         if(!wed.current || wed.current === undefined) {console.log("No Wed data")}
-    }, [agendaContent])
+    })
 
 
     if(!agendaContent) {
