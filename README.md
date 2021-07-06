@@ -1,1 +1,1 @@
-This is the development version of the app to test new and/or upcoming ideas.
+This is the main version of the app that the public sees on the South Hub [events website](https://southbigdatahub-events.org/)
