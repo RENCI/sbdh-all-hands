@@ -41,7 +41,7 @@ function Agenda() {
                     <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
                 </Divider>
                 <Item.Group divided>
-                    {wed.current.map(wedEvent => (
+                    {wed.current && wed.current.map(wedEvent => (
                         <Item key={wedEvent.sys.id} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                             <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
                             <Item.Content>
@@ -69,7 +69,7 @@ function Agenda() {
                     <Header content="Thursday, July 29: ENGAGE" className="agenda-header" />
                 </Divider>
                 <Item.Group divided>
-                    {thurs.current.map(thursEvent => (
+                    {thurs.current && thurs.current.map(thursEvent => (
                             <Item key={thursEvent.sys.id} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                                 <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
                                 <Item.Content>
@@ -97,7 +97,7 @@ function Agenda() {
                     <Header content="Friday, July 30" className="agenda-header" />
                 </Divider>
                 <Item.Group divided>
-                    {fri.current.map(friEvent => (
+                    {fri.current && fri.current.map(friEvent => (
                             <Item key={friEvent.sys.id} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
                                 <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
                                 <Item.Content>
@@ -252,9 +252,9 @@ function Agenda() {
             }
             setAgendaContent(data.eventCollection.items)
             
-            wed.current = agendaContent.filter(event => event.date.includes("2021-07-28"))
-            thurs.current = agendaContent.filter(event => event.date.includes("2021-07-29"))
-            fri.current = agendaContent.filter(event => event.date.includes("2021-07-30"))
+            wed.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-28"))
+            thurs.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-29"))
+            fri.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-30"))
 
             console.log("all events:",data.eventCollection.items)
             console.log("Wed data", wed)
