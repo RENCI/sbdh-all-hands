@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import { Image, Header, Grid, Button, Item, List, Icon } from "semantic-ui-react";
+import { Image, Header, Grid, Button, Item, List, Icon, Loader } from "semantic-ui-react";
 import { Link } from '@reach/router'
 
 import dateBanner from './images/home/date_banner.png'
@@ -61,11 +61,7 @@ function Home() {
     if (!speakerContent) {
         return (
             <div className="page-contain">
-                <Header as='h1' textAlign='center'>
-                    <Header.Content className="page-title">Speakers</Header.Content>
-                    <Header.Subheader className="sub-head">All Hands sessions will be led by experts in their fields. These leaders are building sessions to spark conversations and create collaborative opportunities. Learn more about each speaker below by clicking on their card.</Header.Subheader>
-                    <Header.Subheader className="sub-head"><Icon disabled name="star" color="orange"/>Track Captain</Header.Subheader>
-                </Header>
+                <Loader inverted indeterminate size="big" content='Loading' />
             </div>
         )
     }
