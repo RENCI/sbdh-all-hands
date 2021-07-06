@@ -1,156 +1,223 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Tab, Header, Item, Divider, Loader } from 'semantic-ui-react'
 
 import itemLogo from './images/logos/SBDH-logo-wordless.png'
 import breakLogo from './images/CoffeeBreak_SBDH_V1-03.png'
-import agendaData from "../content/event-agenda.json"
 
 const query = `{
-    eventCollection (order:start_ASC) {
+    eventCollection (order: [date_ASC, start_ASC]) {
     items {
+      date
       title
-      desc
-      isBreak
       start
       end
+      desc
+      isBreak
+      sys {id}
       speakersCollection {
         items {
           speakerName
         }
       }
     }
-    }
-  }`
+  }
+}`
 
-const agenda = [...agendaData]
-const wed = agenda.filter(event => event.date === "7-28")
-const thurs = agenda.filter(event => event.date === "7-29")
-const fri = agenda.filter(event => event.date === "7-30")
-
-const panes = [
-    { menuItem: 'All', render: () => (
-        <Tab.Pane className="agenda-pane">
-            {/* Wed. schedule */}
-            <Divider horizontal section>
-                <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
-            </Divider>
-            <Item.Group divided>
-                {wed.map(wedEvent => (
-                    <Item key={wedEvent.sessionId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{wedEvent.title}</Item.Header>
-                            <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
-                            {wedEvent.speaker !== "" ? <Item.Meta>Speaker: {wedEvent.speaker}</Item.Meta> : null}
-                            <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-            {/* Thurs. schedule */}
-            <Divider horizontal section>
-                <Header content="Thursday, July 29: ENGAGE" className="agenda-header" />
-            </Divider>
-            <Item.Group divided>
-                {thurs.map(thursEvent => (
-                    <Item key={thursEvent.sessionId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{thursEvent.title}</Item.Header>
-                            <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
-                            <Item.Meta>{thursEvent.speaker !== "" ? `Speaker: ${thursEvent.speaker}` : null}</Item.Meta>
-                            <Item.Description>{thursEvent.desc !== "" ? `Description: ${thursEvent.desc}` : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-            {/* Fri. schedule */}
-            <Divider horizontal section>
-                <Header content="Friday, July 30" className="agenda-header" />
-            </Divider>
-            <Item.Group divided>
-                {fri.map(friEvent => (
-                    <Item key={friEvent.sessionId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{friEvent.title}</Item.Header>
-                            <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
-                            <Item.Meta>{friEvent.speaker !== "" ? `Speaker: ${friEvent.speaker}` : null}</Item.Meta>
-                            <Item.Description>{friEvent.desc !== "" ? `Description: ${friEvent.desc}` : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-        </Tab.Pane> 
-    )},
-    { menuItem: `July 28 (Wed.)`, render: () => (
-        <Tab.Pane className="agenda-pane">
-            <Divider horizontal section>
-                <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
-            </Divider>
-            <Item.Group divided>
-                {wed.map(wedEvent => (
-                    <Item key={wedEvent.sessionId} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{wedEvent.title}</Item.Header>
-                            <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
-                            <Item.Meta>{wedEvent.speaker !== "" ? `Speaker: ${wedEvent.speaker}` : null}</Item.Meta>
-                            <Item.Description>{wedEvent.desc !== "" ? `Description: ${wedEvent.desc}` : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-        </Tab.Pane>
-    )},
-    { menuItem: 'July 29 (Thurs.)', render: () => (
-        <Tab.Pane className="agenda-pane">
-            <Divider horizontal section>
-                <Header content="Thursday, July 29: ENGAGE" className="agenda-header" />
-            </Divider>
-
-            <Item.Group divided>
-                {thurs.map(thursEvent => (
-                    <Item key={thursEvent.sessionId} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{thursEvent.title}</Item.Header>
-                            <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
-                            <Item.Meta>{thursEvent.speaker !== "" ? `Speaker: ${thursEvent.speaker}` : null}</Item.Meta>
-                            <Item.Description>{thursEvent.desc !== "" ? `Description: ${thursEvent.desc}` : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-        </Tab.Pane>
-    ) },
-    { menuItem: 'July 30 (Fri.)', render: () => (
-        <Tab.Pane className="agenda-pane">
-            <Divider horizontal section>
-                <Header content="Friday, July 30" className="agenda-header" />
-            </Divider>
-            <Item.Group divided>
-                {fri.map(friEvent => (
-                    <Item key={friEvent.sessionId} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
-                        <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
-                        <Item.Content>
-                            <Item.Header as="h3">{friEvent.title}</Item.Header>
-                            <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
-                            <Item.Meta>{friEvent.speaker !== "" ? `Speaker: ${friEvent.speaker}` : null}</Item.Meta>
-                            <Item.Description>{friEvent.desc !== "" ? `Description: ${friEvent.desc}` : null}</Item.Description>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-        </Tab.Pane>
-    )}
-]
 
 function Agenda() {
     // date stuff for default active tab to be the one for the corresponding day during the event window
     const [defaultTab, setDefaultTab] = useState()
+    // agenda variables
     const [agendaContent, setAgendaContent] = useState()
+    let wed = useRef()
+    let thurs = useRef()
+    let fri = useRef()
 
+    const panes = [
+        { menuItem: 'All', render: () => (
+            <Tab.Pane className="agenda-pane">
+                {/* Wed. schedule */}
+                <Divider horizontal section>
+                    <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
+                </Divider>
+                <Item.Group divided>
+                    {wed.current.map(wedEvent => (
+                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                            <Item.Content>
+                                <Item.Header as="h3">{wedEvent.title}</Item.Header>
+                                <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
+                                {wedEvent.speakersCollection.items !== [] ? () => {
+                                    const speakers = wedEvent.speakersCollection.items
+                                    if(speakers.length > 1) {
+                                        <Item.Meta>
+                                            Speaker(s): {speakers.forEach(speaker => {
+                                                return `${speaker.speakerName},`
+                                            })}
+                                        </Item.Meta>
+                                    } else {
+                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                    }
+                                    } : null}
+                                <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
+                            </Item.Content>
+                        </Item>
+                    ))}
+                </Item.Group>
+                {/* Thurs. schedule */}
+                <Divider horizontal section>
+                    <Header content="Thursday, July 29: ENGAGE" className="agenda-header" />
+                </Divider>
+                <Item.Group divided>
+                    {thurs.current.map(thursEvent => (
+                            <Item key={thursEvent.sys.id} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                                <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                                <Item.Content>
+                                    <Item.Header as="h3">{thursEvent.title}</Item.Header>
+                                    <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
+                                    {thursEvent.speakersCollection.items !== [] ? () => {
+                                        const speakers = thursEvent.speakersCollection.items
+                                        if(speakers.length > 1) {
+                                            <Item.Meta>
+                                                Speaker(s): {speakers.forEach(speaker => {
+                                                    return `${speaker.speakerName},`
+                                                })}
+                                            </Item.Meta>
+                                        } else {
+                                            <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                        }
+                                        } : null}
+                                    <Item.Description>{thursEvent.desc !== "" ? thursEvent.desc : null}</Item.Description>
+                                </Item.Content>
+                            </Item>
+                    ))}
+                </Item.Group>
+                {/* Fri. schedule */}
+                <Divider horizontal section>
+                    <Header content="Friday, July 30" className="agenda-header" />
+                </Divider>
+                <Item.Group divided>
+                    {fri.current.map(friEvent => (
+                            <Item key={friEvent.sys.id} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                                <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                                <Item.Content>
+                                    <Item.Header as="h3">{friEvent.title}</Item.Header>
+                                    <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
+                                    {friEvent.speakersCollection.items !== [] ? () => {
+                                        const speakers = friEvent.speakersCollection.items
+                                        if(speakers.length > 1) {
+                                            <Item.Meta>
+                                                Speaker(s): {speakers.forEach(speaker => {
+                                                    return `${speaker.speakerName},`
+                                                })}
+                                            </Item.Meta>
+                                        } else {
+                                            <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                        }
+                                        } : null}
+                                    <Item.Description>{friEvent.desc !== "" ? friEvent.desc : null}</Item.Description>
+                                </Item.Content>
+                            </Item>
+                    ))}
+                </Item.Group>
+            </Tab.Pane> 
+        )},
+        { menuItem: `July 28 (Wed.)`, render: () => (
+            <Tab.Pane className="agenda-pane">
+                <Divider horizontal section>
+                    <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
+                </Divider>
+                <Item.Group divided>
+                    {wed.current.map(wedEvent => (
+                        <Item key={wedEvent.sys.id} className={wedEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={wedEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                            <Item.Content>
+                                <Item.Header as="h3">{wedEvent.title}</Item.Header>
+                                <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
+                                {wedEvent.speakersCollection.items !== [] ? () => {
+                                    const speakers = wedEvent.speakersCollection.items
+                                    if(speakers.length > 1) {
+                                        <Item.Meta>
+                                            Speaker(s): {speakers.forEach(speaker => {
+                                                return `${speaker.speakerName},`
+                                            })}
+                                        </Item.Meta>
+                                    } else {
+                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                    }
+                                    } : null}
+                                <Item.Description>{wedEvent.desc !== "" ? wedEvent.desc : null}</Item.Description>
+                            </Item.Content>
+                        </Item>
+                    ))}
+                </Item.Group>
+            </Tab.Pane>
+        )},
+        { menuItem: 'July 29 (Thurs.)', render: () => (
+            <Tab.Pane className="agenda-pane">
+                <Divider horizontal section>
+                    <Header content="Thursday, July 29: ENGAGE" className="agenda-header" />
+                </Divider>
+    
+                <Item.Group divided>
+                    {thurs.current.map(thursEvent => (
+                        <Item key={thursEvent.sys.id} className={thursEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={thursEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                            <Item.Content>
+                                <Item.Header as="h3">{thursEvent.title}</Item.Header>
+                                <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
+                                {thursEvent.speakersCollection.items !== [] ? () => {
+                                    const speakers = thursEvent.speakersCollection.items
+                                    if(speakers.length > 1) {
+                                        <Item.Meta>
+                                            Speaker(s): {speakers.forEach(speaker => {
+                                                return `${speaker.speakerName},`
+                                            })}
+                                        </Item.Meta>
+                                    } else {
+                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                    }
+                                    } : null}
+                                <Item.Description>{thursEvent.desc !== "" ? thursEvent.desc : null}</Item.Description>
+                            </Item.Content>
+                        </Item>
+                    ))}
+                </Item.Group>
+            </Tab.Pane>
+        ) },
+        { menuItem: 'July 30 (Fri.)', render: () => (
+            <Tab.Pane className="agenda-pane">
+                <Divider horizontal section>
+                    <Header content="Friday, July 30" className="agenda-header" />
+                </Divider>
+                <Item.Group divided>
+                    {fri.current.map(friEvent => (
+                        <Item key={friEvent.sys.id} className={friEvent.isBreak === 1 ? "agenda-highlight" : ""}>
+                            <Item.Image size="tiny" src={friEvent.isBreak === 1 ? breakLogo : itemLogo} />
+                            <Item.Content>
+                                <Item.Header as="h3">{friEvent.title}</Item.Header>
+                                <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
+                                {friEvent.speakersCollection.items !== [] ? () => {
+                                    const speakers = friEvent.speakersCollection.items
+                                    if(speakers.length > 1) {
+                                        <Item.Meta>
+                                            Speaker(s): {speakers.forEach(speaker => {
+                                                return `${speaker.speakerName},`
+                                            })}
+                                        </Item.Meta>
+                                    } else {
+                                        <Item.Meta>Speaker(s): {speakers.speakerName}</Item.Meta>
+                                    }
+                                    } : null}
+                                <Item.Description>{friEvent.desc !== "" ? friEvent.desc : null}</Item.Description>
+                            </Item.Content>
+                        </Item>
+                    ))}
+                </Item.Group>
+            </Tab.Pane>
+        )}
+    ]
+    
     useEffect(() => {
         const date = new Date()
         let today = `${date.getMonth()+1}-${date.getDate()}`
@@ -184,11 +251,18 @@ function Agenda() {
                 console.error(err)
             }
             setAgendaContent(data.eventCollection.items)
-            console.log("all events:",data.eventCollection.items)
-        })
-    }, [])
+            
+            wed.current = agendaContent.filter(event => event.date.includes("2021-07-28"))
+            thurs.current = agendaContent.filter(event => event.date.includes("2021-07-29"))
+            fri.current = agendaContent.filter(event => event.date.includes("2021-07-30"))
 
-    
+            console.log("all events:",data.eventCollection.items)
+            console.log("Wed data", wed)
+        })
+        if(!wed.current || wed.current === undefined) {console.log("No Wed data")}
+    }, [agendaContent])
+
+
     if(!agendaContent) {
         <div className="page-contain">
             <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change." />
