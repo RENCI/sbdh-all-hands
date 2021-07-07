@@ -106,7 +106,9 @@ div.content.home-goals div.extra {
 .agenda-highlight {
   border: #f37521 dashed 2px !important;
   border-radius: 0.75rem !important;
-  padding: 1rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-right: 0.75rem !important;
 }
 .ui.divided.items>.item:last-child.agenda-highlight {
   padding-bottom: 1rem !important;
