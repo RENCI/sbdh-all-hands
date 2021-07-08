@@ -1,1 +1,1 @@
-This is the staging version of the app to demo upcoming releases.
+This is the main version of the app that the public sees on the South Hub [events website](https://southbigdatahub-events.org/)
