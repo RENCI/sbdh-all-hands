@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
 import { Tab, Header, Item, Divider, Loader } from 'semantic-ui-react'
+import { DateTime } from "luxon"
 
 import itemLogo from './images/logos/SBDH-logo-wordless.png'
 import breakLogo from './images/CoffeeBreak_SBDH_V1-03.png'
 
 const query = `{
-    eventCollection (order: [date_ASC, start_ASC]) {
+    eventCollection (order: [dateStart_ASC]) {
     items {
-      date
+      dateStart
+      dateEnd
       title
-      start
-      end
       desc
       isBreak
       sys {id}
@@ -33,6 +33,10 @@ function Agenda() {
     let thurs = useRef()
     let fri = useRef()
 
+    const formatDate = (date) => {
+        return DateTime.fromISO(date).toFormat('hh:mm a')
+    }
+
     const panes = [
         { menuItem: 'All', render: () => (
             <Tab.Pane className="agenda-pane">
@@ -46,7 +50,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{wedEvent.title}</Item.Header>
-                                <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
+                                <Item.Meta>{formatDate(wedEvent.dateStart)} - {formatDate(wedEvent.dateEnd)}</Item.Meta>
                                 {
                                     (wedEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -73,7 +77,7 @@ function Agenda() {
                                 <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
                                 <Item.Content className="agenda-content">
                                     <Item.Header>{thursEvent.title}</Item.Header>
-                                    <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
+                                    <Item.Meta>{formatDate(thursEvent.dateStart)} - {formatDate(thursEvent.dateEnd)}</Item.Meta>
                                     {
                                         (thursEvent.speakersCollection.items.length > 1) 
                                         ? (<Item.Meta>
@@ -100,7 +104,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{friEvent.title}</Item.Header>
-                                <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
+                                <Item.Meta>{formatDate(friEvent.dateStart)} - {formatDate(friEvent.dateEnd)}</Item.Meta>
                                 {
                                     (friEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -130,7 +134,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{wedEvent.title}</Item.Header>
-                                <Item.Meta>{wedEvent.start} - {wedEvent.end}</Item.Meta>
+                                <Item.Meta>{formatDate(wedEvent.dateStart)} - {formatDate(wedEvent.dateEnd)}</Item.Meta>
                                 {
                                     (wedEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -161,7 +165,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{thursEvent.title}</Item.Header>
-                                <Item.Meta>{thursEvent.start} - {thursEvent.end}</Item.Meta>
+                                <Item.Meta>{formatDate(thursEvent.dateStart)} - {formatDate(thursEvent.dateEnd)}</Item.Meta>
                                 {
                                     (thursEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -191,7 +195,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{friEvent.title}</Item.Header>
-                                <Item.Meta>{friEvent.start} - {friEvent.end}</Item.Meta>
+                                <Item.Meta>{formatDate(friEvent.dateStart)} - {formatDate(friEvent.dateEnd)}</Item.Meta>
                                 {
                                     (friEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -246,9 +250,9 @@ function Agenda() {
             }
             setAgendaContent(data.eventCollection.items)
             
-            wed.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-28"))
-            thurs.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-29"))
-            fri.current = agendaContent && agendaContent.filter(event => event.date.includes("2021-07-30"))
+            wed.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-28"))
+            thurs.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-29"))
+            fri.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-30"))
 
             console.log("all events:",data.eventCollection.items)
             console.log("Wed data", wed)
@@ -259,7 +263,7 @@ function Agenda() {
 
     if(!agendaContent) {
         <div className="page-contain">
-            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change." />
+            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
             <Loader inverted indeterminate size="big" content='Loading' />
        </div>
     }
@@ -267,7 +271,7 @@ function Agenda() {
 
     return (
         <div className='page-contain'>
-            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change." />
+            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
             {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
         </div>
     )
