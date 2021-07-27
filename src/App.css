@@ -113,6 +113,9 @@ div.content.home-goals div.extra {
 .ui.divided.items>.item:last-child.agenda-highlight {
   padding-bottom: 1rem !important;
 }
+.ui.divided.items>.item:first-child.agenda-highlight {
+  padding-top: 1rem !important;
+}
 
 .agenda-pane div.items div.item div.image {
   margin-left: 0.75rem !important;

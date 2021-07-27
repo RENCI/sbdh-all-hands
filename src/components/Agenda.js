@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { Tab, Header, Item, Divider, Loader } from 'semantic-ui-react'
-import { DateTime } from "luxon"
+import { Tab, Header, Item, Divider, Loader, Message, Icon, List } from 'semantic-ui-react'
+import { DateTime, Settings } from "luxon"
 
 import itemLogo from './images/logos/SBDH-logo-wordless.png'
 import breakLogo from './images/CoffeeBreak_SBDH_V1-03.png'
@@ -33,7 +33,7 @@ function Agenda() {
     let thurs = useRef()
     let fri = useRef()
 
-    const formatDate = (date) => {
+    const formatTime = (date) => {
         return DateTime.fromISO(date).toFormat('hh:mm a')
     }
 
@@ -50,7 +50,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{wedEvent.title}</Item.Header>
-                                <Item.Meta>{formatDate(wedEvent.dateStart)} - {formatDate(wedEvent.dateEnd)}</Item.Meta>
+                                <Item.Meta>{formatTime(wedEvent.dateStart)} - {formatTime(wedEvent.dateEnd)}</Item.Meta>
                                 {
                                     (wedEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -77,7 +77,7 @@ function Agenda() {
                                 <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
                                 <Item.Content className="agenda-content">
                                     <Item.Header>{thursEvent.title}</Item.Header>
-                                    <Item.Meta>{formatDate(thursEvent.dateStart)} - {formatDate(thursEvent.dateEnd)}</Item.Meta>
+                                    <Item.Meta>{formatTime(thursEvent.dateStart)} - {formatTime(thursEvent.dateEnd)}</Item.Meta>
                                     {
                                         (thursEvent.speakersCollection.items.length > 1) 
                                         ? (<Item.Meta>
@@ -104,7 +104,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{friEvent.title}</Item.Header>
-                                <Item.Meta>{formatDate(friEvent.dateStart)} - {formatDate(friEvent.dateEnd)}</Item.Meta>
+                                <Item.Meta>{formatTime(friEvent.dateStart)} - {formatTime(friEvent.dateEnd)}</Item.Meta>
                                 {
                                     (friEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -134,7 +134,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{wedEvent.title}</Item.Header>
-                                <Item.Meta>{formatDate(wedEvent.dateStart)} - {formatDate(wedEvent.dateEnd)}</Item.Meta>
+                                <Item.Meta>{formatTime(wedEvent.dateStart)} - {formatTime(wedEvent.dateEnd)}</Item.Meta>
                                 {
                                     (wedEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -165,7 +165,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{thursEvent.title}</Item.Header>
-                                <Item.Meta>{formatDate(thursEvent.dateStart)} - {formatDate(thursEvent.dateEnd)}</Item.Meta>
+                                <Item.Meta>{formatTime(thursEvent.dateStart)} - {formatTime(thursEvent.dateEnd)}</Item.Meta>
                                 {
                                     (thursEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -195,7 +195,7 @@ function Agenda() {
                             <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
                                 <Item.Header>{friEvent.title}</Item.Header>
-                                <Item.Meta>{formatDate(friEvent.dateStart)} - {formatDate(friEvent.dateEnd)}</Item.Meta>
+                                <Item.Meta>{formatTime(friEvent.dateStart)} - {formatTime(friEvent.dateEnd)}</Item.Meta>
                                 {
                                     (friEvent.speakersCollection.items.length > 1) 
                                     ? (<Item.Meta>
@@ -216,12 +216,9 @@ function Agenda() {
         )}
     ]
     
+    const date = new Date()
+    let today = `${date.getMonth()+1}-${date.getDate()}`
     useEffect(() => {
-        const date = new Date()
-        let today = `${date.getMonth()+1}-${date.getDate()}`
-        // let today = "7-30"
-        console.log("today's date", today)
-
         // ES6 object literal which acts like a switch case statement
         const tab = today => ({
             "7-28": 1,
@@ -230,9 +227,7 @@ function Agenda() {
         })[today]
         
         setDefaultTab(tab(today) || 0)
-    }, [])
-
-    console.log("defaultTab Index:", defaultTab)
+    }, [today])
 
     useEffect(() => {
         window.fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE}/`, {
@@ -254,8 +249,8 @@ function Agenda() {
             thurs.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-29"))
             fri.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-30"))
 
-            console.log("all events:",data.eventCollection.items)
-            console.log("Wed data", wed)
+            // console.log("all events:",data.eventCollection.items)
+            // console.log("Wed data", wed)
         })
         if(!wed.current || wed.current === undefined) {console.log("No Wed data")}
     })
@@ -268,12 +263,44 @@ function Agenda() {
        </div>
     }
 
-
+    const eventDates = ["07-28", "07-29", "07-30"]
+    const currentDate = () => {
+        Settings.defaultZone = "America/New_York"
+        // console.log("current Date is ", DateTime.now().toFormat('LL-dd'))
+        return DateTime.now().toFormat('LL-dd')
+    }
+    
     return (
-        <div className='page-contain'>
-            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
-            {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
-        </div>
+        <>
+            {
+                eventDates.includes(currentDate) ? (
+                    <div className='page-contain'>
+                        {/* Message displayed during event days */}
+                        <Message color="orange" size="small" icon>
+                            <Icon name="info" />
+                            <Message.Content style={{color: "#000"}}>
+                                <p>The All-Hands Meeting is being hosted virtually on the Airmeet platform. The first time you click the Airmeet Link, you will be asked to fill out a short name tag before joining the meeting. Additional information about navigating Airmeet is available in the Welcome Packet.</p>
+                                <List bulleted>
+                                    <List.Item>If you have not yet registered, please take a moment to <a href="/register" target="_blank">complete our registration form</a> before clicking on the Airmeet Link.</List.Item>
+                                    <List.Item>To join the meeting on Airmeet, please click <a href="https://bit.ly/AllHandsJuly_SBDH" rel="noreferrer" target="_blank">here</a>.</List.Item>
+                                    <List.Item>To view our Welcome Packet, please click <a href="https://bit.ly/AllHandsJuly_SBDH-WelcomePacket" rel="noreferrer" target="_blank">here</a>.</List.Item>
+                                </List>
+                            </Message.Content>
+                        </Message>
+            
+                        {/* Beginning of Page Content */}
+                        <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
+                        {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
+                    </div>
+                ) : (
+                    <div className='page-contain'>
+                        {/* Beginning of Page Content */}
+                        <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
+                        {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
+                    </div>
+                )
+            }
+        </>
     )
 }
 
