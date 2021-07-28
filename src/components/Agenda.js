@@ -129,7 +129,7 @@ function Agenda() {
                     <Header content="Wednesday, July 28: LEARN" className="agenda-header" />
                 </Divider>
                 <Item.Group divided>
-                    {wed.current.map(wedEvent => (
+                    {wed.current && wed.current.map(wedEvent => (
                         <Item key={wedEvent.sys.id} className={wedEvent.isBreak === true ? "agenda-highlight" : ""}>
                             <Item.Image size="tiny" src={wedEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
@@ -160,7 +160,7 @@ function Agenda() {
                 </Divider>
     
                 <Item.Group divided>
-                    {thurs.current.map(thursEvent => (
+                    {thurs.current && thurs.current.map(thursEvent => (
                         <Item key={thursEvent.sys.id} className={thursEvent.isBreak === true ? "agenda-highlight" : ""}>
                             <Item.Image size="tiny" src={thursEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
@@ -190,7 +190,7 @@ function Agenda() {
                     <Header content="Friday, July 30" className="agenda-header" />
                 </Divider>
                 <Item.Group divided>
-                    {fri.current.map(friEvent => (
+                    {fri.current && fri.current.map(friEvent => (
                         <Item key={friEvent.sys.id} className={friEvent.isBreak === true ? "agenda-highlight" : ""}>
                             <Item.Image size="tiny" src={friEvent.isBreak === true ? breakLogo : itemLogo} />
                             <Item.Content className="agenda-content">
@@ -216,9 +216,9 @@ function Agenda() {
         )}
     ]
     
+    useEffect(() => {
     const date = new Date()
     let today = `${date.getMonth()+1}-${date.getDate()}`
-    useEffect(() => {
         // ES6 object literal which acts like a switch case statement
         const tab = today => ({
             "7-28": 1,
@@ -227,7 +227,7 @@ function Agenda() {
         })[today]
         
         setDefaultTab(tab(today) || 0)
-    }, [today])
+    }, [])
 
     useEffect(() => {
         window.fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE}/`, {
@@ -244,6 +244,8 @@ function Agenda() {
                 console.error(err)
             }
             setAgendaContent(data.eventCollection.items)
+            console.log("data is ", data)
+            console.log(agendaContent)
             
             wed.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-28"))
             thurs.current = agendaContent && agendaContent.filter(event => event.dateStart.includes("2021-07-29"))
@@ -252,6 +254,8 @@ function Agenda() {
             // console.log("all events:",data.eventCollection.items)
             // console.log("Wed data", wed)
         })
+        console.log(wed)
+        console.log(agendaContent)
         if(!wed.current || wed.current === undefined) {console.log("No Wed data")}
     })
 
