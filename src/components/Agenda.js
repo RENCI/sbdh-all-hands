@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Tab, Header, Item, Divider, Loader, Message, Icon, List } from 'semantic-ui-react'
-import { DateTime, Settings } from "luxon"
+import { DateTime } from "luxon"
 
 import itemLogo from './images/logos/SBDH-logo-wordless.png'
 import breakLogo from './images/CoffeeBreak_SBDH_V1-03.png'
@@ -262,45 +262,26 @@ function Agenda() {
             <Loader inverted indeterminate size="big" content='Loading' />
        </div>
     }
-
-    const eventDates = ["07-28", "07-29", "07-30"]
-    const currentDate = () => {
-        Settings.defaultZone = "America/New_York"
-        // console.log("current Date is ", DateTime.now().toFormat('LL-dd'))
-        return DateTime.now().toFormat('LL-dd')
-    }
     
     return (
-        <>
-            {
-                eventDates.includes(currentDate) ? (
-                    <div className='page-contain'>
-                        {/* Message displayed during event days */}
-                        <Message color="orange" size="small" icon>
-                            <Icon name="info" />
-                            <Message.Content style={{color: "#000"}}>
-                                <p>The All-Hands Meeting is being hosted virtually on the Airmeet platform. The first time you click the Airmeet Link, you will be asked to fill out a short name tag before joining the meeting. Additional information about navigating Airmeet is available in the Welcome Packet.</p>
-                                <List bulleted>
-                                    <List.Item>If you have not yet registered, please take a moment to <a href="/register" target="_blank">complete our registration form</a> before clicking on the Airmeet Link.</List.Item>
-                                    <List.Item>To join the meeting on Airmeet, please click <a href="https://bit.ly/AllHandsJuly_SBDH" rel="noreferrer" target="_blank">here</a>.</List.Item>
-                                    <List.Item>To view our Welcome Packet, please click <a href="https://bit.ly/AllHandsJuly_SBDH-WelcomePacket" rel="noreferrer" target="_blank">here</a>.</List.Item>
-                                </List>
-                            </Message.Content>
-                        </Message>
-            
-                        {/* Beginning of Page Content */}
-                        <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
-                        {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
-                    </div>
-                ) : (
-                    <div className='page-contain'>
-                        {/* Beginning of Page Content */}
-                        <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
-                        {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
-                    </div>
-                )
-            }
-        </>
+        <div className='page-contain'>
+            {/* Message displayed during event days */}
+            <Message color="orange" size="small" icon>
+                <Icon name="info" />
+                <Message.Content style={{color: "#000"}}>
+                    <p>The All-Hands Meeting is being hosted virtually on the Airmeet platform. The first time you click the Airmeet Link, you will be asked to fill out a short name tag before joining the meeting. Additional information about navigating Airmeet is available in the Welcome Packet.</p>
+                    <List bulleted>
+                        <List.Item>If you have not yet registered, please take a moment to <a href="/register" target="_blank">complete our registration form</a> before clicking on the Airmeet Link.</List.Item>
+                        <List.Item>To join the meeting on Airmeet, please click <a href="https://bit.ly/AllHandsJuly_SBDH" rel="noreferrer" target="_blank">here</a>.</List.Item>
+                        <List.Item>To view our Welcome Packet, please click <a href="https://bit.ly/AllHandsJuly_SBDH-WelcomePacket" rel="noreferrer" target="_blank">here</a>.</List.Item>
+                    </List>
+                </Message.Content>
+            </Message>
+
+            {/* Beginning of Page Content */}
+            <Header as='h1' className="page-title" textAlign='center' content="Event Agenda" subheader="Join us for three days of data science content and connection. The event agenda sessions are highlighted below and are subject to change. All times listed are in Eastern Daylight Time (EDT/Eastern Time)." />
+            {defaultTab !== undefined && <Tab panes={panes} defaultActiveIndex={defaultTab} />}
+        </div>
     )
 }
 
