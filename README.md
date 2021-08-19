@@ -13,7 +13,7 @@ ___
 ## How to Contribute
 If you would like to contribute to the development of this site, please propose your changes to the `master` branch via pull request(s). The `master` branch consists of what is currently live on the site so create your feature branches off of that.
 
-To develop locally, you will need `yarn` package manager. Once cloned, execute `yarn` to install the dependencies. After this is complete, run `yarn start` from the project root to run the development server on localhost which is on port 3000 by default. Thanks to the `nodemon` dev dependency, any saved changes to the source code are seen and testable in the development browser immediately.
+To develop locally, you will need `yarn` package manager. Once cloned, execute `yarn` to install the dependencies. After this is complete, run `yarn start` from the project root to run the development server on localhost which is on port 3000 by default. You may need to refresh the browser window to view and test any saved changes to the source code.
 
 You will also need two API keys from Contentful to get any agenda and speaker information to appear. Once you register for a free account on Contentful. You will need the Space ID and the Content ID for your content and then save them in a `.env` file. Make sure you don't upload that to your repo!
 
