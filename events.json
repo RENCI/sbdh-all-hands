@@ -1,0 +1,620 @@
+{
+	"data": {
+		"eventCollection": {
+			"items": [
+				{
+					"sys": {
+						"id": "29jRviZxZ8IDiZGwDxzdU5"
+					},
+					"dateStart": "2021-07-28T09:00:00.000-04:00",
+					"dateEnd": "2021-07-28T09:30:00.000-04:00",
+					"title": "Quarantine Coffee",
+					"desc": "Join us for an ice breaker to meet other attendees and familiarize ourselves with the Airmeet platform. We encourage everyone to attend to say hello to one another in a casual format and learn the finer points of Airmeet (sharing a screen, joining the speaker stage, moving between a session and the lounge area, etc.). We hope to see you soon. ",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				},
+				{
+					"sys": {
+						"id": "4bceEqxloXsCXPOIzv57JE"
+					},
+					"dateStart": "2021-07-28T09:30:00.000-04:00",
+					"dateEnd": "2021-07-28T10:30:00.000-04:00",
+					"title": "South Big Data Innovation Hub: Overview and Introduction to the Hub",
+					"desc": "Learn about the programs, resources, and opportunities available to educators, researchers, industry, and government partners through the South Big Data Innovation Hub.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Srinivas Aluru"
+							},
+							{
+								"speakerName": "Stanley C. Ahalt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "nzbP1jaWca0RVr3t86Mg9"
+					},
+					"dateStart": "2021-07-28T10:30:00.000-04:00",
+					"dateEnd": "2021-07-28T11:00:00.000-04:00",
+					"title": "South Hub Priority Track Overviews: What to Expect Day 1",
+					"desc": "Track Captains will introduce their tracks, discuss key participants and share who should attend and what they will gain. ",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Eva Campo"
+							},
+							{
+								"speakerName": "Madhav Marathe"
+							},
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Niall Gaffney"
+							},
+							{
+								"speakerName": "Patrick Sullivan"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "1EokYb9XzG4AxWLBmOxWy5"
+					},
+					"dateStart": "2021-07-28T11:00:00.000-04:00",
+					"dateEnd": "2021-07-28T11:30:00.000-04:00",
+					"title": "BLB: Booth, Lounge & Break Time",
+					"desc": "Visit our Booths to meet programs and engage with initiatives around the country. You can also head to the lounge to interact with other attendees.",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				},
+				{
+					"sys": {
+						"id": "6i59iIGj6eDspxng5qdkQj"
+					},
+					"dateStart": "2021-07-28T11:30:00.000-04:00",
+					"dateEnd": "2021-07-28T13:00:00.000-04:00",
+					"title": "Track 1: Data Science Education and Workforce",
+					"desc": "Learn how governments, industry, and academic programs around the world are responding to the global need for Data and AI talent. Take advantage of insights from researchers, practitioners, and educators on how to provide Data Science and Artificial Intelligence training for the modern workplace. Sessions include: Data Science Education Programs in the U.S. and Empowering Data Science Workforce.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Melvin Greer"
+							},
+							{
+								"speakerName": "R. N. Uma"
+							},
+							{
+								"speakerName": "Andrew Zieffler"
+							},
+							{
+								"speakerName": "Ann McKenna"
+							},
+							{
+								"speakerName": "Charles Isbell"
+							},
+							{
+								"speakerName": "Rebecca Nugent"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "65hJnJQUeLhVJ6g6fn4jaq"
+					},
+					"dateStart": "2021-07-28T12:15:00.000-04:00",
+					"dateEnd": "2021-07-28T13:45:00.000-04:00",
+					"title": "Track 2: Materials and Advanced Manufacturing",
+					"desc": "Learn about materials microstructure data and the different projects around the globe working on building data hubs to support its use, primarily in developing newer and stronger materials for buildings, energy, and compute. Sessions include: Finding and sharing materials data and software with the NIST Materials Resource Registry.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Eva Campo"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							},
+							{
+								"speakerName": "Chandler Becker"
+							},
+							{
+								"speakerName": "Daniel Wheeler"
+							},
+							{
+								"speakerName": "Christoph Berl"
+							},
+							{
+								"speakerName": "Sven Voigt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "2R4vLgkVtYAyO1h9BVHgIg"
+					},
+					"dateStart": "2021-07-28T13:00:00.000-04:00",
+					"dateEnd": "2021-07-28T14:30:00.000-04:00",
+					"title": "Track 3: The Science of Team Science",
+					"desc": "Learn more about Team Science for improving collaboration in Data Science teams. Challenges mount when people collaborate across disciplines with different terminology and group dynamics. This track will discuss common challenges and tools to mitigate. ",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Steve Fiore"
+							},
+							{
+								"speakerName": "Chris Lenhardt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "6V5Y4cCk6nV8gWpgHIl0Z1"
+					},
+					"dateStart": "2021-07-28T13:45:00.000-04:00",
+					"dateEnd": "2021-07-28T15:15:00.000-04:00",
+					"title": "Track 4: Smart and Resilient Cities",
+					"desc": "Learn how researchers are advancing smart cities initiatives such as access to transportation, basic amenities, emergency services, smart grids, and more.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Madhav Marathe"
+							},
+							{
+								"speakerName": "Samarth Swarup"
+							},
+							{
+								"speakerName": "Munindar Singh"
+							},
+							{
+								"speakerName": "Wenwen Zhang"
+							},
+							{
+								"speakerName": "Clio Andris"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "6on5BxslpURSDP5DdwPNO6"
+					},
+					"dateStart": "2021-07-28T14:30:00.000-04:00",
+					"dateEnd": "2021-07-28T16:00:00.000-04:00",
+					"title": "Track 5: Data Sharing and Cyberinfrastructure",
+					"desc": "Learn about data sharing and cyberinfrastructure projects handling data of all kinds and the differences needed to handle data from various fields.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Niall Gaffney"
+							},
+							{
+								"speakerName": "Weijia Xu"
+							},
+							{
+								"speakerName": "Nirav Merchant"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "4KyP5KSf3o6fvlxdPERnyo"
+					},
+					"dateStart": "2021-07-28T15:15:00.000-04:00",
+					"dateEnd": "2021-07-28T16:45:00.000-04:00",
+					"title": "Track 6: Health Disparities",
+					"desc": "Learn about projects using rich data to fight health inequities in diseases such as HIV/AIDS, CoVid-19, and Cardiovascular Disease, and engage with researchers to directly gain access to high quality data on social determinants of health. ",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Patrick Sullivan"
+							},
+							{
+								"speakerName": "Nicole Hood"
+							},
+							{
+								"speakerName": "Adam Vaughan"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "5SIPVSWmbZ0Yeymh81w9fT"
+					},
+					"dateStart": "2021-07-29T09:00:00.000-04:00",
+					"dateEnd": "2021-07-29T09:30:00.000-04:00",
+					"title": "Networking with the Hub",
+					"desc": "Network with fellow attendees by utilizing our 1-on-1 speed networking feature, hosting small discussions in the lounge, and registering your interest at over 25 booths.",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				},
+				{
+					"sys": {
+						"id": "69VHl97xgjJyOqMcOi94Pe"
+					},
+					"dateStart": "2021-07-29T09:30:00.000-04:00",
+					"dateEnd": "2021-07-29T10:30:00.000-04:00",
+					"title": "National Science Foundation Panel",
+					"desc": "Join big data experts to discuss the latest data science advancements, techniques and strategies within federal agencies.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Henry Kautz"
+							},
+							{
+								"speakerName": "Martin Halbert"
+							},
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Shannon McKeen"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "6MIQugXxBhXb1JNENkjho5"
+					},
+					"dateStart": "2021-07-29T10:30:00.000-04:00",
+					"dateEnd": "2021-07-29T11:00:00.000-04:00",
+					"title": "South Hub Priority Track Overviews: What You Missed",
+					"desc": "Track Captains share takeaways and action items from Day 1 while encouraging attendees how to engage in Day 2.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Melvin Greer"
+							},
+							{
+								"speakerName": "Samarth Swarup"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							},
+							{
+								"speakerName": "Steve Fiore"
+							},
+							{
+								"speakerName": "Niall Gaffney"
+							},
+							{
+								"speakerName": "Patrick Sullivan"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "uxAH5fgO8WIBsg8CQR3gv"
+					},
+					"dateStart": "2021-07-29T11:00:00.000-04:00",
+					"dateEnd": "2021-07-29T11:30:00.000-04:00",
+					"title": "BLB: Booth, Lounge & Break Time",
+					"desc": "Visit our Booths to meet programs and engage with initiatives around the country. You can also head to the lounge to interact with other attendees.",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				},
+				{
+					"sys": {
+						"id": "4SHsPG7qfEK4uM19vbUaF7"
+					},
+					"dateStart": "2021-07-29T11:30:00.000-04:00",
+					"dateEnd": "2021-07-29T13:00:00.000-04:00",
+					"title": "Track 1: Data Science and Education and Workforce",
+					"desc": "Engage with researchers, practitioners, and educators on how to provide data science and artificial intelligence training for the modern workplace. Sessions include: Ethical AI from a Startup perspective, Teaching Responsible Data Science and AI, Training the Next Generation of AI Practitioners, and Data Science in Action: Live Demo.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Melvin Greer"
+							},
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Palak Agarwal"
+							},
+							{
+								"speakerName": "Eliu Huerta"
+							},
+							{
+								"speakerName": "Praveen Ashok"
+							},
+							{
+								"speakerName": "Julia Stoyanovich"
+							},
+							{
+								"speakerName": "Angela Benton"
+							},
+							{
+								"speakerName": "R. N. Uma"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "3NdHIVZoWk2BeBvYiZt36t"
+					},
+					"dateStart": "2021-07-29T12:15:00.000-04:00",
+					"dateEnd": "2021-07-29T13:45:00.000-04:00",
+					"title": "Track 2: Materials and Advanced Manufacturing",
+					"desc": "Engage with different projects around the globe working on building data hubs for materials microstructure data for use in buildings, energy, and compute.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Eva Campo"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							},
+							{
+								"speakerName": "Daniel Wheeler"
+							},
+							{
+								"speakerName": "Vahid Attari"
+							},
+							{
+								"speakerName": "Christoph Berl"
+							},
+							{
+								"speakerName": "Sven Voigt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "3019STE25SZ6YWgeO3MKbE"
+					},
+					"dateStart": "2021-07-29T13:00:00.000-04:00",
+					"dateEnd": "2021-07-29T14:30:00.000-04:00",
+					"title": "Track 3: The Science of Team Science",
+					"desc": "Engage in Team Science 201: the project thinking around convergence and transdisciplinary grants.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Steve Fiore"
+							},
+							{
+								"speakerName": "Chris Lenhardt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "5YsLbzKESjEUwUZZzczku0"
+					},
+					"dateStart": "2021-07-29T13:45:00.000-04:00",
+					"dateEnd": "2021-07-29T15:15:00.000-04:00",
+					"title": "Track 4: Smart and Resilient Cities",
+					"desc": "Engage with researchers who are advancing smart cities initiatives such as access to transportation, basic amenities, emergency services, smart grids, and more. Sessions include: India’s Smart City Mission and the Role of Internal vs. External Smartness.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Madhav Marathe"
+							},
+							{
+								"speakerName": "Samarth Swarup"
+							},
+							{
+								"speakerName": "Ralph Hall"
+							},
+							{
+								"speakerName": "Khushboo Gupta"
+							},
+							{
+								"speakerName": "Nasim Uddin"
+							},
+							{
+								"speakerName": "Jon Goodall"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "4soOh7B31JuAF7cClwux8a"
+					},
+					"dateStart": "2021-07-29T14:30:00.000-04:00",
+					"dateEnd": "2021-07-29T16:00:00.000-04:00",
+					"title": "Track 5: Data Sharing and Cyberinfrastructure",
+					"desc": "Engage with cyberinfrastructure providers and share your questions or insights from handling data in various fields.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Niall Gaffney"
+							},
+							{
+								"speakerName": "Weijia Xu"
+							},
+							{
+								"speakerName": "Nirav Merchant"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "4jwQGhwIsza1ke9F31UEBC"
+					},
+					"dateStart": "2021-07-29T15:15:00.000-04:00",
+					"dateEnd": "2021-07-29T16:45:00.000-04:00",
+					"title": "Track 6: Health Disparities",
+					"desc": "Engage with researchers and see demos on how to directly gain access to high quality health data for research as well as on social determinants of health.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Patrick Sullivan"
+							},
+							{
+								"speakerName": "Chandni Jaggi"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "1vRLkMkpEssVH6Fx0wzc86"
+					},
+					"dateStart": "2021-07-30T09:00:00.000-04:00",
+					"dateEnd": "2021-07-30T10:00:00.000-04:00",
+					"title": "Networking with the Hub",
+					"desc": "Network with fellow attendees by utilizing our 1-on-1 speed networking feature, hosting small discussions in the lounge, and registering your interest at over 25 booths.",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				},
+				{
+					"sys": {
+						"id": "7m6nfguhmdwaln1GHOX1am"
+					},
+					"dateStart": "2021-07-30T10:00:00.000-04:00",
+					"dateEnd": "2021-07-30T11:30:00.000-04:00",
+					"title": "Industry Panel",
+					"desc": "Join big data experts to discuss the latest data science advancements, techniques and strategies for those working in industry.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "F. Alex Feltus"
+							},
+							{
+								"speakerName": "Syam Hussin"
+							},
+							{
+								"speakerName": "Peter Baumgartner"
+							},
+							{
+								"speakerName": "Steven Gustafson"
+							},
+							{
+								"speakerName": "Xin Fu"
+							},
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "7M3ugVBZzBCBM5OOhhdBqD"
+					},
+					"dateStart": "2021-07-30T11:30:00.000-04:00",
+					"dateEnd": "2021-07-30T13:30:00.000-04:00",
+					"title": "Community Forum: All Hubs Moving Forward",
+					"desc": "Join us and Share! Track Captains will report out the big ideas addressed over the past three days and invite attendees to discuss action items and next steps. \n\nThis session will start as a panel and will move to the lounge to accommodate group discussion.",
+					"isBreak": false,
+					"speakersCollection": {
+						"items": [
+							{
+								"speakerName": "Renata Rawlings-Goss"
+							},
+							{
+								"speakerName": "Shannon McKeen"
+							},
+							{
+								"speakerName": "Melvin Greer"
+							},
+							{
+								"speakerName": "Steve Fiore"
+							},
+							{
+								"speakerName": "Niall Gaffney"
+							},
+							{
+								"speakerName": "Patrick Sullivan"
+							},
+							{
+								"speakerName": "Madhav Marathe"
+							},
+							{
+								"speakerName": "Samarth Swarup"
+							},
+							{
+								"speakerName": "Eva Campo"
+							},
+							{
+								"speakerName": "Zachary Trautt"
+							}
+						]
+					}
+				},
+				{
+					"sys": {
+						"id": "5MenjTg6OVcU33YqCw0Nv5"
+					},
+					"dateStart": "2021-07-30T13:30:00.000-04:00",
+					"dateEnd": "2021-07-30T14:30:00.000-04:00",
+					"title": "BLB: Booth, Lounge & Break Time",
+					"desc": "Visit our Booths to meet programs and engage with initiatives around the country. You can also head to the lounge to interact with other attendees.",
+					"isBreak": true,
+					"speakersCollection": {
+						"items": []
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,2758 @@
+{
+	"data": {
+		"speakerCollection": {
+			"items": [
+				{
+					"sys": {
+						"id": "1lKtx5ZafHnE81dM5nRm9a"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Renata Rawlings-Goss",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " currently leads the South Big Data Innovation Hub. Formerly, she worked with the White House Office of Science and Technology Policy to create the National Data Science Organizers Group, which facilitates data science groups to address national “Grand Challenge” problems.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Rawlings-Goss was awarded as a AAAS Big Data Fellow and worked with the National Science Foundation in the directorate of Computer and Information Science and Engineering (CISE-OAD) on the Big Data research program, as well as Big Data policies and priority goals for the foundation. She sat on the NITRD interagency Big Data Senior Steering group, charged with strategic planning for Big Data research funded by the federal government.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Rawlings-Goss is a biophysicist by training, where her research interests included data-driven analysis of genetic/expression variation among worldwide human populations. She is also a member of the Board of Directors for U.S.Ignite, providing innovation testbeds for expanding the reach of 5G Broadband nationwide.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "renata-rawlings-goss",
+					"speakerId": 1,
+					"speakerName": "Renata Rawlings-Goss",
+					"speakerTitle": "Executive Director",
+					"org": "South Big Data Hub",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/54eLiDSvHkkj519RjvoAnc/3e27bd4ad7e9a91028706de097e83609/renata-rawlings-goss.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "qsutsxy7v27uvCBvGjekJ"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Shannon McKeen",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " has a strong background in consulting in senior management roles for companies restructuring in the textiles space. He is an instructor in Kenan-Flagler’s online MBA program and in the undergraduate business program at Wake Forest. McKeen has 20 years of executive experience in sales, marketing, and general management, with extensive expertise in growth strategies, new products, and brand rejuvenation.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "As an entrepreneur, McKeen has worked with startup companies and with new divisions of larger companies. His work has included starting ecommerce sites in the U.S. and China and raising capital for medical products companies. He serves on the Fryeburg Academy Board of Trustees and the City of Winston-Salem Budget Advisory Council. He is a member of the National Association of Corporate Directors and the North Carolina Inception Micro Angel Fund.\n\n",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "shannon-mckeen",
+					"speakerId": 2,
+					"speakerName": "Shannon McKeen",
+					"speakerTitle": "Deputy Director",
+					"org": "South Big Data Hub",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/7tORCGknQgOvsjwbNrDLlz/c18f55ede46dad741a0606d1a72bd608/shannon-mckeen.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "5IzXGxqwjTplmP0VyJiuz0"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Madhav Marathe",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is an endowed Distinguished Professor in Biocomplexity, Director of the Network Systems Science and Advanced Computing (NSSAC) Division, Biocomplexity Institute and Initiative, and a tenured Professor of Computer Science at the University of Virginia. Dr. Marathe is a passionate advocate and practitioner of transdisciplinary team science. During his 25-year professional career, he has established and led a number of large transdisciplinary projects and groups. His areas of expertise are network science, artificial intelligence, high performance computing, computational epidemiology, biological and socially coupled systems, and data analytics.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "From January 2005 to September 2018, he was a Professor of Computer Science at Virginia Tech. Concurrently, at Virginia Tech, he was the Deputy Director (2005-2014) and then the Director (2014-2018) of the Network Dynamics and Simulation Science Laboratory at the Biocomplexity Institute of Virginia Tech. He obtained his Bachelor of Technology degree in 1989 in Computer Science and Engineering from the Indian Institute of Technology, Madras, and his Ph.D. in 1994 in Computer Science from the University at Albany -SUNY, under the supervision of Professors Harry B. Hunt III and Richard E. Stearns. Before coming to Virginia Tech in 2005, he worked in the Basic and Applied Simulation Science group (CCS-5) in the Computer and Computational Sciences Division at Los Alamos National Laboratory where he was team leader in a theory-based, advanced simulation program to represent, design, and analyze extremely large socio-technical and critical infrastructure systems. He holds adjunct appointments at Chalmers University and the Indian Institute of Public Health.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "\n\n",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "madhav-marathe",
+					"speakerId": 3,
+					"speakerName": "Madhav Marathe",
+					"speakerTitle": "Division Director, Network Systems Science and Advanced Computing",
+					"org": "University of Virginia Biocomplexity Institute",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/1q5FtHSV4L5MhD4rcXqtTX/55832c6a1d26096d83e8b0af63fbcd16/madhavmarathe_newwebsite-01.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "2P9BUuKEbPn6uB45WdFLby"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Eva Campo",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " has held faculty appointments in Europe and the US under the engineering and physical sciences umbrella. Dr. Campo’s interest in ",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "hyperlink",
+											"content": [
+												{
+													"nodeType": "text",
+													"value": "merging experiment and theory",
+													"marks": [],
+													"data": {}
+												}
+											],
+											"data": {
+												"uri": "http://www.matterdynamicslab.org/"
+											}
+										},
+										{
+											"nodeType": "text",
+											"value": " inspired the use of data analytics along with data curation and sharing towards further reuse. ",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "As a program director and Data Science Lead at the Division of Materials Research at NSF, she developed a data strategy around the materials and chemistry communities that resulted in the grass-roots effort ",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "hyperlink",
+											"content": [
+												{
+													"nodeType": "text",
+													"value": "Materials Research Data Alliance",
+													"marks": [],
+													"data": {}
+												}
+											],
+											"data": {
+												"uri": "https://www.marda-alliance.org/"
+											}
+										},
+										{
+											"nodeType": "text",
+											"value": ". She has recently catalyzed the creation of the Research Data Alliance Region of the Americas through her Ambassador role with Latin America. She continues to work with RDA to ",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "hyperlink",
+											"content": [
+												{
+													"nodeType": "text",
+													"value": "champion materials and chemistry research data worldwide",
+													"marks": [],
+													"data": {}
+												}
+											],
+											"data": {
+												"uri": "https://www.rd-alliance.org/building-common-ground-fair-microstructure-repository-0"
+											}
+										},
+										{
+											"nodeType": "text",
+											"value": ". She practices diversity “",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": "on the go",
+											"marks": [
+												{
+													"type": "italic"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": "” by enabling and facilitating participation of minorities. She has collaborated and mentored women, African Americans, Native Americans, Hispanics, and individuals with disabilities.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Campo is also the president and founder of Campostella Research and Consulting, LLC.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "eva-campo",
+					"speakerId": 4,
+					"speakerName": "Eva Campo",
+					"speakerTitle": "Adjunct Professor Department of Materials Science & Engineering",
+					"org": "University of Maryland College Park",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4Rc5c2nVl4B0TzukLsmgTh/834eb2775a7bfb14127dc26087e128aa/eva-campo.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "54MWmqwXDf85Blb4BnDRvz"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Stephen M. Fiore",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is Director, Cognitive Sciences Laboratory, and Professor with the University of Central Florida's Cognitive Sciences Program in the Department of Philosophy and School of Modeling, Simulation, and Training. He maintains a multidisciplinary research interest that incorporates aspects of the cognitive, social, organizational, and computational sciences in the investigation of learning and performance in individuals and teams. His primary area of research is the interdisciplinary study of complex collaborative cognition and the understanding of how humans interact socially and with technology.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "In 2018, Dr. Fiore was nominated to DARPA's Information Sciences and Technology (ISAT) Study Group to help the DoD examine future areas of technological development potentially influencing national security.  He has been a visiting scholar for the study of shared and extended cognition at École Normale Supérieure de Lyon in Lyon, France (2010) and he was a member of the expert panel for the Organisation for Economic Co-operation and Development's 2015 Programme for International Student Assessment (PISA) which focused on collaborative problem-solving skills. He has contributed to working groups for the National Academies of Sciences in understanding and measuring \"21st Century Skills\" and was a committee member of their \"Science of Team Science\" consensus study, as well as a member of the National Assessment of Educational Progress report on \"Collaborative Problem Solving\".",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "He is recipient of UCF's Luminary Award (2019), as recognition for his work having a significant impact on the world, and UCF's Reach for the Stars Award (2014), as recognition for bringing international prominence to the university.  As Principal Investigator and Co-Principal Investigator he has helped to secure and manage approximately $25 million in research funding. He is co-author of a book on “Accelerating Expertise” (2013) and is a co-editor of volumes on Shared Cognition (2012), Macrocognition in Teams (2008), Distributed Training (2007), and Team Cognition (2004). ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Fiore has also co-authored over 200 scholarly publications in the area of learning, memory, and problem solving in individuals and groups.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "\n\n",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "stephen-fiore",
+					"speakerId": 5,
+					"speakerName": "Steve Fiore",
+					"speakerTitle": "Director, Cognitive Science Laboratory",
+					"org": "University of Central Florida",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2t8LscSB2TxOlcikfFgwZC/3f775de488d421d2d3cb668cd2a64ffa/1517755853899.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "7iixwh1NFcq6mA7njQOEWG"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Niall Gaffney",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": "'s background largely revolves around the management and utilization of large inhomogeneous scientific datasets. Prior to that, he worked for 13 years in the role of designer and developer for the archives housed at the Space Telescope Science Institute (STScI), which holds the data from the Hubble Space Telescope, Kepler, and James Webb Space Telescope missions.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "He was also a leader in the development of the Hubble Legacy Archive, projects that harvested the 20+ years of Hubble Space Telescope data to create some of the most sensitive astronomical data products available for open research. Prior to his work at STScI, Niall was worked as \"the friend of the telescope\" for the Hobby Eberly Telescope (HET) project at the McDonald Observatory in west Texas where he started working to create systems to acquire and handle the storage and distribution of the data the HET produced.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "niall-gaffney",
+					"speakerId": 6,
+					"speakerName": "Niall Gaffney",
+					"speakerTitle": "Director of Data Intensive Computing, Office of Advanced Cyberinfrastructure / CISE",
+					"org": "Texas Advanced Computing Center",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/ovbZTNoh9P7sKosXUGlje/a95620160669d17b6074a096491fea83/niall-gaffney.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "5e2IUnG3sgWgAPpVzHzLpo"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Melvin Greer",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is the Chief Data Scientist, Americas, Intel Corporation. Dr. Greer is responsible for building Intel’s data science platform through artificial intelligence, machine learning, blockchain zero trust models and neuromorphic computing to accelerate transformation of data into a strategic asset for global enterprises. His systems and software engineering experience has resulted in patented inventions in cloud computing, synthetic biology, and IoT bio-sensors for edge analytics.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Greer is one of the 2018 LinkedIn Top 10 Voices in data science and analytics. He also received the Washington Exec inaugural Pinnacle Award as the 2018 Artificial Intelligence Executive of the Year.  Melvin received the 2017 BDPA Lifetime Achievement Award and the 2012 BEYA Technologist of the Year Award which recognize his outstanding technical contributions that have had a material impact and high value to society as a whole. Melvin is a member of the American Association for the Advancement of Science (AAAS) and U.S. National Academy of Science, Engineering and Medicine, Board of Directors.  Dr. Greer has been appointed Senior Advisor and Fellow at the FBI IT and Data Division. He is charged with accelerating the FBI mission by supporting appropriate data collection, data analytics, discovery and visualization via advanced data science and AI techniques.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Greer functions as a university professor and principal investigator where he significantly advances the body of knowledge in basic research and advanced engineering. Melvin is the award-winning author of five books, and the Managing Director of the Greer Institute for Leadership and Innovation, focused on the maturing of new leaders and the growth of future innovators. Melvin Greer has written for, or been covered by, The New Times, Washington Post, Business Times Singapore, Federal Computer Week, Forbes, Computerworld, Washington Executive and Government Computer News.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "\n\n",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "melvin-greer",
+					"speakerId": 7,
+					"speakerName": "Melvin Greer",
+					"speakerTitle": "Chief Data Scientist, Americas",
+					"org": "Intel Corporation",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4b652PK6VgFg2Ncz7DSqLM/715580f7681c2c0b1902242295ebdd6c/melvin-greer.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "4inAV4qwVbpR6R9GixKg3N"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Patrick Sullivan",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is a Charles Howard Candler Professor of Epidemiology at Emory University’s Rollins School of Public Health, the Co-Director of the Prevention Sciences Core at Emory’s Center for AIDS Research (CFAR), and a former Member of the US Presidential Advisory Council on HIV/AIDS.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Sullivan served at the Centers for Disease Control and Prevention as an EIS officer from 1994-1996, and subsequently served in CDC’s Division of HIV/AIDS Prevention as an Epidemiologist, a Team Leader and a Branch Chief.  His career has included work on HIV surveillance at the US Centers for Disease Control and Prevention, HIV vaccine research at NIH-supported HIV Vaccine Trials Network, and research on HIV prevention for MSM supported by the US NIH and CDC. ",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "He is the author of over 450 peer-reviewed publications, most of which are in infectious diseases with a focus on sexually transmitted infections including HIV, public health surveillance, and STI prevention interventions for men who have sex with men. He is the Principal Scientist of ",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "hyperlink",
+											"content": [
+												{
+													"nodeType": "text",
+													"value": "AIDSVu.org",
+													"marks": [],
+													"data": {}
+												}
+											],
+											"data": {
+												"uri": "https://aidsvu.org/"
+											}
+										},
+										{
+											"nodeType": "text",
+											"value": ", a data visualization portal that focuses on health inequities and data visualizations around HIV surveillance data.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "\n\n",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "patrick-sullivan",
+					"speakerId": 8,
+					"speakerName": "Patrick Sullivan",
+					"speakerTitle": "Charles Howard Candler Professor of Epidemiology, Rollins School of Public Health",
+					"org": "Emory University School of Medicine",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/7rhfqzufm0GIGj4A7R1qMM/c119114070337a38a090f60216091981/patrick-sullivan.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "7xbxCx6VRY4eZmWXbWtpOE"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Samarth Swarup",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a research associate professor in the Biocomplexity Institute and Initiative at the University of Virginia. Swarup earned his Ph.D. in Computer Science from the University of Illinois at Urbana-Champaign.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "samarth-swarup",
+					"speakerId": 9,
+					"speakerName": "Samarth Swarup",
+					"speakerTitle": "Research Associate Professor, Network Systems Science and Advanced Computing",
+					"org": "University of Virginia Biocomplexity Institute",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/5zO1fOijBGw8lGFTm6XXru/7cbf7b5cbcc1f6b870d7ce5531222935/samarthswarup_newwebsite-01.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "6EFFHJEYZYCY7HrRuTyUTA"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Zachary T. Trautt",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " holds the title of Materials Research Engineer in the Materials Measurement Science Division at the National Institute of Standards and Technology (NIST). ",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. Trautt plays a significant role in the Material Genome Initiative and has particular interest in the findability, accessibility, interoperability and reusability of materials data and metadata. Dr. Trautt was a study team member for the NSF-funded report on Building a Materials Data Infrastructure and served a detail assignment on the development team of the U.S. Federal Data Strategy and First Year Action Plan.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Prior to joining NIST, Dr. Trautt was a Research Assistant Professor at the School of Physics, Astronomy, and Computational Sciences at George Mason University. He completed his Ph.D. in Engineering Systems with a minor in Material Science at the Colorado School of Mines in 2009. He also completed a B.S. in Engineering Physics at the Colorado School of Mines in 2004.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "zachary-trautt",
+					"speakerId": 10,
+					"speakerName": "Zachary Trautt",
+					"speakerTitle": "Materials Research Engineer",
+					"org": "National Institute of Standards and Technology (NIST)",
+					"isTrackCaptain": true,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/SasrfkcdATfQq56biWUNb/143eed580cd413193dd925f97136b8dc/zachary-trautt.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "1DmyBtK1gIMuqISFEYADgw"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Srinivas Aluru",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a professor in the School of Computational Science and Engineering at Georgia Institute of Technology, and Executive Director for the Georgia Tech Interdisciplinary Research Institute in Data Engineering and Science. His main areas of research are high performance computing, data science, bioinformatics and systems biology, combinatorial methods in scientific computing, and string algorithms. Aluru is a Fellow of the American Association for the Advancement of Science",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "srinivas-aluru",
+					"speakerId": 11,
+					"speakerName": "Srinivas Aluru",
+					"speakerTitle": " Executive Director",
+					"org": "Institute for Data Engineering and Science ",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2k78VntpM20fOqRDUexzPH/4a01aa4951d41d34b1471670fa847e4b/Srinivas_Aluru_2017.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "6Jnmn0GkaJSBXAdyYLvTpv"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Stan Ahalt",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " has been director of the Renaissance Computing Institute (RENCI) at the University of North Carolina at Chapel Hill since September 2009. As such, he leads a team of research scientists, software and network engineers, data science specialists, and visualization experts who work closely with faculty research teams at UNC, Duke, NC State, and partners across the country. RENCI’s role is to provide enabling cyberinfrastructure to these research collaborations.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "stanley-c-ahalt",
+					"speakerId": 12,
+					"speakerName": "Stanley C. Ahalt",
+					"speakerTitle": "Director",
+					"org": "RENCI",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4kGqH8PD7kO1ODBqiyU1F4/5a78fdd209dcd9e71170994b17b278ac/stan-ahalt-2020.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "5XeRR43yBNbyPs6rX5Y3JA"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Eliu Huerta",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is Lead for Translational AI and Computational Scientist in the Data Science and Learning Division at Argonne National Laboratory. He is a theoretical astrophysicist, mathematician and computer scientist with broad research interests. He has done pioneering work at the interface of physics-inspired AI, scientific visualization and extreme scale computing for multi-messenger astrophysics, cosmology, observational astronomy, and large scale simulations that describe multi-scale and multi-physics phenomena. ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Huerta received a Master of Advanced Study in Applied Mathematics and Theoretical Physics and a PhD in Theoretical Astrophysics from the University of Cambridge, United Kingdom. He leads several NSF- and DOE-funded interdisciplinary and multi-institutional projects that focus on disruptive AI applications and advanced computing for big-data experiments. He enjoys doing translational AI research across disciplines, industry, finance and tech. His h-index is 71 and has more than 48,000 citations.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "eliu-huerta",
+					"speakerId": 13,
+					"speakerName": "Eliu Huerta",
+					"speakerTitle": "Lead for Translational AI & CASE Senior Scientist",
+					"org": "Argonne National Laboratory and The University of Chicago",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/G09cJrjKIzL18XtPZ9H1U/3b075c87b90a3485c04324b14a5e7d22/image-2.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "YA1Nt6PdXcNqcY0Fk7TNi"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. R. N. Uma",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a Professor of Computer Science in the Department of Mathematics and Physics at NC Central University, Durham, NC, USA. Her research interests include data science, scheduling and resource allocation with applications to cloud computing, robotics, wireless sensor networks, multimedia networking, and large logistics problems. Her research has spanned from purely theoretical to experimental and simulations.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Uma has published several papers in leading conferences and journals, and a book, in her areas of expertise. On the education front, she is interested in increasing the enrollment and retention of minority students, particularly in the Mathematical Sciences including Computer Science, and towards this end has implemented several federally funded projects. ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "She has served her professional community in a variety of roles including guest editor, TPC Co-Chair, and Publications Chair in addition to routine roles such as TPC Member, Reviewer and Session Chair. She received her BSc degree in Mathematics from the University of Madras, Chennai, India, her ME degree in Computer Science from the Indian Institute of Science, Bangalore, India, and her PhD degree in Computer Science from NYU Tandon School of Engineering, New York. She is a senior member of IEEE.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "r-n-uma",
+					"speakerId": 14,
+					"speakerName": "R. N. Uma",
+					"speakerTitle": "Professor of Computer Science",
+					"org": "North Carolina Central University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/3ztHldEsaZxDLgIAaJZ2up/eb6e0c733e5648e5ab916e7a233d131d/Uma.Ravanasamudram_Headshot.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "1kmYJGAlSKEo7TWajqx8c3"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Dr. F. Alex Feltus",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " received a B.Sc. in Biochemistry from Auburn University in 1992, served two years in the Peace Corps in the Fiji Islands, and then completed advanced training in biomedical sciences at Vanderbilt and Emory. He has performed research in artificial intelligence, bioinformatics, cyberinfrastructure, high-performance computing, network biology, tumor biology, agrigenomics, genome assembly, systems genetics, paleogenomics, and bioenergy feedstock genetics. Currently, Feltus is Professor in Clemson University’s Dept. of Genetics & Biochemistry and co-Founder of Praxis AI LLC. Feltus has published numerous scientific articles in peer-reviewed journals, released open source software, and taught undergrad and PhD students in bioinformatics, biochemistry, and genetics. He is funded by multiple NSF grants and is engaged in tethering together extremely smart people from diverse technical backgrounds to propel genomics research from the Excel-scale into the Exascale. You can view his research products at: ",
+											"marks": [],
+											"data": {}
+										},
+										{
+											"nodeType": "hyperlink",
+											"content": [
+												{
+													"nodeType": "text",
+													"value": "https://scholar.google.com/citations?user=8ZgERJIAAAAJ&hl=en",
+													"marks": [],
+													"data": {}
+												}
+											],
+											"data": {
+												"uri": "https://scholar.google.com/citations?user=8ZgERJIAAAAJ&hl=en"
+											}
+										},
+										{
+											"nodeType": "text",
+											"value": ".",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "f-alex-feltus",
+					"speakerId": 15,
+					"speakerName": "F. Alex Feltus",
+					"speakerTitle": "Professor, Department of Genetics and Biochemistry and Co-Founder of Praxis AI",
+					"org": "Clemson University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/73MwcCUD1YGP2vC9E9LKXA/c74a7d32ea3981808246bf98aa167c9a/feltus_headshot_in_action.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "3Wxm4365UGiqnz2F7epK4r"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Peter Baumgartner",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is a senior research data scientist in RTI's Center for Data Science. His expertise is in computational social science, focusing on natural language processing, machine learning, data visualization, and open-source technologies to solve problems with data. While at RTI, he has leveraged his technical expertise on various projects, extracting value from unstructured data sources including social media, online news articles, and verbatim text from open-ended survey questions.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "peter-baumgartner",
+					"speakerId": 16,
+					"speakerName": "Peter Baumgartner",
+					"speakerTitle": "Senior Research Data Scientist, Center for Data Science",
+					"org": "RTI International",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/444wIQUnROb9BlzUdpIEOE/deddefe9a229f5e2793c08f079aaadc4/imagecroppedsquare.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "2ejdFNniKnC5Gf9UaYktqk"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Syam Hussin",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is a leader in Data Analytics and Innovation at Credit Suisse Internal Audit, where he spent six years building up the Analytics team and onboarding cutting edge data tools into the department. He is passionate in embedding entrepreneurial and innovative spirit in his team. He has previously worked at Deloitte Consulting in London, UK, specializing in Financial Industry, and prior to that, studied Computer Science at the University of Edinburgh and Operational Research at London School of Economics.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "syam-hussin",
+					"speakerId": 17,
+					"speakerName": "Syam Hussin",
+					"speakerTitle": "Vice President, Data Analytics in Internal Audit",
+					"org": "Credit Suisse",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/5oxkSfTh0loNb9bvOe5U78/8aa00b9b39d0e122bac7f61c770c634b/IMG_1733_2__1_.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "2RYwZ4UuIPc8UtiqZaEGhR"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Ann F. McKenna",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is the Vice Dean of Strategic Advancement for the Ira A. Fulton Schools of Engineering at Arizona State University, a professor of engineering and director of the Polytechnic School, one of seven Fulton Schools. Prior to joining ASU, Dr. McKenna served as a program director at the National Science Foundation in the Division of Undergraduate Education, and was director of education improvement in the McCormick School of Engineering at Northwestern University. She was named one of nine 2019 American Society for Engineering Education (ASEE) Fellows for demonstrating outstanding contributions to engineering education. McKenna has twice been the recipient of the ASEE best overall paper award (1998 and 2011), as well as the recipient of the outstanding paper award from the IEEE/ASEE Frontiers in Education (FIE) conference (1997). Her work in the area of design education has been nationally recognized by being a best paper finalist for three consecutive years, 2009, 2010, and 2011 in the Design in Engineering Education Division of ASEE (winning the award in 2011). McKenna’s research focuses on entrepreneurial thinking in the context of engineering faculty mentorship and curricular innovations, design teaching and learning, the role of adaptive expertise in design and innovation, and more recently inclusivity in higher education engineering structures, culture and policies. McKenna received her bachelor's and master's degrees in mechanical engineering from Drexel University and doctorate from the University of California at Berkeley.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "ann-mckenna",
+					"speakerId": 18,
+					"speakerName": "Ann McKenna",
+					"speakerTitle": "Vice Dean of Strategic Advancement, Ira A. Fulton Schools of Engineering",
+					"org": "Arizona State University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/eBxtUxiXVUN2GyxKuXkBJ/44e08196b368c7ce685008e0358f3934/1625915_-_Melvin_Greer.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "6bfx5q3mVgiwcoTiWn6dPS"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Charles Isbell",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is the Dean of College of Computing at the Georgia Institute of Technology. Over the course of his career, his technical focus has been on developing artificial intelligence systems that address messy problems that violate the typical assumptions made in statistical machine learning. Over the last two decades, he has developed a body of work centered on machine learning algorithms and artificial intelligence systems that model human-like behavior, interact with humans, and ultimately influence human action. In addition to his technical contributions, Charles has served on advisory boards and focused on innovation, diversity, and educational reform.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "charles-isbell",
+					"speakerId": 19,
+					"speakerName": "Charles Isbell",
+					"speakerTitle": "Dean, College of Computing",
+					"org": "Georgia Institute of Technology",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4TtW770Dn33bUQxU3xiK7G/092582a9443a13edc368d1a7f1a327eb/download_-_Melvin_Greer.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "56hHBbrzvhhJLXGFfsR18b"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Nirav Merchant",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is the Director of the Data Science Institute at the University of Arizona / CyVerse. Over the last two decades his research has been directed towards developing scalable computational platforms for supporting open science and open innovation, with emphasis on improving research productivity for geographically distributed interdisciplinary teams. ",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "His interests include data science literacy, large-scale data management platforms, data delivery technologies, managed sensor and mobile platforms for health interventions, workforce development, and project based learning.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "nirav-merchant",
+					"speakerId": 20,
+					"speakerName": "Nirav Merchant",
+					"speakerTitle": "Director, Data Science Institute",
+					"org": "University of Arizona / CyVerse",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2vfuiMMYeJ5ozmFVmgXvDe/7043ac40c64e318de492c6c135395227/Nirav_Merchant_headshot2020_-_Nirav_Merchant.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "4WCFeTnwXqmdrYsCQBPIjO"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Weijia Xu",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a research scientist and the Manager of the Scalable Computational Intelligence group at Texas Advanced Computing Center at the University of Texas at Austin.  He received his Ph.D. from Computer Science Department at UT Austin and has been an experienced data scientist. Dr. Xu leads the group that supports large scale data driven analysis and machine learning applications using computing resources at TACC.  ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "weijia-xu",
+					"speakerId": 21,
+					"speakerName": "Weijia Xu",
+					"speakerTitle": "Research Scientist",
+					"org": "Texas Advanced Computing Center",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/7EfzED66ns4n0MRhi4In6v/48ae88fec957ca43d0a48fc3f815a7ac/Weijia_Xu_-_Weijia_Xu.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "1SaHaIeFg8unkvpqRKgqte"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Steven Gustafson",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " received his PhD in Computer Science and Artificial Intelligence, and shortly thereafter was awarded IEEE Intelligent System's \"AI's 10 to Watch\" for his work in algorithms that discover algorithms. For 10+ years at GE's corporate R&D center he was a leader in AI, successful technical lab manager, all while inventing and deploying state-of-the-art AI systems for almost every GE business, from GE Capital to NBC Universal and GE Aviation. He has over 50 publications, 13 patents, was a co-founder and Technical Editor in Chief of the Memetic Computing Journal. As the Chief Scientist at a Knowledge Platform software company, he invented and architected new AutoML and NLP microservices for industrial customers while growing an international data science and research team. With a passion for solving problems and innovation, Steven is excited about Noonum's opportunity to use AI to deliver insights and enable better decisions in financial markets and other industries.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "steven-gustafson",
+					"speakerId": 22,
+					"speakerName": "Steven Gustafson",
+					"speakerTitle": "Chief Technology Officer",
+					"org": "Noonum",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4ZkgNdUjNBKjXgTOf6Plha/76a17b4a6d057095ff628f7f5353cc1e/image001.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "4toVdUkCsAOU5AJ4sckY9A"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Andrew Zieffler",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a Senior Lecturer and researcher in the Quantitative Methods in Education program within the Department of Educational Psychology at the University of Minnesota. In a previous life he taught mathematics and A.P. Statistics at the high-school level. He currently teaches graduate-level courses in statistics, oversees the undergraduate statistics program, trains and supervises graduate students who teach statistics. Andrew has participated as a co-PI on many past and current NSF-funded statistics education research projects, including the HDR DSC-WAV project. He is the author of several papers and book chapters related to statistics and data science education, and has co-authored two textbooks that serve as an introduction to modern statistical and computational methods for students in the educational and behavioral sciences. He also serves as a co-editor of the journal Technology Innovations in Statistics Education and as a member of the Consortium for the Advancement of Undergraduate Statistics Education (CAUSE) Research Advisory Board.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "andrew-zieffler",
+					"speakerId": 23,
+					"speakerName": "Andrew Zieffler",
+					"speakerTitle": "Quantitative Methods Researcher",
+					"org": "University of Minnesota",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2DzmJX01FcNMjFghANtJ8c/4f793b6ebf7903475bc20464b0265114/ZiefflerAndrew_2017_-_Kendra_Lewis_-_Strickland.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "2E9yNYGCOsWvNOnapzumqd"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Angela Benton",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is the Founder and Chief Executive Officer of Streamlytics, a next generation data ecosystem that provides ethical, human powered data, fom today’s fastest growing communities. Prior to her role at Streamlytics she founded the first accelerator for minorities globally in 2011, NewME was acquired in December 2018.\n \nTo date, Ms. Benton has received numerous accolades, some of which include Goldman Sachs’ 100 Most Intriguing Entrepreneurs, Fast Company’s Most Creative People in Business and their Most Influential Women In Technology, Business Insiders’ 25 Most Influential African-Americans in Technology, ADWEEK’s 2020 Women Trailblazers, and many more.  She’s been featured in numerous national and international media outlets including CNN, MSNBC, Bloomberg, Inc, Forbes, Good Morning America, and the Wall Street Journal where she was a featured essayist for the paper’s 125th Anniversary edition on The Future of Entrepreneurship.\n \nAt the helm of Streamlytics, Angela continues to uncover untapped spaces in technology and innovation.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "angela-benton",
+					"speakerId": 24,
+					"speakerName": "Angela Benton",
+					"speakerTitle": "CEO",
+					"org": "Streamlytics",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/pW4Ewvae1xYNp8k481MlF/51f29ac4aee2e44bf4434fa5442360ef/L3B59O52_400x400.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "77pUWDFgipeLZh9NDzJTQ"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Rebecca Nugent",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is the Stephen E. and Joyce Fienberg Professor of Statistics & Data Science, the Associate Department Head and Co-Director of Undergraduate Studies for the Carnegie Mellon Statistics & Data Science Department, and an affiliated faculty member of the Block Center for Technology and Society. She received her PhD in Statistics from the University of Washington in 2006. Prior to that, she received her B.A. in Mathematics, Statistics, and Spanish from Rice University and her M.S. in Statistics from Stanford University. She was won several national and university teaching awards including the American Statistical Association Waller Award for Innovation in Statistics Education and serves as one of the co-editors of the Springer Texts in Statistics. She recently served on the National Academy of Sciences study on Envisioning the Data Science Discipline: The Undergraduate Perspective and is the co-chair of the current NAS study Improving Defense Acquisition Workforce Capability in Data Use. She is the Founding Director of the Statistics & Data Science Corporate Capstone program, an experiential learning initiative that matches groups of faculty and students with data science problems in industry, non-profits, and government organizations. She has worked extensively in clustering and classification methodology with an emphasis on high-dimensional, big data problems and record linkage applications. Her current research focus is the development and deployment of low-barrier data analysis platforms that allow for adaptive instruction and the study of data science as a science.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "rebecca-nugent",
+					"speakerId": 25,
+					"speakerName": "Rebecca Nugent",
+					"speakerTitle": "Stephen E. and Joyce Fienberg Professor of Statistics & Data Science",
+					"org": "Carnegie Mellon University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2nRzueKzJ28aMZ9toyfpQ7/e4ee9edf4979e2bb1c11cd63fcf34b66/nugent.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "6YseVVG5ttigNSE8nIuD9N"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Julia Stoyanovich",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is an Assistant Professor at New York University in the Department of Computer Science and Engineering at the Tandon School of Engineering, and the Center for Data Science.  Julia's research focuses on responsible data management and analysis practices: on operationalizing fairness, diversity, transparency, and data protection in all stages of the data acquisition and processing lifecycle. She established the Data, Responsibly consortium (",
+											"nodeType": "text"
+										},
+										{
+											"data": {
+												"uri": "https://dataresponsibly.github.io/"
+											},
+											"content": [
+												{
+													"data": {},
+													"marks": [],
+													"value": "https://dataresponsibly.github.io/",
+													"nodeType": "text"
+												}
+											],
+											"nodeType": "hyperlink"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": "), and served on the New York City Automated Decision Systems Task Force, by appointment from Mayor de Blasio. Julia developed and is teaching courses on Responsible Data Science at NYU (",
+											"nodeType": "text"
+										},
+										{
+											"data": {
+												"uri": "https://dataresponsibly.github.io/courses/spring20/"
+											},
+											"content": [
+												{
+													"data": {},
+													"marks": [],
+													"value": "https://dataresponsibly.github.io/courses/spring20/",
+													"nodeType": "text"
+												}
+											],
+											"nodeType": "hyperlink"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": ").  In addition to data ethics, Julia works on management and analysis of preference data, and on querying large evolving graphs. She holds M.S. and Ph.D. degrees in Computer Science from Columbia University, and a B.S. in Computer Science and in Mathematics and Statistics from the University of Massachusetts at Amherst.  Julia's work has been funded by the NSF, BSF and by industry. She is a recipient of an NSF CAREER award and of an NSF/CRA CI Fellowship.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "julia-stoyanovich",
+					"speakerId": 26,
+					"speakerName": "Julia Stoyanovich",
+					"speakerTitle": "Institute Associate Professor",
+					"org": "Center for Data Science, New York University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/1o0pUrzVngGVlIxjwKUkt2/f17f09f6fb633496c48f8a91e54039fe/stoyanovich.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "11zcEi7EOaSsbyaUpicUBd"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Xin Fu",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is a data science leader that believes in the value of data-driven decisions and winning together with team and business partners. After spending over a decade building and leading Data Science teams on product innovation at Google, Microsoft and LinkedIn, he is currently at Facebook, supporting a team of infrastructure data scientists and engineers. They scale and optimize the infrastructure that powers websites and applications used by over two billions users every month.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Xin has technical expertise in analyzing online user behavior at Web-scale to generate insights about user experience, product opportunities, and business strategies. He has a track record in building and growing high-performing team to deliver business impact and enable career transformation.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								},
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "\n\n\n",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "xin-fu",
+					"speakerId": 27,
+					"speakerName": "Xin Fu",
+					"speakerTitle": "Director of Data Science",
+					"org": "Facebook",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/734KwkNyfXxTwF7Rfk6tt5/bd0b9943b693c6d855cefcab4f9c0394/XinFUHeadshot.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "3BVPDlB00nNhJwGP4TNMux"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Praveen Ashok",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " serves as the Smart Cities Big Data Program Manager at US Ignite and brings with him a strong experience in technology, operations & project/program management working across the private, government, academic, utilities and not-for-profit sectors. At US Ignite, he works with cities and industries to create a unified, robust framework for open data platforms to facilitate ease in data sharing.\nPrior to US-Ignite, Praveen was a Technology & Innovation fellow at the New York City Mayor’s Office of Technology & Innovation where he worked along with the CTO of NYC in formulating the region’s smart city strategies and IOT guidelines, and participated in breakthrough innovative projects such as framing architecture to map IOT devices using device fingerprinting.\nFrom 2016 to 2018 he was a lead researcher working on a Con-Edison grant to pre-emptively detect leaks in gas distribution using artificial intelligence and machine learning. He also co-taught classes to graduate & undergraduate students at the Urban Infrastructure Institute at New York University.\nPrior to this, in India, Praveen worked as a Senior Design Engineer at Larsen & Toubro and was responsible for engineering, design, and research for smart cities projects. He successfully led and delivered large-scale automation projects and was responsible for overall operations, engineering, commissioning and project management.\nPraveen holds a master’s degree in Urban Systems from New York University and was commended as a Graduate Scholar.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "praveen-ashok",
+					"speakerId": 28,
+					"speakerName": "Praveen Ashok",
+					"speakerTitle": "Smart Cities Big Data Program Manager",
+					"org": "US Ignite",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/6MrqImPUQnW75LKuox6s8O/d3d1ea45ca6e8385e73a49810c00f198/praveen_-_Kendra_Lewis_-_Strickland__1_.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "3SXJQWItuq58EZBV5NaS2E"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Palak serves as a Data Scientist at US Ignite and has a background in city planning and the use of technology to answer resource allocation and policy questions. \nPrior to joining US-Ignite, Palak was the lead researcher from 2019-2021 on the Field Notes initiative by the Ian Mcharg Center for Urbanism and Ecology where she examined the international implications of the Green New Deal and green policies on the Global South and global capital dynamics.\nApart from that, Palak has been involved with helping create methods of creating new classifications using UAVs and multispectral data in the field of landscape ecology to help understand the pattern of spatial ecology of various plant species. \nPrior to this, in India, Palak managed and supervised the Parinaam Foundation account as a Project Architect where she designed 20 prototypes of varied functions for underprivileged communities by analyzing demographics and socio-economic factors to locate sites and functions. \nPalak holds a master’s degree in Landscape Architecture and Urban Spatial Analytics from University of Pennsylvania.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "palak-agarwal",
+					"speakerId": 29,
+					"speakerName": "Palak Agarwal",
+					"speakerTitle": "Data Scientist",
+					"org": "US Ignite",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/i2mfhOAynIdHDv2XdrWCY/bf86ff1abd44c7082946a2ef8cf8db93/Palak_-_Kendra_Lewis_-_Strickland.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "7bos4uMvEwNr2A6C31Hpkx"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Chris Lenhardt",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a research scientist in the Earth Data Science Group at the Renaissance Computing Institute (RENCI), UNC-CH, working at the intersection of human interactions in the environment and data science. As part of his work, he uses data and information science to facilitate the creation and sharing of scientific knowledge leveraging advanced computing and information technologies. Current projects include leading the development of geohealth-related information systems focused on contaminants in water. Throughout his career, Lenhardt has worked across a variety of science domains including bioinformatics, earth and environmental science, and social science.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": " Lenhardt’s research interests include applying sociotechnical perspectives to shed light on when science cyberinfrastructure becomes true infrastructure. Understanding the transformation of new information tools into essential elements of the scientific process is relevant to questions of data interoperability and convergent science. His research draws on the fields of information science, socioinformatics, science and technology studies, and collaborative science. Recent work explores the concept of sociotechnical readiness levels and data interoperability as a science meme.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "In his work, Lenhardt leverages his extensive experience with science data curation and science information system development. Prior to RENCI, Lenhardt led the NASA-funded Distributed Active Archive Center (DAAC) for Biogeochemical Dynamics at Oak Ridge National Laboratory. Earlier positions included serving as Associate Director for Information Services at CIESIN (Center for International Earth Science Information Network), Columbia University. In that role, he managed the archiving, metadata, and user support staff and was deputy manager of the Socioeconomic Data and Applications Center (SEDAC), another NASA-funded DAAC.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Lenhardt currently serves as a member of NOAA’s Science Advisory Board and was a past president and vice-president of ESIP (Federation for Earth Science Information Partners). Lenhardt represents RENCI in ESIP as well as in the EarthCube Council of Data Facilities (CDF).",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "chris-lenhardt",
+					"speakerId": 30,
+					"speakerName": "Chris Lenhardt",
+					"speakerTitle": "Domain Scientist, Environmental Data Science and Systems",
+					"org": "RENCI",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/4qJpncgx0xFrBC7qQ3A6Gu/97f325dde57e83df5c8533a2a731d997/Lenhardt201712.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "6cPLk0NspyKvhZh7o97fp9"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Chandler A Becker, PhD",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": ", is a materials researcher in the NIST Material Measurement Laboratory’s Office of Data and Informatics.  Dr. Becker’s focus is on developing data infrastructure, particularly tools and approaches for robust analysis and computational reproducibility.  Current work includes projects related to additive manufacturing and automotive lightweighting.  Dr. Becker is also an instructor and organizer for NIST's Carpentries tutorials and workshops.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "chandler-beck",
+					"speakerId": 31,
+					"speakerName": "Chandler Becker",
+					"speakerTitle": "Materials Researcher",
+					"org": "National Institute of Standards and Technology (NIST)",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/3PVZkIqVuZuNomU4MwOiUj/69972bfe168de636781183fea7c82bd8/image-asset.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "C0UIviumtTQpcg5dJvWVe"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Daniel Wheeler",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a computer scientist at NIST. He is a developer on a number of software projects including PyMKS, PFHub and FiPy. He is interested in the development and deployment of software and platforms for materials science applications. Daniel has a background in computational mechanics and numerical methods for solving PDEs. He is currently working on a data repository to provide quality assurance for phase field codes.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "daniel-wheeler",
+					"speakerId": 32,
+					"speakerName": "Daniel Wheeler",
+					"speakerTitle": "Computer Scientist",
+					"org": "National Institute of Standards and Technology (NIST)",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/qdb0iMKK0zaloaRJHIInH/5abb7f2fdc70bf27f28e996af2cf46c4/avatar.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "3i7OVK0nN1KUf2TvVZd786"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Chris Eberl",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is Professor of Micro and Materials Mechanics at the\nUniversity of Freiburg and Deputy Director at the Fraunhofer Institute of\nMechanics of Materials.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Chris Eberl studied materials science at the University of Stuttgart and conducted his PhD at the Max Planck Institute for Metal Research and received his doctorate in 2004 for the topic \"Fatigue of Al thin films at ultra-high frequencies\" at the University of Stuttgart. At Johns-HopkinsUniversity, he studied deformation mechanisms in nanocrystalline metals and high-temperature protective coatings within the group of Kevin Hemker. Since then, Chris Eberl is an invited visiting scientist at Johns Hopkins University in Baltimore, USA. After his PostDoc, he led a research group \"Microreliability\" at the KIT and later the group \"Meso- and Micromechanics\" at the Fraunhofer Institute for Mechanics of Materials IWM. In 2014 he became full professor at the University of Freiburg and Deputy Director at the Fraunhofer IWM. Since 2018, Chris Eberl has been a member of the founding board of the \"livMatS\" cluster of excellence - living Materials Systems - at the University of Freiburg. He was also elected scientific coordinator of the Fraunhofer Cluster of Excellence Programmable Materials in 2018. Since 2019 he is in the board of Innovation Plattform MaterDigital and from Oktober 2021 on spokesperson of the NFDI-MatWerk consortium.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "\n\n\n\n\n\n",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "christoph-berl",
+					"speakerId": 33,
+					"speakerName": "Christoph Berl",
+					"speakerTitle": "Deputy Director",
+					"org": "Fraunhofer Institute of Mechanics of Materials",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/41Qxd96IEr0bfXe9PgZxSW/cf6ca2b1086d37b7756336f65b1ceb66/chris-eberl-header.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "6SSZoK1g1simttIHsSB5Oi"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Sven Voigt",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " researched additive manufacturing while pursuing his B.S. and M.S. in Materials Science at Case Western Reserve University, and worked as an automation engineer at Zircoa, Inc. Currently, Sven is researching a materials science knowledge graph while pursuing his Ph.D. in Materials Science at Georgia Institute of Technology. This research intersects A.I. and materials informatics, automates the extraction of knowledge from data, and makes both materials data and extracted knowledge FAIR.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "sven-voigt",
+					"speakerId": 34,
+					"speakerName": "Sven Voigt",
+					"speakerTitle": "Graduate Research Assistant",
+					"org": "Georgia Institute of Technology",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/6IKTyukcFRPKkcaO34mytD/a42595ef34ccac75b074c44c1fcc47c5/Euro2_-_Sven_Voigt.JPG"
+					}
+				},
+				{
+					"sys": {
+						"id": "4KzclLn524YDTUZkpua7oy"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Henry Kautz",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is serving as Division Director for Information & Intelligent Systems (IIS) at the National Science Foundation where he leads the National AI Research Institutes program. He is a Professor in the Department of Computer Science and was the founding director of the Goergen Institute for Data Science at the University of Rochester. He has been a researcher at AT&T Bell Labs in Murray Hill, NJ, and a full professor at the University of Washington, Seattle. ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "In 2010, he was elected President of the Association for Advancement of Artificial Intelligence (AAAI), and in 2016 was elected Chair of the American Association for the Advancement of Science (AAAS) Section on Information, Computing, and Communication. His interdisciplinary research includes practical algorithms for solving worst-case intractable problems in logical and probabilistic reasoning; models for inferring human behavior from sensor data; pervasive healthcare applications of AI; and social media analytics.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "In 1989 he received the IJCAI Computers & Thought Award, which recognizes outstanding young scientists in artificial intelligence, and 30 years later received the 2018 ACM-AAAI Allen Newell Award for career contributions that have breadth within computer science and that bridge computer science and other disciplines. At the 2020 AAAI Conference he received both the Distinguished Service Award and the Robert S. Engelmore Memorial Lecture Award.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "henry-kautz",
+					"speakerId": 35,
+					"speakerName": "Henry Kautz",
+					"speakerTitle": "Division Director for Information & Intelligent Systems",
+					"org": "National Science Foundation ",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/6m4FN2wuvpbfMSDYXEdvM7/e917aefd5102bd15a6840530acd429ff/kautz-headshot-web.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "5CrkX5kPwhlGxUDSdPE6F1"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Martin Halbert",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is the NSF Science Advisor for Public Access. In this role he leads the programmatic activities of the National Science Foundation aimed at advancing the understanding and adoption of open science practices utilizing public access mechanisms, and agency efforts to ensure that research products arising from NSF-funded projects are publicly accessible.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Halbert has an interdisciplinary PhD from Emory University. His research and primary areas of expertise include digital scholarship in the humanities, research library services, and building inter-institutional collaborative alliances for new research functions. He has been principal investigator for grants and contracts totaling more than $7 million, funding more than a dozen large-scale collaborative projects among many educational institutions, with a special focus on information systems in digital humanities. He has previously worked for Emory University, Rice University, UT Austin, UNC Greensboro, the University of North Texas, and the IBM Corporation. He has also served as Dean of Libraries at both the University of North Carolina at Greensboro and the University of North Texas.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Halbert founded the ",
+											"nodeType": "text"
+										},
+										{
+											"data": {
+												"uri": "https://educopia.org/"
+											},
+											"content": [
+												{
+													"data": {},
+													"marks": [],
+													"value": "Educopia Institute",
+													"nodeType": "text"
+												}
+											],
+											"nodeType": "hyperlink"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": ", an educational nonprofit that advances the well-being of libraries by fostering the advancement of shared information systems and infrastructures. Additionally, he led one of the founding projects of the U.S. National Digital Preservation Program beginning in the first years of the 21st Century.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "martin-halbert",
+					"speakerId": 36,
+					"speakerName": "Martin Halbert",
+					"speakerTitle": "Science Advisor for Public Access",
+					"org": "National Science Foundation (NSF)",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/7dM7fgr9ov2wzHyXJwcrWf/83c23f864c72a8b441fb16f31c3d79a7/Martin_Halbert.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "3io6DFcOzKSLbph0Z9TSbc"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Adam Vaughan",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is an epidemiologist in CDC’s Division for Heart Disease and Stroke Prevention. He earned his MPH and PhD at Emory University following many years in medical device post-market research. His work at CDC focuses on the national surveillance of heart disease and stroke by generating and analyzing county-level cardiovascular disease death rates. He is also participates in CDC’s GIS Capacity Building trainings that help state and local health departments develop various skills.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "adam-vaughan",
+					"speakerId": 37,
+					"speakerName": "Adam Vaughan",
+					"speakerTitle": "Epidemiologist",
+					"org": "Centers for Disease Control and Prevention",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/MulSPvM6a0NmKk1N6G1nL/1f4b27c1b6061ea2ca0f7f738551b4f7/Headshot-Vaughan.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "5mc09xexuLed995T1Ap24u"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Chandni Jaggi",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a data analyst for the AIDSVu and HepVu projects run through Emory University in Rollins School of Public Health. She received her Bachelor of Arts degree in Community Health from Texas A&M University in 2016, and her Master of Public Health degree in Epidemiology from Rollins School of Public Health in 2018. She joined PRISM Health in 2016 as a graduate research assistant, transitioned to full-time in 2018, and is now the data analyst for the AIDSVu and Powered By projects",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "chandni-jaggi",
+					"speakerId": 38,
+					"speakerName": "Chandni Jaggi",
+					"speakerTitle": "Data Analyst, Rollins School of Public Health",
+					"org": "Emory University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/Hh2wC340hOxgxS0nE9CM4/0dc8d5b76c7f9d2a6b17d6c673289e4b/image001.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "9gAyincjPQs3o9LssQMs0"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "",
+											"nodeType": "text"
+										},
+										{
+											"data": {
+												"uri": "http://www.csc.ncsu.edu/faculty/mpsingh/"
+											},
+											"content": [
+												{
+													"data": {},
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"value": "",
+													"nodeType": "text"
+												}
+											],
+											"nodeType": "hyperlink"
+										},
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Munindar Singh",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is Alumni Distinguished Graduate Professor in the Department of Computer Science at North Carolina State University. He is a codirector of the DoD-sponsored Science of Security Lablet at NCSU, one of six nationwide. Munindar's research interests include computational aspects of sociotechnical systems. He focuses on challenges such as ethics, safety, resilience, autonomy and heterogeneity, trust, privacy, and security. His research concerns various aspects of AI and multiagent systems and allied topics in social computing and software engineering.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "munindar-singh",
+					"speakerId": 39,
+					"speakerName": "Munindar Singh",
+					"speakerTitle": "Alumni Distinguished Graduate Professor, Department of Computer Science",
+					"org": "North Carolina State University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2IW64SKrJWPEKHBVdOfddR/106dcddcefff584eee7599f65ea3a9ed/Munindar-Singh-headshot.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "1BAd37QuS1LIbLYQ1FZAeG"
+					},
+					"bio": {
+						"json": {
+							"nodeType": "document",
+							"data": {},
+							"content": [
+								{
+									"nodeType": "paragraph",
+									"content": [
+										{
+											"nodeType": "text",
+											"value": "Wenwen Zhang",
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"data": {}
+										},
+										{
+											"nodeType": "text",
+											"value": " is an assistant professor of Public Informatics in Bloustein School of Planning and Public Policy, at Rutgers University. She received her Ph.D. from Georgia Tech’s School of City and Regional Planning in 2017. She also earned Masters in City Planning, Civil Engineering, and Computational Science & Engineering from Georgia Tech. Previously, she was a research assistant at Center for Spatial Planning Analytics and Visualization (previous known as CGIS) for six years. Before joining Rutgers, she worked for three years as Assistant Professor of Urban Affairs and Planning at Virginia Tech. Her research focuses on leveraging open, big data, data science techniques and data visualization tools to address critical planning issues. Her dissertation explores the interactions between land use and transportation in the era of shared autonomous vehicles using an agent-based discrete event simulation. She has worked extensively in interdisciplinary environments to deliver techniques that can address real-world sustainability problems.",
+											"marks": [],
+											"data": {}
+										}
+									],
+									"data": {}
+								}
+							]
+						}
+					},
+					"slug": "wenwen-zhang",
+					"speakerId": 40,
+					"speakerName": "Wenwen Zhang",
+					"speakerTitle": "Assistant Professor",
+					"org": "Bloustein School of Planning and Public Policy, Rutgers University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/6L3rUX1Tt1k1k9hEbyCXZb/f9001d37fa22256a89745e1247ba6ede/profile-wenwen-zhang.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "2rLFcCnZ9jggRCXpS5w95Y"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Nicole Hood",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a doctoral student in the Epidemiology department at the Rollins School of Public Health at Emory University. She earned a Bachelor of Science degree and a Bachelor of Arts degree from the University of Florida, and her Master of Public Health degree from the Epidemiology of Microbial Diseases department at Yale University. Her research interests lie in infectious diseases generally; however, she has spent the last few years working on research related to HIV/AIDS. Her latest HIV/AIDS projects have included work with AIDSVu as part of the Rollins School of Public Health.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "nicole-hood",
+					"speakerId": 41,
+					"speakerName": "Nicole Hood",
+					"speakerTitle": "PhD Student, Rollins School of Public Health",
+					"org": "Emory University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2PIJwIX3SYY7PLZ5VgbZg3/a5f294497c394d7758d7b43424e60287/Hood_Photo.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "6n7nGeBSgd3zp7idVbgDAp"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Ralph Hall",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is an Associate Professor in the Urban Affairs and Planning (UAP) program at Virginia Tech, the Associate Director of the School of Public and International Affairs (SPIA), and the Director of SPIA’s Undergraduate Programs. Dr. Hall’s areas of expertise lie in several domains that are connected by the underlying goal of making progress towards more sustainable forms of development. Dr. Hall has over two decades of academic and professional experience in applying the concept of sustainable development to infrastructure systems in developed and developing regions.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "ralph-hall",
+					"speakerId": 42,
+					"speakerName": "Ralph Hall",
+					"speakerTitle": "Associate Director, School of Public and International Affairs",
+					"org": "Virginia Tech",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/Xih8Cmh7sIUXJ923QRxJJ/d93150da335bd0c0c03112738f57c286/Ralph_Hall_small.jpg"
+					}
+				},
+				{
+					"sys": {
+						"id": "4RR6kBFuSKI34FxCJEcJmT"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Dr. Khushboo Gupta",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " presently works with the Alliance for an Energy Efficient Economy as a Senior Research Associate in the Buildings and Communities Sector. Dr. Gupta has more than five years of experience in smart city planning in India. She has also briefly worked on projects related to youth and inclusive cities. Dr. Gupta has a Ph.D. in Planning, Governance, and Globalization from the School of Public and International Affairs at Virginia Tech. Her doctoral studies focused on smart city implementation in developing nations. She also has a Master’s degree in Civil Engineering from the Indian Institute of Technology Kanpur.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "khushboo-gupta",
+					"speakerId": 43,
+					"speakerName": "Khushboo Gupta",
+					"speakerTitle": "Senior Research Associate, Buildings and Communities Sector",
+					"org": "Alliance for an Energy Efficient Economy",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/6gBOC2JHfbciU1SCPEQYm5/0fc1be9407929b8eefa47df7ef23b88a/khusboo.png"
+					}
+				},
+				{
+					"sys": {
+						"id": "7lG54P1qM1glx2F7CvSsoa"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Clio Andris",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is an assistant professor in the School of City and Regional Planning and the School of Interactive Computing at Georgia Tech. Her research is on mathematical models of social networks, social flows, and interpersonal relationships in geographic space, applied to issues of urban planning, visualization, transportation and geography. She teaches GIScience classes at multiple levels including Environmental GIS and Spatial Network Analysis, as well as classes on Information Visualization. She is a member of the Center for Spatial Planning Analytics and Visualization (CSPAV) and an affiliate of the Center for Quality Growth and Regional Development (CQGRD). She is also a member of the School of Interactive Computing's Information Visualization research group. She received her PhD from MIT in 2011 in Urban Information Systems where she was an NDSEG fellow and member of the Sense",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "italic"
+												}
+											],
+											"value": "able",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " City Lab. She held postdoctoral positions at the Singapore-MIT Alliance for Research and Technology (SMART) at the Santa Fe Institute.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "clio-andris",
+					"speakerId": 44,
+					"speakerName": "Clio Andris",
+					"speakerTitle": "Assistant Professor, City & Regional Planning and Interactive Computing",
+					"org": "Georgia Institute of Technology",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/7EDekUlQirKBpHDW2HMYLr/355d1bbb036e57765b25f5d1b29f2b95/clio-profile-hero.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "XUhFyUVdtgieY8XGwtYqL"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Jonathan Goodall",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a professor of civil engineering in the Department of Engineering Systems and Environment at the University of Virginia (UVA). He is a water resources engineer and works to advance the field of hydroinformatics where data and computational science are used to improve the understanding, forecasting, management of water systems. Much of his current work is focused on adapting techniques from cyber-physical systems for real-time flood mitigation in coastal urban communities experiencing sea level rise impacts. Professor Goodall is the Associate Director of the interdisciplinary LINK LAB within UVA's Engineering School, leading their Smart Cities research area, and directs the Hydroinformatics Research Group housed in the Link Lab. He is a member of UVA's Pan-University Environmental Resilience Institute steering committee, is an affiliated faculty member of the Center for Transportation Studies, and serves on the advisory board for the non-profit Center for Civic Innovation. Professor Goodall is a registered Professional Engineer (PE) and was elected Fellow of the American Society of Civil Engineers in 2018.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "jon-goodall",
+					"speakerId": 45,
+					"speakerName": "Jon Goodall",
+					"speakerTitle": "Associate Director, Link Lab",
+					"org": "University of Virginia",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/2P8mOrgKVIzrfWXLhG9OL/b10aa83dfae4574ee6856e5a8b2fcedb/goodall_2.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "6c6gvYRWvVCn4VyqbYdZzm"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Nasim Uddin's",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " research focuses on high performance resilient and\nsustainable infrastructure, natural hazard analyses and disaster risk reduction, and structural safety of bridge and building structure. Dr. Uddin is a leading researcher in the field of panelized construction for flood, earthquake and hurricane resistant design, and implementation of advanced composites and sensors for hazard resistant structures against earthquake, blast, flood and hurricane loading.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "He has led over 50 research projects, and his major research sponsors include NSF, FHWA, US DOT, ALDOT, and UTCA. Dr. Uddin is the author/co-author of seven books, over 200 papers, served as principal or co-principal investigator on research projects whose cumulative funding exceeds $10.0 million, and directed about 50 Doctoral and Master's theses based on the sponsored research projects.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "nasim-uddin",
+					"speakerId": 46,
+					"speakerName": "Nasim Uddin",
+					"speakerTitle": "Professor",
+					"org": "University of Alabama Birmingham",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/294Z6a99HkUTvaRKnYjUIN/a941f53d5a71d383f4413b6d16c15c3d/Nasim-Uddin-h.jpeg"
+					}
+				},
+				{
+					"sys": {
+						"id": "3n7Zd9rgTqqTsl7nep2Q5m"
+					},
+					"bio": {
+						"json": {
+							"data": {},
+							"content": [
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [
+												{
+													"type": "bold"
+												}
+											],
+											"value": "Vahid Attari",
+											"nodeType": "text"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " is a Senior Postdoctoral Fellow in the Department of Materials Science and Engineering at the Texas A&M University, a Materials Engineer at Multimatic Inc., Canada, and current organizer of the computational thermodynamics and kinetics symposium during the upcoming TMS2022 conference in Anaheim, California, USA. He has been a member of the Chemistry and Physics ofMaterials Committee of the TMS community since 2019.",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "Dr. Attari has a broad research background in computational materials that spans several disciplines in academia and industry, focused on the future of electronic and energy materials. He has developed phase-field models of phase transitions in several key electronic (Cu/Sn/Cu interconnects), energy (Mg2SnSi thermoelectrics), and high-temperature coating (Ti-based nitrides) materials and created one of the largest synthetic microstructure databases using the phase-field approach. This microstructure data is currently curated in the Open Phase-filed Microstructure Database hosted on the ",
+											"nodeType": "text"
+										},
+										{
+											"data": {
+												"uri": "https://microstructures.net"
+											},
+											"content": [
+												{
+													"data": {},
+													"marks": [],
+													"value": "https://microstructures.net",
+													"nodeType": "text"
+												}
+											],
+											"nodeType": "hyperlink"
+										},
+										{
+											"data": {},
+											"marks": [],
+											"value": " website. ",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								},
+								{
+									"data": {},
+									"content": [
+										{
+											"data": {},
+											"marks": [],
+											"value": "\n\n\n\n\n\n",
+											"nodeType": "text"
+										}
+									],
+									"nodeType": "paragraph"
+								}
+							],
+							"nodeType": "document"
+						}
+					},
+					"slug": "vahid-attari",
+					"speakerId": 47,
+					"speakerName": "Vahid Attari",
+					"speakerTitle": "Senior Postdoctoral Fellow",
+					"org": "Texas A&M University",
+					"isTrackCaptain": false,
+					"speakerPic": {
+						"url": "https://images.ctfassets.net/zcfboj70eswd/31Y6rji6aVpexmK8V43fTP/41429edb32e50d24b00461f13cd1a64f/profile_pic_vahid-1-768x721.png"
+					}
+				}
+			]
+		}
+	}
+}
