@@ -1,15 +1,24 @@
-import classes from './footer.module.css'
+import { Sheet } from '@mui/joy'
 import { Brand } from '../brand'
 
 //
 
 export const Footer = () => {
   return (
-    <footer className={ classes.footer }>
+    <Sheet component="footer" sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '1rem',
+      backgroundColor: '#f3752133',
+      borderTop: '2px solid var(--color-sbdh)',
+      padding: '1rem',
+      color: '#333',
+    }}>
       <span>
         &copy; { new Date().getFullYear() }
       </span>
       <Brand compass size="tiny" />
-    </footer>
+    </Sheet>
   )
 }
