@@ -39,7 +39,7 @@ body {
 
  main {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 1rem 2rem;
   flex: 1;
@@ -52,7 +52,7 @@ a {
 
 
 a:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.1);
 }
 
 em {
