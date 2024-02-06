@@ -1,25 +1,28 @@
 import PropTypes from 'prop-types'
 import { Link } from '../link'
-import renciLogo from '../../images/renci-logo.png'
-import renciLogoDark from '../../images/renci-logo-dark.png'
+import sbdhLogo from '../../images/sbdh-logo.png'
+import sbdhCompass from '../../images/sbdh-compass.png'
 
 const SIZES = {
-  tiny: 40,
-  small: 80,
-  medium: 150,
-  large: 200,
+  tiny: 30,
+  small: 120,
+  medium: 180,
+  large: 225,
 }
 
-export const Brand = ({ size, dark }) => {
+export const Brand = ({ size, compass = false }) => {
 
   return (
     <Link to="/">
-      <img src={dark ? renciLogoDark : renciLogo} width={ SIZES?.[size] || SIZES.large } />
+      <img
+        src={ compass ? sbdhCompass : sbdhLogo }
+        width={ SIZES?.[size] || SIZES.large }
+      />
     </Link>
   )  
 }
 
 Brand.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  dark: PropTypes.bool,
+  compass: PropTypes.bool,
 }

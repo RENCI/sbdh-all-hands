@@ -3,11 +3,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(
-    210deg,
-    #444,
-    #111
-  );
+  background-color: #f3752133;
+  border-top: 2px solid var(--color-sbdh);
   padding: 1rem;
-  color: #ddd;
+  color: #333;
 }

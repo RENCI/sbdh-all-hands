@@ -1,5 +1,8 @@
-# Home
+# Partnership Forum
 
-*Officia officia* qui laborum duis [mollit anim](/about) ullamco tempor qui tempor esse. Est eiusmod tempor enim reprehenderit magna voluptate minim sunt nostrud eu aute consequat id. Excepteur proident pariatur proident veniam aliqua deserunt non elit voluptate in tempor. Id dolore exercitation exercitation ad reprehenderit aute. Laborum cillum aute qui cillum in fugiat Lorem ipsum.
+_[The South Big Data Hub](//southbigdatahub.org/) will host an invite-only Partnership Forum at the Sheraton Suites of Old Town Alexandria from April 18 - 19, 2024._
 
-Fugiat minim est [consectetur](https://example.com/) elit ut dolor minim dolore sint fugiat fugiat. Officia officia incididunt pariatur ipsum nulla anim eiusmod eu reprehenderit. Labore sint cillum amet laborum velit consequat aliquip amet commodo velit ea. Ullamco minim ea deserunt pariatur commodo duis ex velit. Quis dolore excepteur irure elit ex ut nisi ex ut enim exercitation sint laborum.
+Attendees will have the chance to discover new partners and funding opportunities while networking with big data influencers from industry, academia, nonprofits, and government.
+The event includes three focused sessions — clean energy manufacturing, health equity, and smart cities and the environment — that will all feature the cross-cutting themes of education and workforce, and data sharing and cyberinfrastructure.
+
+If you are interested in receiving an invitation to the event, please reach out to Jessica Natonick. More information coming soon!

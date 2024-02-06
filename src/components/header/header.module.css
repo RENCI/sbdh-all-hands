@@ -6,11 +6,12 @@
   background: linear-gradient(
     210deg,
     #fff,
-    #ccc
+    #f3752133
   );
   color: #222;
   container-type: inline-size;
   width: 100%;
+  border-bottom: 2px solid #f37521;
 }
 
 .overlay {
@@ -19,21 +20,4 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  background-color: #fff2;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  33% {
-    transform: rotate(65deg);
-  }
-  100% {
-    transform: rotate(60deg);
-  }
-}
-
-.reactLogo {
-  animation: spin infinite 1000ms ease-out;
 }

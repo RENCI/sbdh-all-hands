@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import {
-  AboutView,
   HomeView,
   NotFoundView,
 } from './views'
@@ -15,11 +14,6 @@ const menuOptions = [
     path: '/',
     label: 'Home',
     view: <HomeView />,
-  },
-  {
-    path: '/about',
-    label: 'About',
-    view: <AboutView />,
   },
 ]
 

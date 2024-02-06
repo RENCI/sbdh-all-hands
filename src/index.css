@@ -4,22 +4,7 @@
   --color-bg: #eee;
   --color-text: #222;
   
-  --color-renci: #00758d;
-  --color-unc: #4b9cd3;
-
-  --color-unc-carolina-blue: #4b9cd3;
-  --color-unc-navy: #13294b;
-  --color-unc-black: #151515;
-  --color-unc-white: #ffffff;
-  --color-unc-gray: #f8f8f8;
-  --color-unc-basin-slate: #4f758b;
-  --color-unc-campus-sandstone: #f4e8dd;
-  --color-unc-longleaf-pine: #00594c;
-  --color-unc-azalea-pink: #ef426f;
-  --color-unc-tile-teal: #00a5ad;
-  --color-unc-sunburst-yellow: #ffd100;
-  --color-unc-davie-green: #c4d600;
-  --color-unc-hyperlink-blue: #007fae;
+  --color-sbdh: #f37521;
 }
 
 *, *::before, *::after {
@@ -54,18 +39,22 @@ body {
 
  main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 1rem 2rem;
   flex: 1;
 }
 
 a {
-  color: var(--color-renci);
+  color: var(--color-sbdh);
   transition: filter 250ms;
 }
 
 
 a:hover {
   filter: brightness(1.5);
+}
+
+em {
+  font-weight: 300;
 }
