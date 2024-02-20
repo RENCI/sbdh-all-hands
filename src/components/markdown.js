@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Link } from './link'
-
+import { Typography, List, ListItem } from '@mui/joy'
 /*
  * this object defines a map,
  *   DOM elements -> React components,
@@ -12,9 +12,22 @@ import { Link } from './link'
  */
 const componentMap = {
   // replace links (<a /> tags) with our "smart" Link component.
-  a: ({ href, ...props }) => (
+  a: ({ node, href, ...props }) => (
     <Link to={ href } { ...props } />
   ),
+  p: ({ node, children, ...props }) => (
+    <Typography level="body-md" gutterBottom {...props}>{children}</Typography>
+  ),
+  h1: ({ node, children, ...props }) => (
+    <Typography level="h1" gutterBottom sx={{martinTop: '1rem'}} {...props}>{children}</Typography>
+  ),
+  ul: ({ node, children, ...props }) => (
+    <List marker="disc" {...props}>{children}</List>
+  ),
+  li: ({ node, children, ...props }) => (
+    <ListItem {...props}>{children}</ListItem>
+  ),
+  
 }
 
 export const Markdown = props => {
