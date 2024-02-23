@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
-
+import { Menu } from './components/menu'
 import {
   HomeView,
   NotFoundView,
@@ -35,7 +35,7 @@ export const App = () => {
   return (
     <Fragment>
       <Header menuLinks={ menuOptions } />
-      
+      <Menu options={ menuOptions } />
       <main>
         <Routes>
           {
