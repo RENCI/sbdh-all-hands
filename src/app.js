@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom'
 import {
   HomeView,
   NotFoundView,
+  RegistrationView,
+  AgendaView
 } from './views'
 
 import { Header } from './components/header'
@@ -14,6 +16,16 @@ const menuOptions = [
     path: '/',
     label: 'Home',
     view: <HomeView />,
+  },
+  {
+    path: '/registration',
+    label: 'Registration',
+    view: <RegistrationView />,
+  },
+  {
+    path: '/agenda',
+    label: 'Agenda',
+    view: <AgendaView />,
   },
 ]
 
