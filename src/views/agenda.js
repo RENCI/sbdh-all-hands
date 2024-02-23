@@ -1,4 +1,7 @@
-import content from '../content/agenda.md'
+import content from '../content/agenda/index.md'
+import day1agenda from '../content/agenda/day1.md'
+import day2agenda from '../content/agenda/day2.md'
+import day3agenda from '../content/agenda/day3.md'
 import { Box, Stack, Button, Tabs, TabList, TabPanel, Table, Typography } from '@mui/joy'
 import Tab, { tabClasses } from '@mui/joy/Tab';
 
@@ -27,51 +30,13 @@ export const AgendaView = () => {
             <Tab>Saturday, April 20</Tab>
           </TabList>
           <TabPanel value={0}>
-            <Table>
-              <tbody>
-                <tr>
-                  <td><Typography>9:00 - 1:00</Typography></td>
-                  <td><Typography>Partnerships for Health Equity Focused Session</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>1:00 - 2:00</Typography></td>
-                  <td><Typography>Lunch Presentation</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>2:00 - 6:00</Typography></td>
-                  <td><Typography>Partnerships for Smart Cities + the Environment Focused Session</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>6:00 - 8:00</Typography></td>
-                  <td><Typography>Networking Reception</Typography></td>
-                </tr>
-              </tbody>
-            </Table>
+            <Markdown>{day1agenda}</Markdown>
           </TabPanel>
           <TabPanel value={1}>
-            <Table>
-              <tbody>
-                <tr>
-                  <td><Typography>9:00 - 1:00</Typography></td>
-                  <td><Typography>Partnerships for Clean Energy and Manufacturing Focused Session</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>1:00 - 2:00</Typography></td>
-                  <td><Typography>Lunch Presentation</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>2:00 - 6:00</Typography></td>
-                  <td><Typography>Partnerships for HBCU Data Science (Joint session with the HBCU Data Science Consortium)</Typography></td>
-                </tr>
-                <tr>
-                  <td><Typography>6:00 - 8:00</Typography></td>
-                  <td><Typography>HBCU Data Science Consortium Co-located event begins. Note that this is a separate event with separate registration.</Typography></td>
-                </tr>
-              </tbody>
-            </Table>
+            <Markdown>{day2agenda}</Markdown>
           </TabPanel>
           <TabPanel value={2} sx={{minHeight: '200px'}}>
-            <Typography>HBCU Data Science Consortium Co-located event continues. Note that this is a separate event with separate registration. </Typography>
+            <Markdown>{day3agenda}</Markdown>
           </TabPanel>
         </Tabs>  
       </Box>
