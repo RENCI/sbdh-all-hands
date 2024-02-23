@@ -1,4 +1,4 @@
-|  |  |
+| Time | Session |
 | --- | --- |
 | 9:00 - 1:00 | Partnerships for Health Equity Focused Session |
 | 1:00 - 2:00 | Lunch Presentation |

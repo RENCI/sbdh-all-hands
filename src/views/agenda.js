@@ -16,7 +16,7 @@ export const AgendaView = () => {
       <Box sx={{display: 'flex', justifyContent: 'center', margin: '1.2rem 0'}}>
         <Tabs aria-label="Agenda Tabs" defaultValue={0}
           sx={{
-            width: 800,
+            width: '100%',
             borderRadius: 'lg',
             boxShadow: 'sm',
             overflow: 'auto',
@@ -35,7 +35,7 @@ export const AgendaView = () => {
           <TabPanel value={1}>
             <Markdown>{day2agenda}</Markdown>
           </TabPanel>
-          <TabPanel value={2} sx={{minHeight: '200px'}}>
+          <TabPanel value={2} sx={{minHeight: '230px'}}>
             <Markdown>{day3agenda}</Markdown>
           </TabPanel>
         </Tabs>  

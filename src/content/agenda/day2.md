@@ -1,4 +1,4 @@
-|  |  |
+| Time | Session |
 | --- | --- |
 | 9:00 - 1:00 | Partnerships for Clean Energy and Manufacturing Focused Session |
 | 1:00 - 2:00 | Lunch Presentation |
