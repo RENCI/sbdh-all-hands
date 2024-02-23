@@ -2,10 +2,7 @@ import content from '../content/agenda/index.md'
 import day1agenda from '../content/agenda/day1.md'
 import day2agenda from '../content/agenda/day2.md'
 import day3agenda from '../content/agenda/day3.md'
-import { Box, Stack, Button, Tabs, TabList, TabPanel, Table, Typography } from '@mui/joy'
-import Tab, { tabClasses } from '@mui/joy/Tab';
-
-import { Link } from '../components/link'
+import { Box, Tabs, TabList, Tab, TabPanel, Typography } from '@mui/joy'
 import { Markdown } from '../components/markdown'
 
 export const AgendaView = () => {
