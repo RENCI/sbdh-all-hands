@@ -17,6 +17,7 @@ export const Brand = ({ size, compass = false }) => {
       <img
         src={ compass ? sbdhCompass : sbdhLogo }
         width={ SIZES?.[size] || SIZES.large }
+        alt="South Big Data Hub Logo"
       />
     </Link>
   )  

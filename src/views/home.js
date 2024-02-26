@@ -79,6 +79,7 @@ export const HomeView = () => {
           <img
             className="focused-session-image"
             src={focusedSessionsImg}
+            alt="Click for large, high-resolution image"
           />
         </Link>
       </Box>
