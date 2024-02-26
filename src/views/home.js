@@ -1,8 +1,8 @@
-import content from '../content/home.md'
-import { Box, Stack, Button } from '@mui/joy'
+import titleSubtitle from '../content/home/title-subtitle.md'
+import { Box, Stack } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
-import flyer from '../images/2024-04-18_save-the-date_partnership-forum.png'
+import dateBanner from '../images/blue-date-banner.png'
 
 export const HomeView = () => {
   return (
@@ -19,8 +19,7 @@ export const HomeView = () => {
           justifyContent: 'center',
           alignItems: 'center',
           '.flyer': {
-            borderRadius: 12,
-            border: '2px solid var(--color-sbdh)',
+            borderRadius: 8,
             verticalAlign: 'bottom',
           },
           'svg': {
@@ -41,23 +40,20 @@ export const HomeView = () => {
       }}
     >
       <Box className="flyer-container">
-        <Link to={ flyer }>
+        <Link to={ dateBanner }>
           <img
             className="flyer"
-            src={ flyer }
+            src={ dateBanner }
             alt="Click for large, high-resolution image"
             width="100%"
           /></Link>
       </Box>
 
       <Box className="description" >
-        <Markdown>{ content }</Markdown>
+        <Markdown>{ titleSubtitle }</Markdown>
         <Stack direction="row" gap={4} justifyContent="center" mt={2}>
           <Link button size="lg" to="https://docs.google.com/forms/d/e/1FAIpQLSdCXJLul-2ZShjKi2qHyQdMSPz3VPPJsHbuzgA0jSx4zDGfJQ/viewform">
               Register Here
-          </Link>
-          <Link button size="lg" to="https://docs.google.com/document/d/1RC1de1Tj-u_9cUONHUihtyWXy8MQq20AHMYhUGyNNX4/edit?usp=sharing">
-              View the Agenda
           </Link>
         </Stack>
       </Box>
