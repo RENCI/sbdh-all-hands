@@ -13,14 +13,15 @@ export const HomeView = () => {
     <Fragment>
       <Typography level="h1" sx={{textAlign: 'center'}}>Diverse and Digital: Advancing Digital Workforce and Data Sharing Across Domains</Typography>
       <Stack
-        direction={{ sm: 'column', md: 'row' }}
-        justifyContent="flex-start"
+        direction={{xs: 'column-reverse', sm: 'column-reverse', md: 'row' }}
+        justifyContent="start"
         gap={{ sm: 0, md: 4 }}
         sx={{
           '.flyer-container': {
             borderRadius: 12,
             mt: 2,
-            flex: '1 0 400px',
+            mb: {xs: 1, sm: 0},
+            flex: {sm: '1 0 300px', md: '1 0 500px'},
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -33,17 +34,9 @@ export const HomeView = () => {
             },
           },
           '.description': {
-            flex: { sm: '1', md: '1 1 700px'},
-            textAlign: 'left',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-start',
-            // alignItems: 'center',
-            'h1': {
-              textAlign: 'center',
-            }
+            marginTop: '1rem'
           },
-          marginBottom: '2rem'
+          marginBottom: {sm: '1rem', md: '2rem'}
         }}
       >
         <Box className="flyer-container">
@@ -58,23 +51,28 @@ export const HomeView = () => {
 
         <Box className="description" >
           <Markdown>{ titleSubtitle }</Markdown>
-          <Stack direction="row" gap={4} justifyContent="center" mt={2}>
-            <Link button size="lg" to="https://docs.google.com/forms/d/e/1FAIpQLSdCXJLul-2ZShjKi2qHyQdMSPz3VPPJsHbuzgA0jSx4zDGfJQ/viewform">
-                Register Here
+          <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Link button size="lg" to="/registration">
+              Register Here
             </Link>
-          </Stack>
+          </Box>
         </Box>
       </Stack>
+      
       <Markdown>{focusedSessions}</Markdown>
+
       <Box sx={{
         display: 'flex', 
         justifyContent: 'center',
-        margin: '1rem auto',
+        margin: '1.2rem auto',
         'svg': {
           display: 'none'
         },
         '.focused-session-image': {
-          maxWidth: '600px'
+          maxWidth: '600px',
+          '@media screen and (max-width: 600px)': {
+            maxWidth: '100%'
+          }
         },
       }}>
         <Link to={focusedSessionsImg}>
