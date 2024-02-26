@@ -2,7 +2,7 @@ import titleSubtitle from '../content/home/title-subtitle.md'
 import focusedSessions from '../content/home/focused-sessions.md'
 import registrants from '../content/home/registrants.md'
 import { Fragment } from 'react'
-import { Box, Stack } from '@mui/joy'
+import { Box, Stack, Typography } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
@@ -11,6 +11,7 @@ import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
 export const HomeView = () => {
   return (
     <Fragment>
+      <Typography level="h1" sx={{textAlign: 'center'}}>Diverse and Digital: Advancing Digital Workforce and Data Sharing Across Domains</Typography>
       <Stack
         direction={{ sm: 'column', md: 'row' }}
         justifyContent="flex-start"
