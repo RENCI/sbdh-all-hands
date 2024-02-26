@@ -26,13 +26,13 @@ export const AgendaView = () => {
             <Tab>DAY 2: Friday, April 19</Tab>
             <Tab>Saturday, April 20</Tab>
           </TabList>
-          <TabPanel value={0}>
+          <TabPanel value={0} sx={{backgroundColor: '#FBFCFE'}}>
             <Markdown>{day1agenda}</Markdown>
           </TabPanel>
-          <TabPanel value={1}>
+          <TabPanel value={1} sx={{backgroundColor: '#FBFCFE'}}>
             <Markdown>{day2agenda}</Markdown>
           </TabPanel>
-          <TabPanel value={2} sx={{minHeight: '230px'}}>
+          <TabPanel value={2} sx={{backgroundColor: '#FBFCFE', minHeight: '230px'}}>
             <Markdown>{day3agenda}</Markdown>
           </TabPanel>
         </Tabs>  
