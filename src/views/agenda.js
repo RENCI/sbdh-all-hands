@@ -19,12 +19,10 @@ export const AgendaView = () => {
             overflow: 'auto',
           }}
         >
-          <TabList tabFlex={1} sx={{
-            textAlign: 'center'
-          }}>
-            <Tab>DAY 1: Thursday, April 18</Tab>
-            <Tab>DAY 2: Friday, April 19</Tab>
-            <Tab>Saturday, April 20</Tab>
+          <TabList tabFlex={1}>
+            <Tab sx={{ textAlign: 'center' }}>DAY 1: Thursday, April 18</Tab>
+            <Tab sx={{ textAlign: 'center' }}>DAY 2: Friday, April 19</Tab>
+            <Tab sx={{ textAlign: 'center' }}>Saturday, April 20</Tab>
           </TabList>
           <TabPanel value={0} sx={{backgroundColor: '#FBFCFE'}}>
             <Markdown>{day1agenda}</Markdown>
