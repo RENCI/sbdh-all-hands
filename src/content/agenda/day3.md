@@ -1,0 +1,1 @@
+HBCU Data Science Consortium Co-located event continues. Note that this is a separate event [with separate registration](http://hbcu-dsc.org/conference.html).

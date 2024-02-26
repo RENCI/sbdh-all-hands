@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Link } from './link'
-import { Typography, List, ListItem } from '@mui/joy'
+import { Typography, List, ListItem, Table } from '@mui/joy'
 /*
  * this object defines a map,
  *   DOM elements -> React components,
@@ -26,6 +26,9 @@ const componentMap = {
   ),
   li: ({ node, children, ...props }) => (
     <ListItem {...props}>{children}</ListItem>
+  ),
+  table: ({ node, children, ...props }) => (
+    <Table {...props} sx={{ '& thead th:nth-child(1)': { width: '20%' } }}>{children}</Table>
   ),
   
 }
