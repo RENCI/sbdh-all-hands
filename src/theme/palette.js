@@ -14,7 +14,6 @@ export const palette = {
     main: '#f37521',
     light: '#f8ab77',
     dark: '#e9640c',
-    contrastText: 'rgba(0, 0, 0, 0.87)',
   },
 
 }
