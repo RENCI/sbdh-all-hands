@@ -43,6 +43,30 @@ export const MailtoLink = ({ to, children }) => {
   )
 }
 
+export const InternalLink = ({ button, to, children, ...props}) => {
+  return (
+    <Fragment>
+      { button ? (
+        <Button
+          component={ReactLink}
+          to={to}
+          {...props}
+        >
+          {children}
+        </Button>
+      ) : (
+        <Fragment>
+          <MUILink
+            component={ReactLink}
+            to={ to }
+          >{ children }</MUILink>
+        </Fragment>
+      )}
+      
+    </Fragment>
+  )
+}
+
 const BaseLinkPropTypes = {
   to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
@@ -50,6 +74,7 @@ const BaseLinkPropTypes = {
 
 ExternalLink.propTypes = { ...BaseLinkPropTypes }
 MailtoLink.propTypes = { ...BaseLinkPropTypes }
+InternalLink.propTypes = { ...BaseLinkPropTypes }
 
 //
 
@@ -68,7 +93,7 @@ export const Link = ({ nav, to, children, ...props }) => {
     ? ExternalLink
       : mailtoMatch
         ? MailtoLink
-        : ReactLink
+        : InternalLink
   return <LinkComponent to={to} { ...props }>{children}</LinkComponent>
 }
 
