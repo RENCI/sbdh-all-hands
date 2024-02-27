@@ -30,7 +30,7 @@ export const AgendaView = () => {
           <TabPanel value={1} sx={{backgroundColor: '#FBFCFE'}}>
             <Markdown>{day2agenda}</Markdown>
           </TabPanel>
-          <TabPanel value={2} sx={{backgroundColor: '#FBFCFE', minHeight: '230px'}}>
+          <TabPanel value={2} sx={{backgroundColor: '#FBFCFE', minHeight: '230px', textAlign: 'center'}}>
             <Markdown>{day3agenda}</Markdown>
           </TabPanel>
         </Tabs>  
