@@ -53,5 +53,13 @@ export const components = {
       }),
     },
   },
-
+  JoyDivider: {
+    styleOverrides: {
+      // `ownerState` contains the component props and internal state
+      root: ({ ownerState, theme }) => ({
+        backgroundColor: theme.palette.secondary[900],
+        margin: '1rem 0'
+      }),
+    },
+  },
 }

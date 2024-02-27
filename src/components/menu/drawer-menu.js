@@ -82,7 +82,12 @@ export const DrawerMenu = ({ options = [] }) => {
               </li>
             ))
           }
-          <li className="list-item" onClick={ () => setOpen(false) }>
+          <li 
+            className="list-item" 
+            onClick={ () => setOpen(false) }
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <Link nav to="https://southbigdatahub.org/">
               About the South Hub
               <ExternalLinkIcon fill="#ff8300"/>
