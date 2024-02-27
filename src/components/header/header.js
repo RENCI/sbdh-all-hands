@@ -13,7 +13,7 @@ export const Header = () => {
       color: '#222',
       containerType: 'inline-size',
       width: '100%',
-      borderBottom: '2px solid #f37521',
+      borderBottom: '1px solid #f37521',
       '.overlay': {
         margin: '2rem',
         padding: '0.5rem 1rem',

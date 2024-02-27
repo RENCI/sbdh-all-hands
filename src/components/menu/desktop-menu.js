@@ -1,5 +1,5 @@
 import { Box } from '@mui/joy'
-import { Link } from '../link'
+import { Link, ExternalLinkIcon } from '../link'
 import { menuPropTypes } from './menu'
 
 //
@@ -22,6 +22,7 @@ export const DesktopMenu = ({ options = [] }) => {
           display: 'flex',
           backgroundColor: 'transparent',
           transition: 'background-color 250ms',
+          letterSpacing: '0.3px',
           '&:hover': {
             'backgroundColor': '#f3752144',
           },
@@ -31,6 +32,7 @@ export const DesktopMenu = ({ options = [] }) => {
           p: 2,
           textDecoration: 'none',
           textTransform: 'uppercase',
+          color: '#414042',
         },
         '[aria-current="page"]': {
           'backgroundColor': '#f3752133',
@@ -44,6 +46,12 @@ export const DesktopMenu = ({ options = [] }) => {
           </li>
         ))
       }
+      <li className="list-item" >
+        <Link nav to="https://southbigdatahub.org/">
+          About the South Hub
+          <ExternalLinkIcon fill="#414042"/>
+        </Link>
+      </li>
     </Box>
   )
 }

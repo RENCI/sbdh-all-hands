@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Box, Divider, Drawer, IconButton, ModalClose, Stack } from '@mui/joy'
 import { Menu as MenuIcon } from 'react-feather'
-import { Link } from '../link'
+import { Link, ExternalLinkIcon } from '../link'
 import { Brand } from '../brand'
 import { menuPropTypes } from './menu'
 
@@ -82,6 +82,12 @@ export const DrawerMenu = ({ options = [] }) => {
               </li>
             ))
           }
+          <li className="list-item" onClick={ () => setOpen(false) }>
+            <Link nav to="https://southbigdatahub.org/">
+              About the South Hub
+              <ExternalLinkIcon fill="#ff8300"/>
+            </Link>
+          </li>
         </Box>
       </Drawer>
     </Fragment>
