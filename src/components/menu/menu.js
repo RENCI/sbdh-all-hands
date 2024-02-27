@@ -15,12 +15,11 @@ export const Menu = ({ options = [] }) => {
     <Sheet
       ref={ ref }
       sx={{
-        backgroundColor: 'white',
+        backgroundColor: '#F7D387',
         display: 'flex',
-        justifyContent: 'flex-start',
+        justifyContent: { sm: 'start', md: 'center' },
         alignItems: 'center',
         height: '60px',
-        borderBottom: '1px solid #f37521',
         position: 'sticky',
         top: 0,
         overflow: 'hidden',
