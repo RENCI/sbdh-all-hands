@@ -47,7 +47,11 @@ export const components = {
         backgroundColor: theme.palette.primary[500] ,
         color: theme.palette.secondary[900],
         fontWeight: 400,
+        ':hover': {
+          backgroundColor: theme.palette.primary[700] ,
+        }
       }),
     },
   },
+
 }
