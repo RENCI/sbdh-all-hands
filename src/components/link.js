@@ -26,7 +26,7 @@ export const ExternalLink = ({ button, to, children, ...props}) => {
             target="_blank"
             rel="noopener noreferrer"
           >{ children }</MUILink>
-          <ExternalLinkIcon fill="#ff8300"/>
+          <ExternalLinkIcon fill="var(--sbdh-palette-secondary-700)"/>
         </Fragment>
       )}
       
