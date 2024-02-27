@@ -11,11 +11,25 @@ export const palette = {
     800: '#d55c0b',
     900: '#c2540a',
 
-    main: '#f37521',
+    main: '#ff8300',
     light: '#f8ab77',
     dark: '#e9640c',
+
+    solidBg: 'var(--sbdh-palette-primary-main)',
+    solidActiveBg: 'var(--sbdh-palette-primary-main)',
   },
-  solidBg: 'var(--sbdh-palette-primary-500)',
-  solidActiveBg: 'var(--sbdh-palette-primary-500)',
+
+  secondary: {
+    50: '#808EA4',
+    100: '#728199',
+    200: '#64748F',
+    300: '#566885',
+    400: '#485B7B',
+    500: '#3A4F71',
+    600: '#2C4267',
+    700: '#1E365D',
+    800: '#102953',
+    900: '#021D49',
+  }
 
 }
