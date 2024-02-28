@@ -1,4 +1,4 @@
-import { Sheet } from '@mui/joy'
+import { Sheet, Box, Typography, Container } from '@mui/joy'
 import { Brand } from '../brand'
 
 //
@@ -13,19 +13,40 @@ export const Header = () => {
       color: '#222',
       containerType: 'inline-size',
       width: '100%',
-      borderBottom: '2px solid #f37521',
+      borderBottom: '1px solid #f37521',
       '.overlay': {
-        margin: '2rem',
-        padding: '0.5rem 1rem',
+        padding: '1rem 0',
         display: 'flex',
         alignItems: 'center',
         gap: '2rem',
-      }
-
+      },
     }}>
-      <div className="overlay">
-        <Brand size="large" />
-      </div>
+      <Container maxWidth="lg">
+        <div className="overlay">
+          <Brand size="medium" />
+        </div>
+      </Container>
+
+      <Box sx={{
+        backgroundColor: "#f37521",
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}>
+        <Container maxWidth="lg">
+          <Typography level="h1" className="overlay" sx={{
+              padding: '0 2rem',
+              fontSize: '2.275rem',
+              color: 'white',
+              letterSpacing: '',
+              fontWeight: 300,
+              margin: '0'
+          }}>
+            South Big Data Innovation Hub
+          </Typography>
+        </Container>
+      </Box>
     </Sheet>
   )
 }

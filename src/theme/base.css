@@ -45,15 +45,15 @@ body {
   flex: 1;
 }
 
-a {
+/* a {
   color: var(--color-sbdh);
   transition: filter 250ms;
-}
+} */
 
 
-a:hover {
+/* a:hover {
   filter: brightness(1.1);
-}
+} */
 
 em {
   font-weight: 300;

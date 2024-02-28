@@ -1,66 +1,89 @@
-import content from '../content/home.md'
-import { Box, Stack, Button } from '@mui/joy'
+import titleSubtitle from '../content/home/title-subtitle.md'
+import focusedSessions from '../content/home/focused-sessions.md'
+import registrants from '../content/home/registrants.md'
+import { Fragment } from 'react'
+import { Box, Stack, Typography } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
-import flyer from '../images/2024-04-18_save-the-date_partnership-forum.png'
+import dateBanner from '../images/blue-date-banner.png'
+import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
 
 export const HomeView = () => {
   return (
-    <Stack
-      direction={{ sm: 'column', md: 'row' }}
-      justifyContent="flex-start"
-      gap={{ sm: 0, md: 4 }}
-      sx={{
-        '.flyer-container': {
-          borderRadius: 12,
-          mt: 2,
-          flex: '1 0 400px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          '.flyer': {
+    <Fragment>
+      <Typography level="h1" sx={{textAlign: 'center'}}>Diverse and Digital: Advancing Digital Workforce and Data Sharing Across Domains</Typography>
+      <Stack
+        direction={{xs: 'column-reverse', sm: 'column-reverse', md: 'row' }}
+        justifyContent="start"
+        gap={{ sm: 0, md: 4 }}
+        sx={{
+          '.flyer-container': {
             borderRadius: 12,
-            border: '2px solid var(--color-sbdh)',
-            verticalAlign: 'bottom',
+            mt: 2,
+            mb: {xs: 1, sm: 0},
+            flex: {sm: '1 0 300px', md: '1 0 500px'},
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            '.flyer': {
+              borderRadius: 8,
+              verticalAlign: 'bottom',
+            },
+            'svg': {
+              display: 'none'
+            },
           },
-          'svg': {
-            display: 'none'
+          '.description': {
+            marginTop: '1rem'
           },
+          marginBottom: {sm: '1rem', md: '2rem'}
+        }}
+      >
+        <Box className="flyer-container">
+          <Link to={ dateBanner }>
+            <img
+              className="flyer"
+              src={ dateBanner }
+              alt="Click for large, high-resolution image"
+              width="100%"
+            /></Link>
+        </Box>
+
+        <Box className="description" >
+          <Markdown>{ titleSubtitle }</Markdown>
+          <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Link button size="lg" to="/registration">
+              Register Here
+            </Link>
+          </Box>
+        </Box>
+      </Stack>
+      
+      <Markdown>{focusedSessions}</Markdown>
+
+      <Box sx={{
+        display: 'flex', 
+        justifyContent: 'center',
+        margin: '1.2rem auto',
+        'svg': {
+          display: 'none'
         },
-        '.description': {
-          flex: { sm: '1', md: '1 1 700px'},
-          textAlign: 'left',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'flex-start',
-          // alignItems: 'center',
-          'h1': {
-            textAlign: 'center',
+        '.focused-session-image': {
+          maxWidth: '600px',
+          '@media screen and (max-width: 600px)': {
+            maxWidth: '100%'
           }
         },
-      }}
-    >
-      <Box className="flyer-container">
-        <Link to={ flyer }>
+      }}>
+        <Link to={focusedSessionsImg}>
           <img
-            className="flyer"
-            src={ flyer }
+            className="focused-session-image"
+            src={focusedSessionsImg}
             alt="Click for large, high-resolution image"
-            width="100%"
-          /></Link>
+          />
+        </Link>
       </Box>
-
-      <Box className="description" >
-        <Markdown>{ content }</Markdown>
-        <Stack direction="row" gap={4} justifyContent="center" mt={2}>
-          <Link button size="lg" to="https://docs.google.com/forms/d/e/1FAIpQLSdCXJLul-2ZShjKi2qHyQdMSPz3VPPJsHbuzgA0jSx4zDGfJQ/viewform">
-              Register Here
-          </Link>
-          <Link button size="lg" to="https://docs.google.com/document/d/1RC1de1Tj-u_9cUONHUihtyWXy8MQq20AHMYhUGyNNX4/edit?usp=sharing">
-              View the Agenda
-          </Link>
-        </Stack>
-      </Box>
-    </Stack>
+      <Markdown>{registrants}</Markdown>
+    </Fragment>
   )
 }

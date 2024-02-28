@@ -1,9 +1,11 @@
 import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
-
+import { Menu } from './components/menu'
 import {
   HomeView,
   NotFoundView,
+  RegistrationView,
+  AgendaView
 } from './views'
 
 import { Header } from './components/header'
@@ -15,6 +17,16 @@ const menuOptions = [
     label: 'Home',
     view: <HomeView />,
   },
+  {
+    path: '/registration',
+    label: 'Registration',
+    view: <RegistrationView />,
+  },
+  {
+    path: '/agenda',
+    label: 'Agenda',
+    view: <AgendaView />,
+  },
 ]
 
 //
@@ -23,7 +35,7 @@ export const App = () => {
   return (
     <Fragment>
       <Header menuLinks={ menuOptions } />
-      
+      <Menu options={ menuOptions } />
       <main>
         <Routes>
           {
