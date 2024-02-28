@@ -16,7 +16,7 @@ export const DrawerMenu = ({ options = [] }) => {
         variant="outlined"
         color="neutral"
         onClick={ () => setOpen(true) }
-        sx={{ mx: 2 }}
+        sx={{ mx: 2, borderColor: '#41404270' }}
       >
         <MenuIcon />
       </IconButton>
@@ -65,6 +65,8 @@ export const DrawerMenu = ({ options = [] }) => {
               padding: 2,
               textDecoration: 'none',
               textTransform: 'uppercase',
+              color: '#414042',
+
             },
             '[aria-current="page"]': {
               'backgroundColor': '#f3752133',
@@ -85,12 +87,10 @@ export const DrawerMenu = ({ options = [] }) => {
           <li 
             className="list-item" 
             onClick={ () => setOpen(false) }
-            target="_blank" 
-            rel="noopener noreferrer"
           >
-            <Link nav to="https://southbigdatahub.org/">
+            <Link nav to="https://southbigdatahub.org/" target="_blank" rel="noopener noreferrer">
               About the South Hub
-              <ExternalLinkIcon fill="#ff8300"/>
+              <ExternalLinkIcon fill="#414042"/>
             </Link>
           </li>
         </Box>
