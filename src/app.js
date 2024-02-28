@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Menu } from './components/menu'
 import {
   HomeView,
@@ -50,7 +50,7 @@ export const App = () => {
               />
             ))
           }
-          <Route path="*" element={ <NotFoundView /> } />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
 
