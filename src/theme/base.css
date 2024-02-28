@@ -45,10 +45,10 @@ body {
   flex: 1;
 }
 
-a {
+/* a {
   color: var(--color-sbdh);
   transition: filter 250ms;
-}
+} */
 
 
 /* a:hover {
