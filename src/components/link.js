@@ -5,7 +5,7 @@ import { NavLink as ReactNavLink } from 'react-router-dom'
 import { Link as MUILink, Button } from '@mui/joy/'
 //
 
-export const ExternalLink = ({ button, to, children, ...props}) => {
+export const ExternalLink = ({ button, noIcon, to, children, ...props}) => {
   return (
     <Fragment>
       { button ? (
@@ -26,7 +26,9 @@ export const ExternalLink = ({ button, to, children, ...props}) => {
             target="_blank"
             rel="noopener noreferrer"
           >{ children }</MUILink>
-          <ExternalLinkIcon fill="var(--sbdh-palette-secondary-700)"/>
+          {
+            !noIcon && (<ExternalLinkIcon fill="var(--sbdh-palette-secondary-700)"/>)
+          }
         </Fragment>
       )}
       
