@@ -8,4 +8,4 @@ All focused sessions will feature cross-cutting themes of:
 - Education and Workforce
 - Data Sharing and Cyberinfrastructure
 
-All focused sessions will include introductions, keynotes, and partnership networking
+All focused sessions will include introductions, keynotes, and partnership networking.
