@@ -19,7 +19,7 @@ export const Menu = ({ options = [] }) => {
         display: 'flex',
         justifyContent: { sm: 'start', md: 'center' },
         alignItems: 'center',
-        height: '60px',
+        height: '55px',
         position: 'sticky',
         top: 0,
         overflow: 'hidden',

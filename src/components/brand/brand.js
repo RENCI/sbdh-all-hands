@@ -13,7 +13,7 @@ const SIZES = {
 export const Brand = ({ size, compass = false }) => {
 
   return (
-    <Link to="/">
+    <Link noIcon to="https://southbigdatahub.org/">
       <img
         src={ compass ? sbdhCompass : sbdhLogo }
         width={ SIZES?.[size] || SIZES.large }

@@ -12,7 +12,7 @@ export const DesktopMenu = ({ options = [] }) => {
         role="navigation"
         component="ul"
         sx={{
-          height: '60px',
+          height: '55px',
           padding: 0,
           margin: 0,
           listStyleType: 'none',

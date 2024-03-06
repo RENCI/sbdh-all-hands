@@ -15,7 +15,7 @@ export const Header = () => {
       width: '100%',
       borderBottom: '1px solid #f37521',
       '.overlay': {
-        padding: '1rem 0',
+        padding: '0.5rem 0',
         display: 'flex',
         alignItems: 'center',
         gap: '2rem',
@@ -37,11 +37,11 @@ export const Header = () => {
         <Container maxWidth="lg">
           <Typography level="h1" className="overlay" sx={{
               padding: '0 2rem',
-              fontSize: '2.275rem',
+              fontSize: '2rem',
               color: 'white',
-              letterSpacing: '',
-              fontWeight: 300,
-              margin: '0'
+              letterSpacing: '0.1px',
+              fontWeight: 400,
+              margin: '0',
           }}>
             South Big Data Innovation Hub
           </Typography>
