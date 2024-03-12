@@ -1,7 +1,7 @@
 export const components = {
   JoyTypography: {
     styleOverrides: {
-      root: ({ ownerState, theme }) => ({
+      root: ({ ownerState }) => ({
         fontSize: '100%',
         ...(ownerState.level === 'h1' && {
           fontSize: '1.84rem',
@@ -33,8 +33,7 @@ export const components = {
   },
   JoyLink: {
     styleOverrides: {
-      // `ownerState` contains the component props and internal state
-      root: ({ ownerState, theme }) => ({
+      root: ({ theme }) => ({
         color: theme.palette.secondary[700],
         fontWeight: 600,
       }),
@@ -42,8 +41,7 @@ export const components = {
   },
   JoyButton: {
     styleOverrides: {
-      // `ownerState` contains the component props and internal state
-      root: ({ ownerState, theme }) => ({
+      root: ({ theme }) => ({
         backgroundColor: theme.palette.primary[500] ,
         color: theme.palette.secondary[900],
         fontWeight: 400,
@@ -55,8 +53,7 @@ export const components = {
   },
   JoyDivider: {
     styleOverrides: {
-      // `ownerState` contains the component props and internal state
-      root: ({ ownerState, theme }) => ({
+      root: ({ theme }) => ({
         backgroundColor: theme.palette.secondary[900],
         margin: '1rem 0'
       }),
