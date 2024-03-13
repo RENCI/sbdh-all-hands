@@ -1,1 +1,1 @@
-The South Hub Partnership Forum includes three focused sessions --- clean energy manufacturing, health equity, and smart cities and the environment --- that will all feature the cross-cutting themes of education and workforce, and data sharing and cyberinfrastructure.
+The South Hub Partnership Forum includes three focused sessions &mdash; clean energy manufacturing, health equity, and smart cities and the environment &mdash; that will all feature the cross-cutting themes of education and workforce, and data sharing and cyberinfrastructure.
