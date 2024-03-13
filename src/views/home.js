@@ -2,13 +2,38 @@ import titleSubtitle from '../content/home/title-subtitle.md'
 import focusedSessions from '../content/home/focused-sessions.md'
 import registrants from '../content/home/registrants.md'
 import { Fragment } from 'react'
-import { Box, Stack, Typography } from '@mui/joy'
+import { Box, Stack, Typography, Card, AspectRatio, CardContent, Divider,Button } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
 import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
+import donnaEnnis from '../images/donna-ennis.png'
+import yolandaLawson from '../images/yolanda-lawson.jpeg'
+import anikaFoster from '../images/anika-foster.jpg'
+import { useTheme } from '@mui/joy/styles'
+
+
+export const KeynoteSpeakers = [
+  {
+    name: "Yolanda Lawson",
+    image: yolandaLawson,
+    info: "Board Certified OBGYN, founder of MadeWell OBGYN"
+  },
+  {
+    name: "Donna Ennis",
+    image: donnaEnnis,
+    info: "Director, Community Engagement and Program Development; Co-Director, Georgia AIM"
+  },
+  {
+    name: "Anika Foster",
+    image: anikaFoster,
+    info: "Chief Executive Officer of Detroit Future City (DFC)"
+  },
+]
 
 export const HomeView = () => {
+  const theme = useTheme()
+
   return (
     <Fragment>
       <Typography level="h1" sx={{textAlign: 'center'}}>Diverse and Digital: Advancing Digital Workforce and Data Sharing Across Domains</Typography>
@@ -60,6 +85,7 @@ export const HomeView = () => {
       </Stack>
       
       <Markdown>{focusedSessions}</Markdown>
+      <Markdown>{registrants}</Markdown>
 
       <Box sx={{
         display: 'flex', 
@@ -69,7 +95,7 @@ export const HomeView = () => {
           display: 'none'
         },
         '.focused-session-image': {
-          maxWidth: '600px',
+          maxWidth: '100%',
           '@media screen and (max-width: 600px)': {
             maxWidth: '100%'
           }
@@ -83,7 +109,50 @@ export const HomeView = () => {
           />
         </Link>
       </Box>
-      <Markdown>{registrants}</Markdown>
+
+      <Divider sx={{color: theme.palette.secondary[500], margin: '2rem 0'}} />
+
+      <Typography level="h2" sx={{textAlign: 'center'}}>Keynote Speakers</Typography>
+      
+      <Stack
+        direction={{xs: 'column', sm: 'row' }}
+        gap={{xs: 2, sm: 1, md: 4}}
+        flex
+        sx={{maxWidth: '900px', margin: '0 auto 2rem'}}
+      >
+        {KeynoteSpeakers.map((speaker)=>(
+          <Card 
+            key={speaker.name} 
+            sx={{flex: 1}}
+            variant="soft"
+            size="lg"
+          >
+            <AspectRatio ratio="1" sx={{
+              borderRadius: '100%',
+              transition: 'transform 0.1s',
+              ':hover': {
+                  transform:'scale(1.02)'
+              }
+            }}>
+              <img 
+                src={speaker.image}
+                width="100%"
+                height="100%"
+              />
+            </AspectRatio>
+
+            <CardContent sx={{display: 'flex', justifyContent: 'space-between'}}>
+              <Box>
+                <Typography level="h3" sx={{
+                  color: theme.palette.secondary[800],
+                }}>{speaker.name}</Typography>
+                <Typography level="title-sm" sx={{marginBottom: '1.2rem'}}>{speaker.info}</Typography>
+              </Box>
+              {/* <Button color="secondary">Read More</Button> */}
+            </CardContent>
+          </Card>
+        ))}
+      </Stack>
     </Fragment>
   )
 }
