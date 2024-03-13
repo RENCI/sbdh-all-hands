@@ -8,7 +8,7 @@ import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
 import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
 import donnaEnnis from '../images/donna-ennis.png'
-import yolandaLawson from '../images/yolanda-lawson.jpeg'
+import yolandaLawson from '../images/yolanda-lawson.png'
 import anikaFoster from '../images/anika-foster.jpg'
 import { useTheme } from '@mui/joy/styles'
 
