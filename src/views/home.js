@@ -112,7 +112,7 @@ export const HomeView = () => {
 
       <Divider sx={{color: theme.palette.secondary[500], margin: '2rem 0'}} />
 
-      <Typography level="h2" sx={{textAlign: 'center'}}>Keynote Speakers</Typography>
+      <Typography level="h2" sx={{textAlign: 'center', fontSize: '2rem', color: theme.palette.secondary[900], margin: '1rem 0'}}>Keynote Speakers</Typography>
 
       <Stack
         direction={{xs: 'column', sm: 'row' }}

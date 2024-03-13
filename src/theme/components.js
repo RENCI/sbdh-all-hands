@@ -4,13 +4,15 @@ export const components = {
       root: ({ ownerState }) => ({
         fontSize: '100%',
         ...(ownerState.level === 'h1' && {
-          fontSize: '1.84rem',
-          margin: '16px 0',
-        }),
-        ...(ownerState.level === 'h2' && {
-          fontSize: '1.75rem',
+          fontSize: '1.89rem',
           margin: '16px 0',
           fontWeight: 500,
+
+        }),
+        ...(ownerState.level === 'h2' && {
+          fontSize: '2rem',
+          margin: '16px 0',
+          fontWeight: 400,
         }),
         ...(ownerState.level === 'h3' && {
           fontSize: '1.5rem',
