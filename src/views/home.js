@@ -2,7 +2,7 @@ import titleSubtitle from '../content/home/title-subtitle.md'
 import focusedSessions from '../content/home/focused-sessions.md'
 import registrants from '../content/home/registrants.md'
 import { Fragment } from 'react'
-import { Box, Stack, Typography, Card, AspectRatio, CardContent, Divider,Button } from '@mui/joy'
+import { Box, Stack, Typography, Card, AspectRatio, CardContent, Divider, Button } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
@@ -113,7 +113,7 @@ export const HomeView = () => {
       <Divider sx={{color: theme.palette.secondary[500], margin: '2rem 0'}} />
 
       <Typography level="h2" sx={{textAlign: 'center'}}>Keynote Speakers</Typography>
-      
+
       <Stack
         direction={{xs: 'column', sm: 'row' }}
         gap={{xs: 2, sm: 1, md: 4}}
@@ -148,6 +148,9 @@ export const HomeView = () => {
                 }}>{speaker.name}</Typography>
                 <Typography level="title-sm" sx={{marginBottom: '1.2rem'}}>{speaker.info}</Typography>
               </Box>
+              {/* Uncomment this Button when Speakers page is finished; 
+              use 'speaker/#speaker-slug' to link to the speaker's 
+              portion of the speaker page */}
               {/* <Button color="secondary">Read More</Button> */}
             </CardContent>
           </Card>

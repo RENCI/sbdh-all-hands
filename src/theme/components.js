@@ -73,8 +73,7 @@ export const components = {
   },
   JoyDivider: {
     styleOverrides: {
-      root: ({ theme }) => ({
-        // backgroundColor: theme.palette.secondary[900],
+      root: () => ({
         margin: '1rem 0'
       }),
     },
