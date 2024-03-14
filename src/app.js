@@ -5,7 +5,8 @@ import {
   HomeView,
   NotFoundView,
   RegistrationView,
-  AgendaView
+  AgendaView,
+  SpeakersView
 } from './views'
 
 import { Header } from './components/header'
@@ -26,6 +27,11 @@ const menuOptions = [
     path: '/agenda',
     label: 'Agenda',
     view: <AgendaView />,
+  },
+  {
+    path: '/speakers',
+    label: 'Speakers',
+    view: <SpeakersView />,
   },
 ]
 
