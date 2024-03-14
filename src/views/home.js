@@ -127,10 +127,11 @@ export const HomeView = () => {
                 }}>{speaker.name}</Typography>
                 <Typography level="title-sm" sx={{marginBottom: '1.2rem'}}>{speaker.info}</Typography>
               </Box>
-              {/* Uncomment this Button when Speakers page is finished; 
-              use 'speaker/#speaker-slug' to link to the speaker's 
-              portion of the speaker page */}
-              {/* <Button color="secondary">Read More</Button> */}
+              <Box sx={{margin: '0 auto'}}>
+                <Link to={`/speakers#${speaker.slug}`} underline="none">
+                  <Button color="secondary" sx={{}}>Read More</Button>
+                </Link>
+              </Box>
             </CardContent>
           </Card>
         ))}
