@@ -25,6 +25,7 @@ export const ExternalLink = ({ button, noIcon, to, children, ...props}) => {
             href={ to }
             target="_blank"
             rel="noopener noreferrer"
+            {...props}
           >{ children }</MUILink>
           {
             !noIcon && (<ExternalLinkIcon fill="var(--sbdh-palette-secondary-700)"/>)
@@ -61,6 +62,7 @@ export const InternalLink = ({ button, to, children, ...props}) => {
           <MUILink
             component={ReactLink}
             to={ to }
+            {...props}
           >{ children }</MUILink>
         </Fragment>
       )}
