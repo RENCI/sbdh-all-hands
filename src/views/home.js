@@ -7,29 +7,8 @@ import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
 import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
-import donnaEnnis from '../images/donna-ennis.png'
-import yolandaLawson from '../images/yolanda-lawson.png'
-import anikaFoster from '../images/anika-foster.jpg'
 import { useTheme } from '@mui/joy/styles'
-
-
-export const KeynoteSpeakers = [
-  {
-    name: "Yolanda Lawson",
-    image: yolandaLawson,
-    info: "Board Certified OBGYN, founder of MadeWell OBGYN"
-  },
-  {
-    name: "Donna Ennis",
-    image: donnaEnnis,
-    info: "Director, Community Engagement and Program Development; Co-Director, Georgia AIM"
-  },
-  {
-    name: "Anika Foster",
-    image: anikaFoster,
-    info: "Chief Executive Officer of Detroit Future City (DFC)"
-  },
-]
+import { speakers } from '../content/speakers/index.js'
 
 export const HomeView = () => {
   const theme = useTheme()
@@ -120,7 +99,7 @@ export const HomeView = () => {
         flex
         sx={{maxWidth: '900px', margin: '0 auto 2rem'}}
       >
-        {KeynoteSpeakers.map((speaker)=>(
+        {speakers.map((speaker)=>(
           <Card 
             key={speaker.name} 
             sx={{flex: 1}}
