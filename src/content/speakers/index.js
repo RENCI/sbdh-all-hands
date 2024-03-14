@@ -1,4 +1,4 @@
-import yolandaLawsonImg from '../../images/yolanda-lawson.jpeg'
+import yolandaLawsonImg from '../../images/yolanda-lawson.png'
 import yolandaLawson from './yolandaLawson.yaml'
 import donnaEnnisImg from '../../images/donna-ennis.png'
 import donnaEnnis from './donnaEnnis.yaml'
