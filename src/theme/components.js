@@ -40,6 +40,11 @@ export const components = {
           letterSpacing: '0.1px',
           fontWeight: 300
         }),
+        ...(ownerState.level === 'body-md' && {
+          fontSize: 'clamp(1rem, 0.95rem + 0.30vw, 1.2rem)',
+          // color: 'red'
+        
+        })
       }),
     },
   },
