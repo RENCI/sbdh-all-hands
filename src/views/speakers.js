@@ -25,7 +25,7 @@ export const SpeakersView = () => {
             <Box id={speaker.slug} sx={{paddingBottom: '3rem'}} mt="-2rem"></Box>
             <Card variant="soft" sx={{backgroundColor:'#ffffff00'}}>
               <Stack
-                direction={{ xs: 'column', sm: 'row' }}
+                direction={{ xs: 'column', sm: 'column', md: 'row' }}
                 spacing={3}
               >
                 <Box>
