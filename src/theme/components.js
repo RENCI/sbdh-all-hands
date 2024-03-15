@@ -40,6 +40,11 @@ export const components = {
           letterSpacing: '0.1px',
           fontWeight: 300
         }),
+        ...(ownerState.level === 'body-md' && {
+          fontSize: 'clamp(1rem, 0.95rem + 0.30vw, 1.2rem)',
+          // color: 'red'
+        
+        })
       }),
     },
   },
@@ -63,11 +68,11 @@ export const components = {
           }
         }),
         ...(ownerState.color === 'secondary' && {
-          backgroundColor: theme.palette.secondary[900] ,
-          color: "#fff",
-          fontWeight: 400,
+          color: theme.palette.secondary[900],
+          backgroundColor: `${theme.palette.secondary[900]}10`,
+          transition: 'transform 0.2s easeIn',
           ':hover': {
-            backgroundColor: `${theme.palette.secondary[900]}98` ,
+            backgroundColor: `${theme.palette.secondary[900]}15` ,
           }
         })
       }),
