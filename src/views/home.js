@@ -2,7 +2,7 @@ import titleSubtitle from '../content/home/title-subtitle.md'
 import focusedSessions from '../content/home/focused-sessions.md'
 import registrants from '../content/home/registrants.md'
 import { Fragment } from 'react'
-import { Box, Stack, Typography, Card, AspectRatio, CardContent, Divider, Button } from '@mui/joy'
+import { Box, Stack, Typography, Card, AspectRatio, CardContent, CardActions, Divider, Button } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
@@ -127,11 +127,14 @@ export const HomeView = () => {
                 }}>{speaker.name}</Typography>
                 <Typography level="title-sm" sx={{marginBottom: '1.2rem'}}>{speaker.info}</Typography>
               </Box>
-              <Box sx={{margin: '0 auto'}}>
-                <Link to={`/speakers#${speaker.slug}`} underline="none">
-                  <Button color="secondary" sx={{}}>Read More</Button>
-                </Link>
-              </Box>
+              <CardActions>
+                <Button 
+                  component={Link}
+                  color="secondary" 
+                  to={`/speakers#${speaker.slug}`}
+                  underline="none"
+                >Read More</Button>
+              </CardActions>
             </CardContent>
           </Card>
         ))}
