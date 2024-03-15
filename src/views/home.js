@@ -2,13 +2,13 @@ import titleSubtitle from '../content/home/title-subtitle.md'
 import focusedSessions from '../content/home/focused-sessions.md'
 import registrants from '../content/home/registrants.md'
 import { Fragment } from 'react'
-import { Box, Stack, Typography, Card, AspectRatio, CardContent, Divider, Button } from '@mui/joy'
+import { Box, Stack, Typography, Card, AspectRatio, CardContent, CardActions, Divider, Button } from '@mui/joy'
 import { Link } from '../components/link'
 import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
 import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
 import { useTheme } from '@mui/joy/styles'
-import { speakers } from '../content/speakers/index.js'
+import { keynoteSpeakers } from '../content/speakers/index.js'
 
 export const HomeView = () => {
   const theme = useTheme()
@@ -33,9 +33,6 @@ export const HomeView = () => {
               borderRadius: 8,
               verticalAlign: 'bottom',
             },
-            'svg': {
-              display: 'none'
-            },
           },
           '.description': {
             marginTop: '1rem'
@@ -44,7 +41,7 @@ export const HomeView = () => {
         }}
       >
         <Box className="flyer-container">
-          <Link to={ dateBanner }>
+          <Link to={ dateBanner } noIcon>
             <img
               className="flyer"
               src={ dateBanner }
@@ -70,9 +67,6 @@ export const HomeView = () => {
         display: 'flex', 
         justifyContent: 'center',
         margin: '1.2rem auto',
-        'svg': {
-          display: 'none'
-        },
         '.focused-session-image': {
           maxWidth: '100%',
           '@media screen and (max-width: 600px)': {
@@ -80,7 +74,7 @@ export const HomeView = () => {
           }
         },
       }}>
-        <Link to={focusedSessionsImg}>
+        <Link to={focusedSessionsImg} noIcon>
           <img
             className="focused-session-image"
             src={focusedSessionsImg}
@@ -99,7 +93,7 @@ export const HomeView = () => {
         flex
         sx={{maxWidth: '900px', margin: '0 auto 2rem'}}
       >
-        {speakers.map((speaker)=>(
+        {keynoteSpeakers.map((speaker)=>(
           <Card 
             key={speaker.name} 
             sx={{flex: 1}}
@@ -108,9 +102,9 @@ export const HomeView = () => {
           >
             <AspectRatio ratio="1" sx={{
               borderRadius: '100%',
-              transition: 'transform 0.1s',
-              ':hover': {
-                  transform:'scale(1.02)'
+              ':hover img': {
+                transition: 'transform 0.1s',
+                transform:'scale(1.02)'
               }
             }}>
               <img 
@@ -127,11 +121,14 @@ export const HomeView = () => {
                 }}>{speaker.name}</Typography>
                 <Typography level="title-sm" sx={{marginBottom: '1.2rem'}}>{speaker.info}</Typography>
               </Box>
-              <Box sx={{margin: '0 auto'}}>
-                <Link to={`/speakers#${speaker.slug}`} underline="none">
-                  <Button color="secondary" sx={{}}>Read More</Button>
-                </Link>
-              </Box>
+              <CardActions>
+                <Button 
+                  component={Link}
+                  color="secondary" 
+                  to={`/speakers#${speaker.slug}`}
+                  underline="none"
+                >Read More</Button>
+              </CardActions>
             </CardContent>
           </Card>
         ))}
