@@ -63,11 +63,11 @@ export const components = {
           }
         }),
         ...(ownerState.color === 'secondary' && {
-          backgroundColor: theme.palette.secondary[900] ,
-          color: "#fff",
-          fontWeight: 400,
+          color: theme.palette.secondary[900],
+          backgroundColor: `${theme.palette.secondary[900]}10`,
+          transition: 'transform 0.2s easeIn',
           ':hover': {
-            backgroundColor: `${theme.palette.secondary[900]}98` ,
+            backgroundColor: `${theme.palette.secondary[900]}15` ,
           }
         })
       }),
