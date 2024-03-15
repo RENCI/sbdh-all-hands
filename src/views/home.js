@@ -8,7 +8,7 @@ import { Markdown } from '../components/markdown'
 import dateBanner from '../images/blue-date-banner.png'
 import focusedSessionsImg from '../images/save-the-date-focused-sessions.png'
 import { useTheme } from '@mui/joy/styles'
-import { speakers } from '../content/speakers/index.js'
+import { keynoteSpeakers } from '../content/speakers/index.js'
 
 export const HomeView = () => {
   const theme = useTheme()
@@ -99,7 +99,7 @@ export const HomeView = () => {
         flex
         sx={{maxWidth: '900px', margin: '0 auto 2rem'}}
       >
-        {speakers.map((speaker)=>(
+        {keynoteSpeakers.map((speaker)=>(
           <Card 
             key={speaker.name} 
             sx={{flex: 1}}
