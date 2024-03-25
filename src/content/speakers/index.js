@@ -4,6 +4,8 @@ import donnaEnnisImg from '../../images/donna-ennis.png'
 import donnaEnnis from './donnaEnnis.yaml'
 import anikaFosterImg from '../../images/anika-foster.jpg'
 import anikaFoster from './anikaFoster.yaml'
+import angeliqueJohnsonImg from '../../images/angelique-johnson.png'
+import angeliqueJohnson from './angeliqueJohnson.yaml'
 
 export const speakers = [
   {
@@ -13,6 +15,10 @@ export const speakers = [
   {
     image: anikaFosterImg,
     ...anikaFoster
+  },
+  {
+    image: angeliqueJohnsonImg,
+    ...angeliqueJohnson
   },
   {
     image: yolandaLawsonImg,
