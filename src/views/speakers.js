@@ -17,7 +17,7 @@ export const SpeakersView = () => {
   }, [location.hash])
   
   return (
-    <Box>
+    <Box sx={{paddingBottom: '10rem'}}>
       <Typography level="h2" sx={{marginBottom: '0'}}>Speakers</Typography>
       {speakers.map((speaker)=> {
         return (
@@ -28,7 +28,7 @@ export const SpeakersView = () => {
                 direction={{ xs: 'column', sm: 'column', md: 'row' }}
                 spacing={3}
               >
-                <Box>
+                <Box sx={{display: 'flex', justifyContent: 'center' }}>
                   <AspectRatio ratio={1}  sx={{ width: 300 }}>
                     <img 
                       src={speaker.image}
