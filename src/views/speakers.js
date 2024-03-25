@@ -17,7 +17,7 @@ export const SpeakersView = () => {
   }, [location.hash])
   
   return (
-    <Box>
+    <Box sx={{paddingBottom: '10rem'}}>
       <Typography level="h2" sx={{marginBottom: '0'}}>Speakers</Typography>
       {speakers.map((speaker)=> {
         return (
