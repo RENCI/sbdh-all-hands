@@ -2,8 +2,8 @@ import yolandaLawsonImg from '../../images/yolanda-lawson.png'
 import yolandaLawson from './yolandaLawson.yaml'
 import donnaEnnisImg from '../../images/donna-ennis.png'
 import donnaEnnis from './donnaEnnis.yaml'
-import anikaFosterImg from '../../images/anika-foster.jpg'
-import anikaFoster from './anikaFoster.yaml'
+import anikaGossImg from '../../images/anika-goss.jpg'
+import anikaGoss from './anikaGoss.yaml'
 import angeliqueJohnsonImg from '../../images/angelique-johnson.png'
 import angeliqueJohnson from './angeliqueJohnson.yaml'
 
@@ -13,8 +13,8 @@ export const speakers = [
     ...donnaEnnis
   },
   {
-    image: anikaFosterImg,
-    ...anikaFoster
+    image: anikaGossImg,
+    ...anikaGoss
   },
   {
     image: angeliqueJohnsonImg,
@@ -36,7 +36,7 @@ export const keynoteSpeakers = [
     ...yolandaLawson
   },
   {
-    image: anikaFosterImg,
-    ...anikaFoster
+    image: anikaGossImg,
+    ...anikaGoss
   },
 ]

@@ -1,7 +1,7 @@
 import { Fragment, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { speakers } from '../content/speakers/index.js'
-import { Box, Card, Typography, Stack, AspectRatio, Divider } from '@mui/joy'
+import { AspectRatio, Box, Card, Stack, Typography } from '@mui/joy'
 import { Markdown } from '../components/markdown'
 
 export const SpeakersView = () => {
