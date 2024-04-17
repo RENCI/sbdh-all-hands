@@ -8,6 +8,8 @@ import anikaGossImg from '../../images/anikaGoss.jpg'
 import anikaGoss from './anikaGoss.yaml'
 import debbyCovingtonImg from '../../images/debbyCovington.jpg'
 import debbyCovington from './debbyCovington.yaml'
+import chadEvansImg from '../../images/chadEvans.jpg'
+import chadEvans from './chadEvans.yaml'
 import thomasGulbransenImg from '../../images/thomasGulbransen.jpg'
 import thomasGulbransen from './thomasGulbransen.yaml'
 import angeliqueJohnsonImg from '../../images/angeliqueJohnson.png'
@@ -37,6 +39,10 @@ export const speakers = [
   {
     image: donnaEnnisImg,
     ...donnaEnnis
+  },
+  {
+    image: chadEvansImg,
+    ...chadEvans
   },
   {
     image: jeminGeorgeImg,
