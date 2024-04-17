@@ -38,7 +38,9 @@ export const SpeakersView = () => {
                 </Box>
                 <Stack direction="column">
                   <Typography level="h3" sx={{marginTop: 0, marginBottom: '0.5rem'}} >{speaker.name}</Typography>
-                  <Typography level="title-md" sx={{marginBottom: '0.5rem'}}>{speaker.info}</Typography>
+                  {
+                    speaker.info && (<Typography level="title-md" sx={{marginBottom: '0.5rem'}}>{speaker.info}</Typography>)
+                  }
                   <Markdown>{speaker.bio}</Markdown>
                 </Stack>
               </Stack>
